@@ -1,0 +1,28 @@
+---
+layout: site
+---
+<main role="main">
+    <header class="topic-hdr" role="banner">
+        <h2><a href="/{{ page.topic }}/guides/">{{ page.topicHdr }}</a></h2>
+    </header>
+    <div class="row">
+        <div class="small-12 columns">
+            <article>
+                {% if page.pagination %}
+                <nav class="clearfix">
+                    <ul class="pagination right">
+                        {% if page.pagination.prev %}<li><a href="/{{ page.topic }}/guides/{{ page.pagination.prev.url }}/">&laquo; {{ page.pagination.prev.title }}</a></li>{% endif %}
+                        {% if page.pagination.next %}<li><a href="/{{ page.topic }}/guides/{{ page.pagination.next.url}}/">{{ page.pagination.next.title}} &raquo;</a></li>{% endif %}
+                    </ul>
+                </nav>
+                {% endif %}
+                <header>
+                    <h1>{{ page.title }}</h1>
+                </header>
+                <section>
+                    {{ content }}
+                </section>
+            </article>
+        </div>
+    </div>
+</main>

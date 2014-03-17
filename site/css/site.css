@@ -78,3 +78,7 @@ body.developers .topic-hdr {
 body.sdk .topic-hdr {
   background-color: #0776A0;
 }
+
+article h1 {
+  font-weight: 700;
+}
