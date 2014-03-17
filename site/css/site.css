@@ -4,7 +4,7 @@ body, h1, h2, h3, h4, h5, h6  {
 }
 
 .dropdown li.topic.api a {
-  color: #FF1E00;
+  color: #D94222;
 }
 
 .dropdown li.topic.developers a {
@@ -31,11 +31,11 @@ body, h1, h2, h3, h4, h5, h6  {
 }
 
 .small-block-grid-1.medium-block-grid-3 li.api {
-  background-color: #FF1E00;
+  background-color: #D94222;
 }
 
 .small-block-grid-1.medium-block-grid-3 li.api:hover {
-  background-color: #CC1700;
+  background-color: #CC3515;
 }
 
 .small-block-grid-1.medium-block-grid-3 li.developers {
@@ -52,4 +52,26 @@ body, h1, h2, h3, h4, h5, h6  {
 
 .small-block-grid-1.medium-block-grid-3 li.sdk:hover {
   background-color: #056387;
+}
+
+.topic-hdr {
+  padding: 1em 15px;
+}
+
+.topic-hdr h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+body.api .topic-hdr {
+  background-color: #D94222;
+}
+
+body.developers .topic-hdr {
+  background-color: #FFA500;
+}
+
+body.sdk .topic-hdr {
+  background-color: #0776A0;
 }
