@@ -28,7 +28,7 @@ copyright_year: 2014
 # ***************************
 
 # Directory where Jekyll will look to transform files.
-source: app 
+source: site 
 
 # Directory where Jekyll will save transformed files.
 destination: .tmp/

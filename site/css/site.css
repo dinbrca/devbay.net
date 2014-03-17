@@ -1,0 +1,55 @@
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: "Noto Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.dropdown li.topic.api a {
+  color: #FF1E00;
+}
+
+.dropdown li.topic.developers a {
+  color: #FFA500;
+}
+
+.dropdown li.topic.sdk a {
+  color: #0776A0;
+}
+
+.small-block-grid-1.medium-block-grid-3 li {
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.small-block-grid-1.medium-block-grid-3 a {
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.small-block-grid-1.medium-block-grid-3 li {
+  box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.api {
+  background-color: #FF1E00;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.api:hover {
+  background-color: #CC1700;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.developers {
+  background-color: #FFA500;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.developers:hover {
+  background-color: #E59400;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.sdk {
+  background-color: #0776A0;
+}
+
+.small-block-grid-1.medium-block-grid-3 li.sdk:hover {
+  background-color: #056387;
+}

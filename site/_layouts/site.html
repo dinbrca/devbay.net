@@ -10,31 +10,33 @@
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/vendor/normalize/3.0.0/css/normalize.css">
         <link rel="stylesheet" href="/vendor/foundation/5.2.1/css/foundation.css">
-        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/site.css">
         <script src="/vendor/modernizr/2.7.2/js/modernizr.js"></script>
     </head>
     <body class="{{ page.topic }}">
-        <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-                <li class="name"><h1><a href="/">{{ site.title }}</a></h1></li>
-                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-            </ul>
-            <section class="top-bar-section">
-                <ul class="right">
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                        <a href="#">Guides</a>
-                        <ul class="dropdown">
-                            <li class="topic api"><a href="/api/guides/">eBay API</a></li>
-                            <li class="topic developers"><a href="/developers/guides/">Developers Program</a></li>
-                            <li class="topic sdk"><a href="/sdk/guides/">SDK for PHP</a></li>
-                        </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="/about/">About</a></li>
+        <header role="banner">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name"><h1><a href="/">{{ site.title }}</a></h1></li>
+                    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
                 </ul>
-            </section>
-        </nav>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li class="divider"></li>
+                        <li class="has-dropdown">
+                            <a href="#">Guides</a>
+                            <ul class="dropdown">
+                                <li class="topic api"><a href="/api/guides/">eBay API</a></li>
+                                <li class="topic developers"><a href="/developers/guides/">Developers Program</a></li>
+                                <li class="topic sdk"><a href="/sdk/guides/">SDK for PHP</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
         {{ content }}
         <script src="/vendor/jquery/2.1.0/js/jquery.js"></script>
         <script src="/vendor/foundation/5.2.1/js/foundation.js"></script>
