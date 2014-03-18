@@ -1,6 +1,6 @@
 ---
 layout: guide
 topic: sdk
-topicHdr: SDK for PHP
+topicHdr: eBay SDK for PHP
 ---
 {{ content }}

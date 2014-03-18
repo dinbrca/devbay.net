@@ -82,3 +82,10 @@ body.sdk .topic-hdr {
 article h1 {
   font-weight: 700;
 }
+
+article h2 {
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 2em;
+  font-weight: 700;
+}
