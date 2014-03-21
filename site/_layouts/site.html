@@ -10,6 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/vendor/normalize/3.0.0/css/normalize.css">
         <link rel="stylesheet" href="/vendor/foundation/5.2.1/css/foundation.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="/css/site.css">
         <script src="/vendor/modernizr/2.7.2/js/modernizr.js"></script>
     </head>
@@ -40,8 +41,15 @@
         {{ content }}
         <footer role="contentinfo">
             <div class="row">
-                <div class="small-12 columns"> 
-                    <small>Copyright &copy; {{ site.copyright_year }} {{ site.author }}</small>
+                <div class="medium-6 columns"> 
+                    <ul class="inline-list">
+                        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="https://groups.google.com/forum/#!forum/{{ site.google_group }}"><i class="fa fa-group fa-2x"></i></a></li>
+                        <li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>  
+                <div class="medium-6 columns"> 
+                    <small>Copyright &copy; {{ site.copyright_year }} <a href="http://davidtsadler.com">{{ site.author }}</a></small>
                 </div>  
             </div>
         </footer>

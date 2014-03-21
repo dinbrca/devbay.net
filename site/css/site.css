@@ -100,3 +100,21 @@ body.developers article h2 {
 body.sdk article h2 {
   border-bottom: 1px solid #0776A0;
 }
+
+footer {
+  padding: 24px 0 10px;
+  background-color: #222222;
+}
+
+footer,
+footer a {
+  color: #666666;
+}
+
+footer a:hover {
+  color: #777777;
+}
+
+footer ul li {
+  list-style: none;
+}

@@ -12,10 +12,12 @@ author: David T. Sadler
 description: 
 
 # Twitter name minus the @ character. 
-twitter: davidtsadler
+twitter: devbaydotnet
+
+google_group: ebay-sdk-php
 
 # Git hub name.
-github: davidtsadler
+github: davidtsadler/devbay.net
 
 # Google plus profile ID
 google_plus_id: 103985843031062200565
