@@ -24,9 +24,9 @@ Installing the SDK with Composer is done as follows:
     ```javascript
     {
         "require": {
-            "dts/ebay-sdk-finding": "dev-master",
-            "dts/ebay-sdk-trading": "dev-master",
-            "dts/ebay-sdk-shopping": "dev-master"
+            "dts/ebay-sdk-finding": "~0.0",
+            "dts/ebay-sdk-trading": "~0.0",
+            "dts/ebay-sdk-shopping": "~0.0"
         }
     }
     ```
@@ -51,7 +51,7 @@ Installing the SDK with Composer is done as follows:
     require 'vendor/autoload.php';
     ```
 
-It is highly recommended that you read the Composer documentation to fully understand how to install Composer, define dependencies, and configure the autoloading at [getcomposer.org](http://getcomposer.org).
+It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies, and configure the autoloading.
 
 ## Customizing the installation.
 
@@ -62,10 +62,19 @@ Using the method outlined earlier installs all of the SDK. By only declaring the
 ```javascript
 {
     "require": {
-        "dts/ebay-sdk-finding": "dev-master"
+        "dts/ebay-sdk-finding": "~0.0"
     }
 }
 ```
 
+## Versions
 
+Because each SDK is its own project they will be at different versions to one another. This is due to the fact that the eBay API services are not updated at the same time. Note also that the SDK versioning system does not follow the one used by the API. To help determine which version of a SDK you require a complete list of each SDK, and the API version they support, can be found [here](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions#trading). If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
 
+```javascript
+{
+    "require": {
+        "dts/ebay-sdk-trading": "dev-master"
+    }
+}
+```

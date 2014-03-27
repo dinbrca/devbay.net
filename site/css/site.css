@@ -3,6 +3,10 @@ body, h1, h2, h3, h4, h5, h6  {
   font-weight: 400;
 }
 
+body {
+  background-color: #FBFBFB;
+}
+
 .top-bar {
   background-image: url("/img/logo_24x24.png");
   background-position: 15px 50%;
@@ -113,6 +117,7 @@ body.sdk article h2 {
 }
 
 footer {
+  margin-top: 44px;
   padding: 24px 0 10px;
   background-color: #222222;
 }
@@ -124,4 +129,13 @@ footer a {
 
 footer a:hover {
   color: #777777;
+}
+
+.highlight {
+  margin-bottom: 1.25rem;
+}
+
+pre {
+  padding: 0.5em; 
+  background-color: #FFFFFF;
 }
