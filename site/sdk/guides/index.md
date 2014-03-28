@@ -22,7 +22,7 @@ This project enables PHP developers to use the [eBay API](https://go.developer.e
 
   - [Configuring the SDK](/sdk/guides/configuring.html)
 
-## Service Guides
+## <a name="service-guides"></a>Service Guides
 
   - Finding
     - [Configuration](/sdk/guides/finding/configuration.html)
