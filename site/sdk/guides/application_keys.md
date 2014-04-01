@@ -10,7 +10,7 @@ pagination:
     title: Requirements
 description:
 ---
-Before you can send requests to the eBay API, you need to obtain a valid set of Application Keys. There are three keys available for use. 
+Before you can send requests to the eBay API, you need to obtain a valid set of application keys. There are three keys available for use. 
 
 <dl>
     <dt>DevID</dt>
@@ -27,4 +27,4 @@ Application keys serve the following purposes:
   - They verify that the developer or application is allowed to make the API requests that they are using.
   - They ensure that the developer or application is authorized to make API requests on behalf of an eBay user.
 
-## Getting you Application Keys
+## Getting your application keys

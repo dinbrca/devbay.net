@@ -55,11 +55,11 @@ require 'vendor/autoload.php';
 
 It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies, and configure the autoloading.
 
-## Customizing the installation.
+## Customizing the installation
 
 Due to the vast size of the eBay API, the SDK is actually composed of several smaller individual SDKs that provide the means to use a specific eBay API service in your project.
 
-Using the method outlined earlier installs all of the SDK. By only declaring the services that you require you can install just what you need. For example, if you are only using the Finding API service your `composer.json` file will be as follows:
+Using the method outlined earlier installs all of the SDK, but by only declaring the services that you require you can install just what you need. For example, if you are only using the Finding API service your `composer.json` file will be as follows:
 
 {% highlight javascript %}
 {
@@ -71,7 +71,7 @@ Using the method outlined earlier installs all of the SDK. By only declaring the
 
 ## Versions
 
-Because each SDK is its own project they will be at different versions to one another. This is due to the fact that the eBay API services are not updated at the same time. Note also that the SDK versioning system does not follow the one used by the API. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions) avilable. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
+Because each SDK is its own project they will be at different versions to one another. This is due to the fact that the eBay API services are not updated at the same time. Note also that the SDK versioning system does not follow the one used by the API. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions) available. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
 
 {% highlight javascript %}
 {
