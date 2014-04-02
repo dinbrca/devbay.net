@@ -40,7 +40,7 @@ curl -sS https://getcomposer.org/installer | php
 {% endhighlight %}
 </li>
 <li>
-  Install the dependencies.
+  Install the SDK and its dependencies.
 {% highlight bash %}
 php composer.phar install
 {% endhighlight %}
@@ -71,7 +71,7 @@ Using the method outlined earlier installs all of the SDK, but by only declaring
 
 ## Versions
 
-Because each SDK is its own project they will be at different versions to one another. This is due to the fact that the eBay API services are not updated at the same time. Note also that the SDK versioning system does not follow the one used by the API. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions) available. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
+Because each SDK is its own project they will be at different versions to one another. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions) available. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
 
 {% highlight javascript %}
 {

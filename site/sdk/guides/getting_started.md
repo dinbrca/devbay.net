@@ -9,19 +9,19 @@ pagination:
     url: sample_project
     title: Sample Project
 ---
-This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation.html) and [retrieved your application keys](/sdk/guides/application_keys.html).
+This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. For the purpose of this guide the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service is been used and for the most part the process is the same for all services. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation.html) and [retrieved your application keys](/sdk/guides/application_keys.html).
 
 ## Including the SDK
 
-As Composer was used to install the SDK an autoloader is provided so that you can include the SDK in your project. This is achived by adding the following line to your project files. Note that you should replace `/path/to/` with the actual path used on your system. 
+As Composer was used to install the SDK an autoloader is provided so that you can include the SDK in your project. To use the autoloader add the following line to your project files. Note that you should replace `/path/to/` with the actual path used on your system.
 
 {% highlight php startinline %}
 require '/path/to/vendor/autoload.php';
 {% endhighlight %}
 
-## Creating a service object
+## <a name="service-object"></a>Creating a service object
 
-To use the SDK, you first need to instaniate a **service** object for the eBay API service you are using. The object's type will depend on which service is been used. This guide will use the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service as an example and so the object will be an instance of the [\DTS\eBaySDK\Finding\Services\FindingService](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Services/FindingService.php) class.
+To use the SDK, you first need to instaniate a **service** object for the eBay API service you are using. For this guide the object will be an instance of the [\DTS\eBaySDK\Finding\Services\FindingService](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Services/FindingService.php) class.
 
 {% highlight php %}
 <?php
@@ -29,18 +29,19 @@ To use the SDK, you first need to instaniate a **service** object for the eBay A
 // Use the Composer autoloader to include the SDK.
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\HttpClient\HttpClient;
-use \DTS\eBaySDK\Finding\Services as Services;
-use \DTS\eBaySDK\Finding\Types as Types;
+use \DTS\eBaySDK\HttpClient;
+use \DTS\eBaySDK\Constants;
+use \DTS\eBaySDK\Finding\Services;
+use \DTS\eBaySDK\Finding\Types;
 
 // Instantiate a service.
-$service = new Services\FindingService(new HttpClient(), array(
+$service = new Services\FindingService(new HttpClient\HttpClient(), array(
     'appId' => 'YOUR_APPID_APPLICATION_KEY',
-    'globalId' => 'EBAY-US'
+    'globalId' => Constants\GlobalIds::US
 ));
 {% endhighlight %}
 
-You can provide your application keys and other configuration options when creating the service object. For more information see [Configuring the SDK](/sdk/guides/configuring.html). 
+You can provide your application keys and other configuration options when creating the service object. For more information see [Configuring the SDK](/sdk/guides/configuring.html).
 
 ## Creating a request object
 
@@ -51,7 +52,7 @@ Before sending data to the API you will need to instaniate a **request** object.
 $request = new Types\FindItemsByKeywordsRequest();
 {% endhighlight %}
 
-Properties of the request object can then be assigned values that will be sent to the API.
+Properties of the request object can then be assigned values that will be sent to the API. Note that you may have to create instances of other classes, such as [\DTS\eBaySDK\Finding\Types\PaginationInput](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Types/PaginationInput.php), in order to build up a complete request.
 
 {% highlight php startinline %}
 // Assign the keywords.
@@ -68,7 +69,7 @@ $request->sortOrder = 'CurrentPriceHighest';
 
 ## Calling a service operation
 
-You call a service operation by calling the appropriate method on the service object. There will be one method for each of the service operations that the API provides. All methods, such as `findItemsByKeywords`, accept the request object as their only parameter.
+You call a service operation by calling the appropriate method on the service object. There will be one method for each  operation that the service provides. All methods, such as `findItemsByKeywords`, accept the request object as their only parameter. The SDK takes the information assigned to the properties of the request object and uses it to construct the raw XML that is sent to the API.
 
 {% highlight php startinline %}
 // Send the request.
@@ -77,7 +78,7 @@ $response = $service->findItemsByKeywords($request);
 
 ## Working with the service response object
 
-The result of calling a service operation is a **response** object that contains the data returned from the API. The type and contents of the object depend on the service operation that was called. In this example the object will be an instance of the [\DTS\eBaySDK\Finding\Types\FindItemsByKeywordsResponse](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Types/FindItemsByKeywordsResponse.php) class.
+The result of calling a service operation is a **response** object that contains the data returned from the API. The SDK uses the raw XML response to assign values to the properties on the response object. The type and contents of the object depend on the service operation that was called. In this example the object will be an instance of the [\DTS\eBaySDK\Finding\Types\FindItemsByKeywordsResponse](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Types/FindItemsByKeywordsResponse.php) class.
 
 {% highlight php startinline %}
 // Output the response from the API.
@@ -91,3 +92,5 @@ if ($response->ack === 'Failure') {
     }
 }
 {% endhighlight %}
+
+This guide is by no means an exhausted look at how to use the SDK. More information can be found in the [in-depth](/sdk/guides/index.html#in-depth-guides) and [service specific](/sdk/guides/index.html#service-guides) guides. 
