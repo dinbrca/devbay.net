@@ -28,7 +28,8 @@ module.exports = function(grunt) {
 			]
 		},
 		cssmin: {
-			'<%= paths.dist %>/css/app.css': '<%= paths.dist %>/css/app.css'
+			'<%= paths.dist %>/css/vendors.css': '<%= paths.dist %>/css/vendors.css',
+			'<%= paths.dist %>/css/site.css': '<%= paths.dist %>/css/site.css'
 		},
 		uglify: {
 			'<%= paths.dist %>/js/modernizr.js': '<%= paths.dist %>/js/modernizr.js',
