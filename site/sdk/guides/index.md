@@ -18,11 +18,11 @@ This project enables PHP developers to use the [eBay API](https://go.developer.e
     - [Getting Started Guide](/sdk/guides/getting_started.html)
     - [Sample Project](/sdk/guides/sample_project.html)
 
-## <a name="in-depth-guides"></a>In-depth Guides
+## <a id="in-depth-guides"></a>In-depth Guides
 
   - [Configuring the SDK](/sdk/guides/configuring.html)
 
-## <a name="service-guides"></a>Service Guides
+## <a id="service-guides"></a>Service Guides
 
   - Finding
     - [Configuration](/sdk/guides/finding/configuration.html)

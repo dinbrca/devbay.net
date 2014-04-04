@@ -12,7 +12,7 @@ The eBay SDK for PHP can be configured to suit your needs and this guide will sh
 
 Configuring the SDK is done by passing configuration options to the service objects that you create. To see what options are supported by each service it is recommended that you read the [service specific guides](/sdk/guides/index.html#service-guides).
 
-### <a name="class-constructor"></a>Configuring via the class constructor
+### Configuring via the class constructor
 
 When instantiating a service object an associative array of configuration options can be passed as the second parameter to the class constructor.
 
@@ -33,7 +33,7 @@ $service = new Services\FindingService(new HttpClient\HttpClient(), array(
 ));
 {% endhighlight %}
 
-### <a name="config-method"></a>Calling the config method
+### Calling the config method
 
 The `config` method allows you to set configurations options after the service object has been created. You set a single option by passing its name and value as the method parameters.
  

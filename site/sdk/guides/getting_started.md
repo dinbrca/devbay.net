@@ -19,7 +19,7 @@ As Composer was used to install the SDK an autoloader is provided so that you ca
 require '/path/to/vendor/autoload.php';
 {% endhighlight %}
 
-## <a name="service-object"></a>Creating a service object
+## <a id="service-object"></a>Creating a service object
 
 To use the SDK, you first need to instaniate a **service** object for the eBay API service you are using. For this guide the object will be an instance of the [\DTS\eBaySDK\Finding\Services\FindingService](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Services/FindingService.php) class.
 
@@ -43,7 +43,7 @@ $service = new Services\FindingService(new HttpClient\HttpClient(), array(
 
 You can provide your application keys and other configuration options when creating the service object. For more information see [Configuring the SDK](/sdk/guides/configuring.html).
 
-## Creating a request object
+## <a id="request-object"></a>Creating a request object
 
 Before sending data to the API you will need to instaniate a **request** object. This example will call the [findItemsByKeywords](http://developer.ebay.com/DevZone/finding/CallRef/findItemsByKeywords.html) operation and so the object will be an instance of the [\DTS\eBaySDK\Finding\Types\FindItemsByKeywordsRequest](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Types/FindItemsByKeywordsRequest.php) class.
 
@@ -67,7 +67,7 @@ $request->paginationInput->pageNumber = 1;
 $request->sortOrder = 'CurrentPriceHighest';
 {% endhighlight %}
 
-## Calling a service operation
+## <a id="service-operation"></a>Calling a service operation
 
 You call a service operation by calling the appropriate method on the service object. There will be one method for each  operation that the service provides. All methods, such as `findItemsByKeywords`, accept the request object as their only parameter. The SDK takes the information assigned to the properties of the request object and uses it to construct the raw XML that is sent to the API.
 
@@ -76,7 +76,7 @@ You call a service operation by calling the appropriate method on the service ob
 $response = $service->findItemsByKeywords($request);
 {% endhighlight %}
 
-## Working with the service response object
+## <a id="response-object"></a>Working with the service response object
 
 The result of calling a service operation is a **response** object that contains the data returned from the API. The SDK uses the raw XML response to assign values to the properties on the response object. The type and contents of the object depend on the service operation that was called. In this example the object will be an instance of the [\DTS\eBaySDK\Finding\Types\FindItemsByKeywordsResponse](https://github.com/davidtsadler/ebay-sdk-finding/blob/master/src/DTS/eBaySDK/Finding/Types/FindItemsByKeywordsResponse.php) class.
 
