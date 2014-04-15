@@ -5,15 +5,15 @@
 # Appears in the <title> and <header> elements within the site.
 title: Devbay
 
-# Used in various places where the author of the site needs to appear. 
+# Used in various places where the author of the site needs to appear.
 author: David T. Sadler
 
 author_twitter: davidtsadler
 
 # Used in the meta description tag of the site and the description element of the RSS feed.
-description: 
+description:
 
-# Twitter name minus the @ character. 
+# Twitter name minus the @ character.
 twitter: devbaydotnet
 
 google_group: ebay-sdk-php
@@ -32,12 +32,15 @@ copyright_year: 2014
 # ***************************
 
 # Directory where Jekyll will look to transform files.
-source: site 
+source: site
 
 # Directory where Jekyll will save transformed files.
 destination: .tmp/
 
 # Markdown engine that will be used.
 markdown: redcarpet
+
+redcarpet:
+  extensions: ['tables']
 
 pygments: true

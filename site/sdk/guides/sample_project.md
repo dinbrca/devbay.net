@@ -6,8 +6,8 @@ pagination:
     url: getting_started
     title: Getting Started Guide
   next:
-    url: configuring
-    title: Configuring the SDK
+    url: versions
+    title: SDK Versions
 ---
 The [sample project](https://github.com/davidtsadler/ebay-sdk-examples) contains examples of using the eBay SDK for PHP. This guide will show how to install the project and run the examples.
 

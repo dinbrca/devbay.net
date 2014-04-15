@@ -3,8 +3,11 @@ layout: sdk
 title: Configuring the SDK
 pagination:
   prev:
-    url: sample_project
-    title: Sample Project
+    url: versions
+    title: SDK Versions
+  next:
+    url: finding
+    title: Finding
 ---
 The eBay SDK for PHP can be configured to suit your needs and this guide will show the various ways you can do this in your projects.
 
