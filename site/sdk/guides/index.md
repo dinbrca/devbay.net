@@ -6,7 +6,7 @@ pagination:
     url: application_keys
     title: Application Keys
 ---
-This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools) in their PHP code, and build software using services such as [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html), [Trading](http://developer.ebay.com/Devzone/guides/ebayfeatures/index.html), [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html),  etc.
+The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools) in their PHP code, and build software using services such as [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html), [Trading](http://developer.ebay.com/Devzone/guides/ebayfeatures/index.html), [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html),  etc.
 
 ## Getting Started
 
