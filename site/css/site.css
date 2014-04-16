@@ -18,15 +18,15 @@ body {
   padding-left: 44px;
 }
 
-.dropdown li.topic.api a {
+.dropdown li.topic.api a:not(.button) {
   color: #D94222;
 }
 
-.dropdown li.topic.developers a {
+.dropdown li.topic.developers a:not(.button) {
   color: #FFA500;
 }
 
-.dropdown li.topic.sdk a {
+.dropdown li.topic.sdk a:not(.button) {
   color: #0776A0;
 }
 
