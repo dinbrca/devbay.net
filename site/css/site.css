@@ -140,3 +140,8 @@ pre {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+code {
+  color: inherit;
+  font-weight: normal;
+}

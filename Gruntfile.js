@@ -16,7 +16,6 @@ module.exports = function(grunt) {
 				'<%= paths.tmp %>/vendor/foundation/**/*.css'
 			],
 			'dist/css/site.css': [
-				'<%= paths.tmp %>/css/github.css',
 				'<%= paths.tmp %>/css/site.css'
 			],
 			'dist/js/modernizr.js': [
