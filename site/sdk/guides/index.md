@@ -28,3 +28,4 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
   - [Finding](/sdk/guides/finding.html)
   - [Trading](/sdk/guides/trading.html)
   - [Shopping](/sdk/guides/shopping.html)
+  - [Business Policies Management](/sdk/guides/business_policies_management.html)
