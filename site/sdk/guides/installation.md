@@ -19,40 +19,38 @@ Composer is a tool for dependency management in PHP. It allows you to declare th
 
 Installing the SDK with Composer is done as follows:
 
-<ol>
-<li>
-  Edit your project's <code>composer.json</code> file so that is contains the following:
-{% highlight javascript %}
-{
-    "require": {
-        "dts/ebay-sdk-finding": "~0.0",
-        "dts/ebay-sdk-trading": "~0.0",
-        "dts/ebay-sdk-shopping": "~0.0",
-        "dts/ebay-sdk-business-policies-management": "~0.0"
-    }
-}
-{% endhighlight %}
-  Note that this will install all of the SDK. It is explained later how the installation can be customized to only include the parts that you need.
-</li>
-<li>
-  Download and install Composer.
-{% highlight bash %}
-curl -sS https://getcomposer.org/installer | php
-{% endhighlight %}
-</li>
-<li>
-  Install the SDK and its dependencies.
-{% highlight bash %}
-php composer.phar install
-{% endhighlight %}
-</li>
-<li>
-  Require Composer's autoloader by adding the following line to the top of you code.
-{% highlight php startinline %}
-require 'vendor/autoload.php';
-{% endhighlight %}
-</li>
-</ol>
+  1. Edit your project's <code>composer.json</code> file so that is contains the following:
+
+     ```javascript
+     {
+         "require": {
+             "dts/ebay-sdk-finding": "~0.0",
+             "dts/ebay-sdk-trading": "~0.0",
+             "dts/ebay-sdk-shopping": "~0.0",
+             "dts/ebay-sdk-business-policies-management": "~0.0"
+         }
+     }
+     ```
+
+     Note that this will install all of the SDK. It is explained later how the installation can be customized to only include the parts that you need.
+
+  1. Download and install Composer.
+
+     ```
+     curl -sS https://getcomposer.org/installer | php
+     ```
+
+  1. Install the SDK and its dependencies.
+
+     ```
+     php composer.phar install
+     ```
+
+  1. Require Composer's autoloader by adding the following line to the top of you code.
+
+     ```php
+     require 'vendor/autoload.php';
+     ```
 
 It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies, and configure the autoloading.
 
@@ -62,22 +60,22 @@ Due to the vast size of the eBay API, the SDK is actually composed of several sm
 
 Using the method outlined earlier installs all of the SDK, but by only declaring the services that you require you can install just what you need. For example, if you are only using the Finding API service your `composer.json` file will be as follows:
 
-{% highlight javascript %}
+```javascript
 {
     "require": {
         "dts/ebay-sdk-finding": "~0.0"
     }
 }
-{% endhighlight %}
+```
 
 ## Versions
 
 Because each SDK is its own project they will be at different versions to one another. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](/sdk/guides/versions.html) available. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
 
-{% highlight javascript %}
+```javascript
 {
     "require": {
         "dts/ebay-sdk-trading": "dev-master"
     }
 }
-{% endhighlight %}
+```
