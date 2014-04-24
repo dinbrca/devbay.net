@@ -1,6 +1,6 @@
 ---
 layout: sdk
-title: Shopping
+title: Trading
 pagination:
   prev:
     url: finding

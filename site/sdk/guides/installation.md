@@ -27,7 +27,8 @@ Installing the SDK with Composer is done as follows:
     "require": {
         "dts/ebay-sdk-finding": "~0.0",
         "dts/ebay-sdk-trading": "~0.0",
-        "dts/ebay-sdk-shopping": "~0.0"
+        "dts/ebay-sdk-shopping": "~0.0",
+        "dts/ebay-sdk-business-policies-management": "~0.0"
     }
 }
 {% endhighlight %}

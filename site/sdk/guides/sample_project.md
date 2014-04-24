@@ -53,7 +53,9 @@ There are several examples for each service that the SDK supports and they are l
 
 1. [Shopping](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/shopping/README.md)
 
-To run an example from the command line use the `php` command followed by the name of the example file. 
+1. [Business Policies Management](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/business-policies-management/README.md)
+
+To run an example from the command line use the `php` command followed by the name of the example file.
 
 {% highlight bash %}
 php finding/01-simple-keywords-search.php
