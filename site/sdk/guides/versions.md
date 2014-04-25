@@ -28,14 +28,14 @@ To help determine which version of a SDK you require, a list is provided below t
 
 ### <a id="trading"> </a>[Trading](https://github.com/davidtsadler/ebay-sdk-trading)
 
-| SDK/API Versions | [863][22-03] | [861][22-02] | [859][22-01] |
-|:----------------:|:------------:|:------------:|:------------:|
-| [0.0.5][21-06]   | &#10004;     |              |              |
-| [0.0.4][21-05]   |              | &#10004;     |              |
-| [0.0.3][21-04]   |              |              | &#10004;     |
-| [0.0.2][21-03]   |              |              | &#10004;     |
-| [0.0.1][21-02]   |              |              | &#10004;     |
-| [0.0.0][21-01]   |              |              | &#10004;     |
+| SDK/API Versions | [865][22-04] | [863][22-03] | [861][22-02] | [859][22-01] |
+|:----------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.0.5][21-06]   | &#10004;     | &#10004;     |              |              |
+| [0.0.4][21-05]   |              |              | &#10004;     |              |
+| [0.0.3][21-04]   |              |              |              | &#10004;     |
+| [0.0.2][21-03]   |              |              |              | &#10004;     |
+| [0.0.1][21-02]   |              |              |              | &#10004;     |
+| [0.0.0][21-01]   |              |              |              | &#10004;     |
 
 ### <a id="shopping"> </a>[Shopping](https://github.com/davidtsadler/ebay-sdk-shopping)
 
@@ -66,6 +66,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [21-02]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.1
 [21-01]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.0
 
+[22-04]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#865
 [22-03]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#863
 [22-02]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#861
 [22-01]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#859

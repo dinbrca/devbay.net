@@ -38,7 +38,7 @@ $service = new Services\FindingService(new HttpClient\HttpClient(), array(
 
 ### Calling the config method
 
-The `config` method allows you to set configurations options after the service object has been created. You set a single option by passing its name and value as the method parameters.
+The `config` method allows you to set configuration options after the service object has been created. You set a single option by passing its name and value as the method parameters.
 
 ```php
 $service->config('globalId', Constants\GlobalIds::US);
