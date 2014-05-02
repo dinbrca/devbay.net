@@ -79,6 +79,10 @@ body {
 }
 
 .topic-hdr a {
+  display: block;
+}
+
+.topic-hdr a {
   color: #FFFFFF;
 }
 
