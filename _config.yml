@@ -43,4 +43,4 @@ markdown: redcarpet
 redcarpet:
   extensions: ['tables']
 
-pygments: true
+highlighter: true
