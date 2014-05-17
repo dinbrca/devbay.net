@@ -19,7 +19,7 @@ Composer is a tool for dependency management in PHP. It allows you to declare th
 
 Installing the SDK with Composer is done as follows:
 
-  1. Edit your project's <code>composer.json</code> file so that is contains the following:
+  1. Edit your project's `composer.json` file so that is contains the following:
 
      ```javascript
      {

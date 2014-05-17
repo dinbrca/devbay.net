@@ -28,3 +28,11 @@ Application keys serve the following purposes:
   - They ensure that the developer or application is authorized to make API requests on behalf of an eBay user.
 
 ## Getting your application keys
+
+This guide assumes that you have already generated a set of application keys after [joining the eBay Developers Progam](https://developer.ebay.com/join/) and so to obtain a copy of your keys you will need to:
+
+  - [Sign in to the eBay Developers Program](https://developer.ebay.com/base/membership/signin/).
+  - [Navigate to the **My Account** page](https://developer.ebay.com/DevZone/account/default.aspx) if you have not already done so.
+  - Locate the **application keys** section. Here you will find values for your DevID, AppID and CertID keys which can be copied and then pasted into your application's configuration.
+
+Note that there are two sets of application keys. The **Production** set will be what your application uses when sending requests to the production API. The **Sandbox** set can only be used with the sandbox API and allows you to test you application using [eBay's sandbox site](http://www.sandbox.ebay.com/). It is important to remember that the two sets are not interchangeable. You cannot use the production set with the sandbox API and likewse you cannot use the sandbox set with the production API. Using an application key set with the wrong API will result in errors when sending requests.

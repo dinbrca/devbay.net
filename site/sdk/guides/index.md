@@ -25,7 +25,15 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
 
 ## <a id="service-guides"></a>Service Guides
 
-  - [Finding](/sdk/guides/finding.html)
-  - [Trading](/sdk/guides/trading.html)
-  - [Shopping](/sdk/guides/shopping.html)
-  - [Business Policies Management](/sdk/guides/business_policies_management.html)
+  - Finding
+    - [Guide](/sdk/guides/finding.html)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-finding)
+  - Trading
+    - [Guide](/sdk/guides/trading.html)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-trading)
+  - Shopping
+    - [Guide](/sdk/guides/shopping.html)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-shopping)
+  - Business Policies Management
+    - [Guide](/sdk/guides/business_policies_management.html)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-business-policies-management)
