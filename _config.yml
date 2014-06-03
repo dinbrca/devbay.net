@@ -2,6 +2,9 @@
 # SITE
 # ***************************
 
+# Full url for the site minus the ending forward slash. 
+url: http://devbay.net
+
 # Appears in the <title> and <header> elements within the site.
 title: Devbay
 
