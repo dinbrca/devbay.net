@@ -29,13 +29,12 @@ To use the SDK, you first need to instaniate a **service** object for the eBay A
 // Use the Composer autoloader to include the SDK.
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\HttpClient;
 use \DTS\eBaySDK\Constants;
 use \DTS\eBaySDK\Finding\Services;
 use \DTS\eBaySDK\Finding\Types;
 
 // Instantiate a service.
-$service = new Services\FindingService(new HttpClient\HttpClient(), array(
+$service = new Services\FindingService(array(
     'appId' => 'YOUR_APPID_APPLICATION_KEY',
     'globalId' => Constants\GlobalIds::US
 ));
@@ -93,4 +92,4 @@ if ($response->ack !== 'Success') {
 }
 ```
 
-This guide is by no means an exhausted look at how to use the SDK. More information can be found in the [in-depth](/sdk/guides/index.html#in-depth-guides) and [service specific](/sdk/guides/index.html#service-guides) guides. 
+This guide is by no means an exhausted look at how to use the SDK. More information can be found in the [in-depth](/sdk/guides/index.html#in-depth-guides) and [service specific](/sdk/guides/index.html#service-guides) guides.

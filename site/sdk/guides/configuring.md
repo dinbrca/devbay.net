@@ -17,20 +17,19 @@ Configuring the SDK is done by passing configuration options to the service obje
 
 ### Configuring via the class constructor
 
-When instantiating a service object an associative array of configuration options can be passed as the second parameter to the class constructor.
+When instantiating a service object an associative array of configuration options can be passed as the first parameter to the class constructor.
 
 ```php
 <?php
 
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\HttpClient;
 use \DTS\eBaySDK\Constants;
 use \DTS\eBaySDK\Finding\Services;
 use \DTS\eBaySDK\Finding\Types;
 
 // Pass associative array of configuration options.
-$service = new Services\FindingService(new HttpClient\HttpClient(), array(
+$service = new Services\FindingService(array(
     'globalId' => Constants\GlobalIds::US,
     'sandbox' => true
 ));
