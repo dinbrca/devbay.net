@@ -18,14 +18,14 @@ As shown in the [installation guide](/sdk/guides/installation.html), Composer is
 ```javascript
 {
     "require": {
-        "dts/ebay-sdk-shopping": "~0.0"
+        "dts/ebay-sdk-shopping": "~0.1"
     }
 }
 ```
 
 ### Versions
 
-Using the above method will install a version of the SDK that is compatiable with the current API version. If you need to support a different version of the API there is a [list of SDK versions, and the API version they support](/sdk/guides/versions.html#finding) available.
+Using the above method will install a version of the SDK that is compatiable with the current API version. If you need to support a different version of the API there is a [list of SDK versions, and the API version they support](/sdk/guides/versions.html#shopping) available.
 
 ## Namespaces
 

@@ -24,10 +24,10 @@ Installing the SDK with Composer is done as follows:
      ```javascript
      {
          "require": {
-             "dts/ebay-sdk-finding": "~0.0",
-             "dts/ebay-sdk-trading": "~0.0",
-             "dts/ebay-sdk-shopping": "~0.0",
-             "dts/ebay-sdk-business-policies-management": "~0.0"
+             "dts/ebay-sdk-finding": "~0.1",
+             "dts/ebay-sdk-trading": "~0.1",
+             "dts/ebay-sdk-shopping": "~0.1",
+             "dts/ebay-sdk-business-policies-management": "~0.1"
          }
      }
      ```
@@ -52,7 +52,7 @@ Installing the SDK with Composer is done as follows:
      require 'vendor/autoload.php';
      ```
 
-It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies, and configure the autoloading.
+It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies and configure the autoloading.
 
 ## Customizing the installation
 
@@ -63,7 +63,7 @@ Using the method outlined earlier installs all of the SDK, but by only declaring
 ```javascript
 {
     "require": {
-        "dts/ebay-sdk-finding": "~0.0"
+        "dts/ebay-sdk-finding": "~0.1"
     }
 }
 ```

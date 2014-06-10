@@ -18,7 +18,7 @@ As shown in the [installation guide](/sdk/guides/installation.html), Composer is
 ```javascript
 {
     "require": {
-        "dts/ebay-sdk-finding": "~0.0"
+        "dts/ebay-sdk-finding": "~0.1"
     }
 }
 ```
