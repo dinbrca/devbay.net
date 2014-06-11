@@ -6,7 +6,7 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   next:
-    url: application_keys
+    url: application-keys
     title: Application Keys
 ---
 The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools) in their PHP code, and build software using services such as [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html), [Trading](http://developer.ebay.com/Devzone/guides/ebayfeatures/index.html), [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html),  etc.
@@ -14,12 +14,12 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
 ## Getting Started
 
   - Before using the SDK
-    - [Get your applications keys](/sdk/guides/application_keys/)
+    - [Get your applications keys](/sdk/guides/application-keys/)
     - [Verify that your system meets the requirements for the SDK](/sdk/guides/requirements/)
     - [Install the SDK](/sdk/guides/installation/)
   - Using the SDK
-    - [Getting Started Guide](/sdk/guides/getting_started/)
-    - [Sample Project](/sdk/guides/sample_project/)
+    - [Getting Started Guide](/sdk/guides/getting-started/)
+    - [Sample Project](/sdk/guides/sample-project/)
 
 ## <a id="in-depth-guides"></a>In-depth Guides
 
@@ -38,5 +38,5 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
     - [Guide](/sdk/guides/shopping/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-shopping)
   - Business Policies Management
-    - [Guide](/sdk/guides/business_policies_management/)
+    - [Guide](/sdk/guides/business-policies-management/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-business-policies-management)

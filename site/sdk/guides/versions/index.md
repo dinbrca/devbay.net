@@ -6,7 +6,7 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: sample_project/
+    url: sample-project/
     title: Sample Project
   next:
     url: configuring/

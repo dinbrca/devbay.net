@@ -9,7 +9,7 @@ pagination:
     url: requirements/
     title: Requirements
   next:
-    url: getting_started/
+    url: getting-started/
     title: Getting Started Guide
 ---
 ## Installing via Composer

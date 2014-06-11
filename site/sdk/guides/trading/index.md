@@ -12,7 +12,7 @@ pagination:
     url: shopping/
     title: Shopping
 ---
-This guide provides details for using the eBay SDK for PHP with the [Trading](http://developer.ebay.com/Devzone/guides/ebayfeatures/index.html) service in your projects. It assumes that you have read and understood the [getting started guide](/sdk/guides/getting_started/).
+This guide provides details for using the eBay SDK for PHP with the [Trading](http://developer.ebay.com/Devzone/guides/ebayfeatures/index.html) service in your projects. It assumes that you have read and understood the [getting started guide](/sdk/guides/getting-started/).
 
 ## Installation
 
@@ -36,11 +36,11 @@ The various classes and constants that the SDK provides are grouped using the fo
 
 **\DTS\eBaySDK\Trading\Services**
 
-The **TradingService** class belongs to this namespace. An instance of this class is the **service object** that provides the means to send requests to the API as explained in the [getting started guide](/sdk/guides/getting_started/#service-object).
+The **TradingService** class belongs to this namespace. An instance of this class is the **service object** that provides the means to send requests to the API as explained in the [getting started guide](/sdk/guides/getting-started/#service-object).
 
 **\DTS\eBaySDK\Trading\Types**
 
-This namespace groups the classes that are used to construct the **request and response objects**. As explained in the [getting started guide](/sdk/guides/getting_started/#request-object) these classes save you from having to deal with XML when coding your application.
+This namespace groups the classes that are used to construct the **request and response objects**. As explained in the [getting started guide](/sdk/guides/getting-started/#request-object) these classes save you from having to deal with XML when coding your application.
 
 ## Configuration
 
@@ -49,8 +49,8 @@ The SDK provides the following configuration options for the **TradingService** 
 | Option     | Required | Description |
 |:-----------|:--------:|:------------|
 | apiVersion | Yes      | The API version supported by your application. A list of API version numbers can be found in the [release notes](http://developer.ebay.com/DevZone/XML/docs/ReleaseNotes.html) for the Trading service. |
-| appId      | No       | Your application ID, as explained in the [application keys guide](/sdk/guides/application_keys/). |
-| certId     | No       | Your certificate ID, as explained in the [application keys guide](/sdk/guides/application_keys/). |
-| devId      | No       | Your developer ID, as explained in the [application keys guide](/sdk/guides/application_keys/). |
+| appId      | No       | Your application ID, as explained in the [application keys guide](/sdk/guides/application-keys/). |
+| certId     | No       | Your certificate ID, as explained in the [application keys guide](/sdk/guides/application-keys/). |
+| devId      | No       | Your developer ID, as explained in the [application keys guide](/sdk/guides/application-keys/). |
 | sandbox   | No       | Boolean value that indicates if you application will be using the sandbox API instead of the default production API. Defaults to false if a value is not provided. |
 | siteId     | Yes      | The unique numerical identifier for the eBay site your API requests are to be sent to. For example, you would pass the value 3 to specify the eBay UK site. A [complete list of eBay site IDs](http://developer.ebay.com/devzone/finding/Concepts/SiteIDToGlobalID.html) is available. |

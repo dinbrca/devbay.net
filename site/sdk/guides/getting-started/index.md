@@ -9,10 +9,10 @@ pagination:
     url: installation/
     title: Installation
   next:
-    url: sample_project/
+    url: sample-project/
     title: Sample Project
 ---
-This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. For the purpose of this guide the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service is been used and for the most part the process is the same for all services. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation/) and [retrieved your application keys](/sdk/guides/application_keys/).
+This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. For the purpose of this guide the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service is been used and for the most part the process is the same for all services. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation/) and [retrieved your application keys](/sdk/guides/application-keys/).
 
 ## Including the SDK
 

@@ -6,7 +6,7 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: application_keys/
+    url: application-keys/
     title: Application Keys
   next:
     url: installation/
