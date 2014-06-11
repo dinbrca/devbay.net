@@ -2,6 +2,8 @@
 layout: sdk
 title: eBay SDK for PHP
 description: Find guides, tutorials and examples for the eBay SDK for PHP and use eBay's API in your applications.
+sitemap:
+  lastmod: 2014-06-11
 pagination:
   next:
     url: application_keys

@@ -2,6 +2,8 @@
 layout: sdk
 title: Shopping
 description: In-depth guide on using the eBay SDK for PHP with the Shopping service.
+sitemap:
+  lastmod: 2014-06-11
 pagination:
   prev:
     url: trading

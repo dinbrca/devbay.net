@@ -2,6 +2,8 @@
 layout: sdk
 title: Sample Project
 description: Install the sample project and find examples of using the eBay SDK for PHP.
+sitemap:
+  lastmod: 2014-06-11
 pagination:
   prev:
     url: getting_started
