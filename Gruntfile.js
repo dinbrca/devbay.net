@@ -69,7 +69,8 @@ module.exports = function(grunt) {
 					src: [
 						'**/*.png',
 						'**/*.ico',
-						'**/*.xml'
+						'**/*.xml',
+						'**/*.txt'
 					],
 					dest: '<%= paths.dist %>'
 				}]
