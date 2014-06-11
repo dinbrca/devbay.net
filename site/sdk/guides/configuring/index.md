@@ -6,17 +6,17 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: versions
+    url: versions/
     title: SDK Versions
   next:
-    url: finding
+    url: finding/
     title: Finding
 ---
 The eBay SDK for PHP can be configured to suit your needs and this guide will show the various ways you can do this in your projects.
 
 ## Configuration options
 
-Configuring the SDK is done by passing configuration options to the service objects that you create. To see what options are supported by each service it is recommended that you read the [service specific guides](/sdk/guides/index.html#service-guides).
+Configuring the SDK is done by passing configuration options to the service objects that you create. To see what options are supported by each service it is recommended that you read the [service specific guides](/sdk/guides/#service-guides).
 
 ### Configuring via the class constructor
 

@@ -6,10 +6,10 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: application_keys
+    url: application_keys/
     title: Application Keys
   next:
-    url: installation
+    url: installation/
     title: Installation
 ---
 There are a few minimum system requirements to start using the SDK. Many of these are installed by default in most PHP environments.

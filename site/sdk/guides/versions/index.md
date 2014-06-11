@@ -6,10 +6,10 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: sample_project
+    url: sample_project/
     title: Sample Project
   next:
-    url: configuring
+    url: configuring/
     title: Configuring the SDK
 ---
 Due to the vast size of the eBay API, the SDK is composed of several individual SDKs that are maintained within their own projects. Each one provides the means to use a specific eBay API service in your project.

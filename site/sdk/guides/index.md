@@ -14,29 +14,29 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
 ## Getting Started
 
   - Before using the SDK
-    - [Get your applications keys](/sdk/guides/application_keys.html)
-    - [Verify that your system meets the requirements for the SDK](/sdk/guides/requirements.html)
-    - [Install the SDK](/sdk/guides/installation.html)
+    - [Get your applications keys](/sdk/guides/application_keys/)
+    - [Verify that your system meets the requirements for the SDK](/sdk/guides/requirements/)
+    - [Install the SDK](/sdk/guides/installation/)
   - Using the SDK
-    - [Getting Started Guide](/sdk/guides/getting_started.html)
-    - [Sample Project](/sdk/guides/sample_project.html)
+    - [Getting Started Guide](/sdk/guides/getting_started/)
+    - [Sample Project](/sdk/guides/sample_project/)
 
 ## <a id="in-depth-guides"></a>In-depth Guides
 
-  - [SDK Versions](/sdk/guides/versions.html)
-  - [Configuring the SDK](/sdk/guides/configuring.html)
+  - [SDK Versions](/sdk/guides/versions/)
+  - [Configuring the SDK](/sdk/guides/configuring/)
 
 ## <a id="service-guides"></a>Service Guides
 
   - Finding
-    - [Guide](/sdk/guides/finding.html)
+    - [Guide](/sdk/guides/finding/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-finding)
   - Trading
-    - [Guide](/sdk/guides/trading.html)
+    - [Guide](/sdk/guides/trading/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-trading)
   - Shopping
-    - [Guide](/sdk/guides/shopping.html)
+    - [Guide](/sdk/guides/shopping/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-shopping)
   - Business Policies Management
-    - [Guide](/sdk/guides/business_policies_management.html)
+    - [Guide](/sdk/guides/business_policies_management/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-business-policies-management)

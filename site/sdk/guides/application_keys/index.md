@@ -6,10 +6,10 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: index
+    url:
     title: eBay SDK for PHP
   next:
-    url: requirements
+    url: requirements/
     title: Requirements
 ---
 Before you can send requests to the eBay API, you need to obtain a valid set of application keys. There are three keys available for use.

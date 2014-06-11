@@ -6,13 +6,13 @@ sitemap:
   lastmod: 2014-06-11
 pagination:
   prev:
-    url: installation
+    url: installation/
     title: Installation
   next:
-    url: sample_project
+    url: sample_project/
     title: Sample Project
 ---
-This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. For the purpose of this guide the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service is been used and for the most part the process is the same for all services. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation.html) and [retrieved your application keys](/sdk/guides/application_keys.html).
+This guide will take you through the basics of using the eBay SDK for PHP. By the end of it you should have enough knowledge to start using the SDK in your projects. For the purpose of this guide the [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html) service is been used and for the most part the process is the same for all services. It is assumed that you have already [downloaded and installed the SDK](/sdk/guides/installation/) and [retrieved your application keys](/sdk/guides/application_keys/).
 
 ## Including the SDK
 
@@ -43,7 +43,7 @@ $service = new Services\FindingService(array(
 ));
 ```
 
-You can provide your application keys and other configuration options when creating the service object. For more information see [Configuring the SDK](/sdk/guides/configuring.html).
+You can provide your application keys and other configuration options when creating the service object. For more information see [Configuring the SDK](/sdk/guides/configuring/).
 
 ## <a id="request-object"> </a>Creating a request object
 
@@ -95,4 +95,4 @@ if ($response->ack !== 'Success') {
 }
 ```
 
-This guide is by no means an exhausted look at how to use the SDK. More information can be found in the [in-depth](/sdk/guides/index.html#in-depth-guides) and [service specific](/sdk/guides/index.html#service-guides) guides.
+This guide is by no means an exhausted look at how to use the SDK. More information can be found in the [in-depth](/sdk/guides/#in-depth-guides) and [service specific](/sdk/guides/#service-guides) guides.
