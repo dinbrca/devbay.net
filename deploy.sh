@@ -24,5 +24,8 @@ s3cmd sync --acl-public --exclude '*.*' --include '*.png' -m "image/png" --add-h
 # JPG (Cache: 30 days)
 s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" dist/ s3://devbay.net/
 
+# ICO (Cache: 30 days)
+s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" dist/ s3://devbay.net/
+
 # Sync: remaining files & delete removed
 s3cmd sync --acl-public --delete-removed  dist/ s3://devbay.net/
