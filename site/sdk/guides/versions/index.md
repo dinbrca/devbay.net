@@ -24,6 +24,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 | SDK/API Versions | [1.12.0][12-01] |
 |:----------------:|:---------------:|
+| [0.0.4][11-05]   | &#10004;        |
 | [0.0.3][11-04]   | &#10004;        |
 | [0.0.2][11-03]   | &#10004;        |
 | [0.0.1][11-02]   | &#10004;        |
@@ -33,6 +34,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 | SDK/API Versions | [869][22-06] | [867][22-05] | [865][22-04] | [863][22-03] | [861][22-02] | [859][22-01] |
 |:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.0.8][21-09]   | &#10004;     |              |              |              |              |              |
 | [0.0.7][21-08]   | &#10004;     |              |              |              |              |              |
 | [0.0.6][21-07]   |              | &#10004;     |              |              |              |              |
 | [0.0.5][21-06]   |              |              | &#10004;     | &#10004;     |              |              |
@@ -46,6 +48,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 | SDK/API Versions | [869][32-04] | [867][32-03] | [861][32-02] | [857][32-01] |
 |:----------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.0.7] [31-08]  | &#10004;     |              |              |              |
 | [0.0.6] [31-07]  | &#10004;     |              |              |              |
 | [0.0.5] [31-06]  |              | &#10004;     |              |              |
 | [0.0.4] [31-05]  |              |              | &#10004;     |              |
@@ -58,8 +61,10 @@ To help determine which version of a SDK you require, a list is provided below t
 
 | SDK/API Versions | [1.0.0][42-01] |
 |:----------------:|:--------------:|
+| [0.0.1] [41-02]  | &#10004;       |
 | [0.0.0] [41-01]  | &#10004;       |
 
+[11-05]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.4
 [11-04]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.3
 [11-03]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.2
 [11-02]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.1
@@ -67,6 +72,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 [12-01]: https://developer.ebay.com/DevZone/finding/ReleaseNotes.html#1.12.0
 
+[21-09]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.8
 [21-08]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.7
 [21-07]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.6
 [21-06]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.5
@@ -83,6 +89,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [22-02]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#861
 [22-01]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#859
 
+[31-08]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.7
 [31-07]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.6
 [31-06]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.5
 [31-05]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.4
@@ -96,6 +103,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [32-02]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#861
 [32-01]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#857
 
+[41-02]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.0.1
 [41-01]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.0.0
 
 [42-01]: http://developer.ebay.com/DevZone/business-policies/ReleaseNotes.html#1.0.0
