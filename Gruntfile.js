@@ -69,6 +69,7 @@ module.exports = function(grunt) {
 					cwd: '<%= paths.tmp %>/',
 					src: [
 						'**/*.png',
+						'**/*.jpg',
 						'**/*.ico',
 						'**/*.txt'
 					],
