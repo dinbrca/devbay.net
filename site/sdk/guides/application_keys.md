@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Application Keys
+description: Get your eBay API application keys ready for the eBay SDK for PHP.
 pagination:
   prev:
     url: index
@@ -8,9 +9,8 @@ pagination:
   next:
     url: requirements
     title: Requirements
-description:
 ---
-Before you can send requests to the eBay API, you need to obtain a valid set of application keys. There are three keys available for use. 
+Before you can send requests to the eBay API, you need to obtain a valid set of application keys. There are three keys available for use.
 
 <dl>
     <dt>DevID</dt>

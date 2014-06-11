@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Getting Started Guide
+description: Learn how to get started with the eBay SDK for PHP.
 pagination:
   prev:
     url: installation

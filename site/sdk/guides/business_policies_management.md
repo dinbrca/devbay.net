@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Business Policies Management
+description: In-depth guide on using the eBay SDK for PHP with the Business Policies Management service.
 pagination:
   prev:
     url: shopping

@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Requirements
+description: Check the minimum requirements for using the eBay SDK for PHP.
 pagination:
   prev:
     url: application_keys
@@ -15,7 +16,7 @@ There are a few minimum system requirements to start using the SDK. Many of thes
 
   - PHP 5.3.3 or greater with the following extensions:
     - cURL
-    - libxml 
+    - libxml
   - SSL enabled on the cURL extension so that https requests can be made.
 
 ## Checking requirements

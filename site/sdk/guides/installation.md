@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Installation
+description: Learn how to install the eBay SDK for PHP.
 pagination:
   prev:
     url: requirements

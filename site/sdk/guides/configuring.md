@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Configuring the SDK
+description: Learn how to configure the eBay SDK for PHP.
 pagination:
   prev:
     url: versions

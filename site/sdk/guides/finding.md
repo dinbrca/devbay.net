@@ -1,6 +1,7 @@
 ---
 layout: sdk
 title: Finding
+description: In-depth guide on using the eBay SDK for PHP with the Finding service.
 pagination:
   prev:
     url: configuring
