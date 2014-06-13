@@ -3,7 +3,7 @@ layout: sdk
 title: SDK Versions
 description: Learn which version of the eBay API the SDK for PHP supports.
 sitemap:
-  lastmod: 2014-06-11
+  lastmod: 2014-06-13
 pagination:
   prev:
     url: sample-project/
@@ -24,6 +24,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 | SDK/API Versions | [1.12.0][12-01] |
 |:----------------:|:---------------:|
+| [0.1.0][11-06]   | &#10004;        |
 | [0.0.4][11-05]   | &#10004;        |
 | [0.0.3][11-04]   | &#10004;        |
 | [0.0.2][11-03]   | &#10004;        |
@@ -32,38 +33,42 @@ To help determine which version of a SDK you require, a list is provided below t
 
 ### <a id="trading"> </a>[Trading](https://github.com/davidtsadler/ebay-sdk-trading)
 
-| SDK/API Versions | [869][22-06] | [867][22-05] | [865][22-04] | [863][22-03] | [861][22-02] | [859][22-01] |
-|:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-| [0.0.8][21-09]   | &#10004;     |              |              |              |              |              |
-| [0.0.7][21-08]   | &#10004;     |              |              |              |              |              |
-| [0.0.6][21-07]   |              | &#10004;     |              |              |              |              |
-| [0.0.5][21-06]   |              |              | &#10004;     | &#10004;     |              |              |
-| [0.0.4][21-05]   |              |              |              |              | &#10004;     |              |
-| [0.0.3][21-04]   |              |              |              |              |              | &#10004;     |
-| [0.0.2][21-03]   |              |              |              |              |              | &#10004;     |
-| [0.0.1][21-02]   |              |              |              |              |              | &#10004;     |
-| [0.0.0][21-01]   |              |              |              |              |              | &#10004;     |
+| SDK/API Versions | [871][22-07] | [869][22-06] | [867][22-05] | [865][22-04] | [863][22-03] | [861][22-02] | [859][22-01] |
+|:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.1.0][21-10]   | &#10004;     |              |              |              |              |              |              |
+| [0.0.8][21-09]   |              | &#10004;     |              |              |              |              |              |
+| [0.0.7][21-08]   |              | &#10004;     |              |              |              |              |              |
+| [0.0.6][21-07]   |              |              | &#10004;     |              |              |              |              |
+| [0.0.5][21-06]   |              |              |              | &#10004;     | &#10004;     |              |              |
+| [0.0.4][21-05]   |              |              |              |              |              | &#10004;     |              |
+| [0.0.3][21-04]   |              |              |              |              |              |              | &#10004;     |
+| [0.0.2][21-03]   |              |              |              |              |              |              | &#10004;     |
+| [0.0.1][21-02]   |              |              |              |              |              |              | &#10004;     |
+| [0.0.0][21-01]   |              |              |              |              |              |              | &#10004;     |
 
 ### <a id="shopping"> </a>[Shopping](https://github.com/davidtsadler/ebay-sdk-shopping)
 
-| SDK/API Versions | [869][32-04] | [867][32-03] | [861][32-02] | [857][32-01] |
-|:----------------:|:------------:|:------------:|:------------:|:------------:|
-| [0.0.7] [31-08]  | &#10004;     |              |              |              |
-| [0.0.6] [31-07]  | &#10004;     |              |              |              |
-| [0.0.5] [31-06]  |              | &#10004;     |              |              |
-| [0.0.4] [31-05]  |              |              | &#10004;     |              |
-| [0.0.3] [31-04]  |              |              | &#10004;     |              |
-| [0.0.2] [31-03]  |              |              |              | &#10004;     |
-| [0.0.1] [31-02]  |              |              |              | &#10004;     |
-| [0.0.0] [31-01]  |              |              |              | &#10004;     |
+| SDK/API Versions | [871][32-05] | [869][32-04] | [867][32-03] | [861][32-02] | [857][32-01] |
+|:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.1.0] [31-09]  | &#10004;     |              |              |              |              |
+| [0.0.7] [31-08]  |              | &#10004;     |              |              |              |
+| [0.0.6] [31-07]  |              | &#10004;     |              |              |              |
+| [0.0.5] [31-06]  |              |              | &#10004;     |              |              |
+| [0.0.4] [31-05]  |              |              |              | &#10004;     |              |
+| [0.0.3] [31-04]  |              |              |              | &#10004;     |              |
+| [0.0.2] [31-03]  |              |              |              |              | &#10004;     |
+| [0.0.1] [31-02]  |              |              |              |              | &#10004;     |
+| [0.0.0] [31-01]  |              |              |              |              | &#10004;     |
 
 ### <a id="business"> </a>[Business Policies Management](https://github.com/davidtsadler/ebay-sdk-business-policies-management)
 
 | SDK/API Versions | [1.0.0][42-01] |
 |:----------------:|:--------------:|
+| [0.1.0] [41-03]  | &#10004;       |
 | [0.0.1] [41-02]  | &#10004;       |
 | [0.0.0] [41-01]  | &#10004;       |
 
+[11-06]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.1.0
 [11-05]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.4
 [11-04]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.3
 [11-03]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.0.2
@@ -72,6 +77,7 @@ To help determine which version of a SDK you require, a list is provided below t
 
 [12-01]: https://developer.ebay.com/DevZone/finding/ReleaseNotes.html#1.12.0
 
+[21-10]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.1.0
 [21-09]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.8
 [21-08]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.7
 [21-07]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.6
@@ -82,6 +88,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [21-02]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.1
 [21-01]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.0.0
 
+[22-07]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#871
 [22-06]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#869
 [22-05]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#867
 [22-04]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#865
@@ -89,6 +96,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [22-02]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#861
 [22-01]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#859
 
+[31-09]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.1.0
 [31-08]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.7
 [31-07]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.6
 [31-06]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.5
@@ -98,11 +106,13 @@ To help determine which version of a SDK you require, a list is provided below t
 [31-02]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.1
 [31-01]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.0.0
 
+[32-05]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#871
 [32-04]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#869
 [32-03]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#867
 [32-02]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#861
 [32-01]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#857
 
+[41-03]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.1.0
 [41-02]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.0.1
 [41-01]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.0.0
 
