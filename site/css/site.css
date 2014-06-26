@@ -154,3 +154,9 @@ code {
   color: inherit;
   font-weight: normal;
 }
+
+.author-meta img {
+  margin-right: 8px;
+  width: 72px;
+  border-radius: 50%;
+}

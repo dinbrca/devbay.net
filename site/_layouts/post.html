@@ -1,0 +1,29 @@
+---
+layout: site
+---
+<main role="main">
+    <div class="row">
+        <div class="small-12 columns">
+            <article>
+                <header>
+                    <h1>{{ page.title }}</h1>
+                    <p class="author-meta">
+                    {% if page.author %}
+                        <img src="http://www.gravatar.com/avatar/{{ page.author.gravatar }}?s=96"/>{{ page.author.name }}
+                    {% else %}
+                        <img src="http://www.gravatar.com/avatar/{{ site.author_gravatar }}?s=96"/>{{ site.author }}
+                    {% endif %}
+                    </p>
+                    <p>
+                      Published <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>
+                                    {{ page.date | ordinalize }} {{ page.date | date: '%B, %Y' }}
+                                </time>
+                    </p>
+                </header>
+                <section>
+                    {{ content }}
+                </section>
+            </article>
+        </div>
+    </div>
+</main>

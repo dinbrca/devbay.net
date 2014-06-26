@@ -2,7 +2,7 @@
 # SITE
 # ***************************
 
-# Full url for the site minus the ending forward slash. 
+# Full url for the site minus the ending forward slash.
 url: http://devbay.net
 
 # Appears in the <title> and <header> elements within the site.
@@ -12,6 +12,8 @@ title: Devbay
 author: David T. Sadler
 
 author_twitter: davidtsadler
+
+author_gravatar: bbf9fb140f0e3d23b65c88d5b3baa3a2
 
 # Used in the meta description tag of the site and the description element of the RSS feed.
 description:
@@ -47,3 +49,6 @@ redcarpet:
   extensions: ['tables']
 
 highlighter: true
+
+# Format that Jekyll will use when generating URLs to posts.
+permalink: /blog/:year/:month/:day/:title/
