@@ -2,6 +2,9 @@
 # SITE
 # ***************************
 
+# Can be overridden in other config files to switch off code such as Google Analytics.
+production: true
+
 # Full url for the site minus the ending forward slash.
 url: http://devbay.net
 

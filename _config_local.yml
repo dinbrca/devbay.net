@@ -1,0 +1,6 @@
+# ***************************
+# SITE
+# ***************************
+
+# Switch off code such as Google Analytics.
+production: false
