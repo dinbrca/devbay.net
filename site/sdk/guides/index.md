@@ -3,7 +3,7 @@ layout: sdk
 title: eBay SDK for PHP
 description: Find guides, tutorials and examples for the eBay SDK for PHP and use eBay's API in your applications.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-08-25
 pagination:
   next:
     url: application-keys/
@@ -25,6 +25,7 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
 
   - [SDK Versions](/sdk/guides/versions/)
   - [Configuring the SDK](/sdk/guides/configuring/)
+  - [Uploading and downloading files with the SDK](/sdk/guides/uploading-and-downloading-files/)
 
 ## <a id="service-guides"></a>Service Guides
 
@@ -40,3 +41,9 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
   - Business Policies Management
     - [Guide](/sdk/guides/business-policies-management/)
     - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-business-policies-management)
+  - File Transfer
+    - [Guide](/sdk/guides/file-transfer/)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-file-transfer)
+  - Bulk Data Exchange
+    - [Guide](/sdk/guides/bulk-data-exchange/)
+    - [GitHub repository](https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange)

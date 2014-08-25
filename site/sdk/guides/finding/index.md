@@ -3,11 +3,11 @@ layout: sdk
 title: Finding
 description: In-depth guide on using the eBay SDK for PHP with the Finding service.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-08-25
 pagination:
   prev:
-    url: configuring/
-    title: Configuring the SDK
+    url: uploading-and-downloading-files/
+    title: Uploading and downloading files
   next:
     url: trading/
     title: Trading

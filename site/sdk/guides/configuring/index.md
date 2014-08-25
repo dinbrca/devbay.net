@@ -3,14 +3,14 @@ layout: sdk
 title: Configuring the SDK
 description: Learn how to configure the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-08-25
 pagination:
   prev:
     url: versions/
     title: SDK Versions
   next:
-    url: finding/
-    title: Finding
+    url: uploading-and-downloading-files/
+    title: Uploading and downloading files
 ---
 The eBay SDK for PHP can be configured to suit your needs and this guide will show the various ways you can do this in your projects.
 

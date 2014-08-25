@@ -3,11 +3,14 @@ layout: sdk
 title: Business Policies Management
 description: In-depth guide on using the eBay SDK for PHP with the Business Policies Management service.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-08-25
 pagination:
   prev:
     url: shopping/
     title: Shopping
+  next:
+    url: file-transfer/
+    title: File Transfer
 ---
 This guide provides details for using the eBay SDK for PHP with the [Business Policies Management](http://developer.ebay.com/Devzone/business-policies/Concepts/BusinessPoliciesAPIGuide.html) service in your projects. It assumes that you have read and understood the [getting started guide](/sdk/guides/getting-started/).
 
