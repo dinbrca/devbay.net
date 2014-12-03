@@ -3,11 +3,14 @@ layout: sdk
 title: Bulk Data Exchange
 description: In-depth guide on using the eBay SDK for PHP with the Bulk Data Exchange service.
 sitemap:
-  lastmod: 2014-08-25
+  lastmod: 2014-12-03
 pagination:
   prev:
     url: file-transfer/
     title: File Transfer
+  next:
+    url: half-finding/
+    title: Half Finding
 ---
 This guide provides details for using the eBay SDK for PHP with the [Bulk Data Exchange](https://developer.ebay.com/DevZone/large-merchant-services/Concepts/LMS_APIGuide.html#bdxservice) service in your projects. It assumes that you have read and understood the [getting started guide](/sdk/guides/getting-started/).
 

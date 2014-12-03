@@ -3,7 +3,7 @@ layout: sdk
 title: SDK Versions
 description: Learn which version of the eBay API the SDK for PHP supports.
 sitemap:
-  lastmod: 2014-21-01
+  lastmod: 2014-12-03
 pagination:
   prev:
     url: sample-project/
@@ -105,6 +105,12 @@ To help determine which version of a SDK you require, a list is provided below t
 | SDK/API Versions | [1.5.0][62-01] |
 |:----------------:|:--------------:|
 | [0.1.0] [61-01]  | &#10004;       |
+
+### <a id="half"> </a>[Half Finding](https://github.com/davidtsadler/ebay-sdk-half-finding)
+
+| SDK/API Versions | [1.2.0][72-01] |
+|:----------------:|:--------------:|
+| [0.1.0] [71-01]  | &#10004;       |
 
 [11-10]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.2.0
 [11-09]: https://github.com/davidtsadler/ebay-sdk-finding/tree/0.1.3
@@ -217,3 +223,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [61-01]: https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/tree/0.1.0
 
 [62-01]: http://developer.ebay.com/DevZone/bulk-data-exchange/ReleaseNotes.html#1.5.0
+
+[71-01]: https://github.com/davidtsadler/ebay-sdk-half-finding/tree/0.1.0
+
+[72-01]: http://developer.ebay.com/DevZone/half-finding/ReleaseNotes.html#1.2.0

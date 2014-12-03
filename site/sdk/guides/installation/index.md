@@ -3,7 +3,7 @@ layout: sdk
 title: Installation
 description: Learn how to install the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-12-03
 pagination:
   prev:
     url: requirements/
@@ -30,7 +30,10 @@ Installing the SDK with Composer is done as follows:
              "dts/ebay-sdk-finding": "~0.1",
              "dts/ebay-sdk-trading": "~0.1",
              "dts/ebay-sdk-shopping": "~0.1",
-             "dts/ebay-sdk-business-policies-management": "~0.1"
+             "dts/ebay-sdk-business-policies-management": "~0.1",
+             "dts/ebay-sdk-file-transfer": "~0.1",
+             "dts/ebay-sdk-bulk-data-exchange": "~0.1",
+             "dts/ebay-sdk-half-finding": "~0.1"
          }
      }
      ```

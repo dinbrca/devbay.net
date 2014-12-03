@@ -3,7 +3,7 @@ layout: sdk
 title: Sample Project
 description: Install the sample project and find examples of using the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2014-12-03
 pagination:
   prev:
     url: getting-started/
@@ -57,6 +57,10 @@ There are several examples for each service that the SDK supports and they are l
   1. [Shopping](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/shopping/README.md)
 
   1. [Business Policies Management](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/business-policies-management/README.md)
+
+  1. [Large Merchange Services](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/large-merchant-services/README.md)
+
+  1. [Half Finding](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/half-finding/README.md)
 
 To run an example from the command line use the `php` command followed by the name of the example file.
 
