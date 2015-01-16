@@ -2,12 +2,13 @@
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }} - {{ site.title }}</title>
+        <title>{{ page.title }} - {{ site.name }}</title>
         <meta name="author" content="{{ site.author }}">
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="canonical" href="{{ site.url}}{{ page.url | remove: 'index.html' }}">
-        <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/blog/rss.xml" title="Feed for {{ site.name }}">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <!-- build:css /css/vendors.css -->
         <link rel="stylesheet" href="/vendor/normalize/3.0.0/css/normalize.css">
@@ -49,7 +50,7 @@
         <header role="banner">
             <nav class="top-bar" data-topbar>
                 <ul class="title-area">
-                    <li class="name"><h1><a href="/">{{ site.title }}</a></h1></li>
+                    <li class="name"><h1><a href="/">{{ site.name }}</a></h1></li>
                     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
                 </ul>
                 <section class="top-bar-section">
@@ -57,6 +58,11 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/sdk/guides/">Guides</a></li>
                         <li><a href="/about/">About</a></li>
+                    </ul>
+                </section>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li><a href="/blog/rss.xml" rel="nofollow"><i class="fa fa-rss fa-fx fa-2x"></i></a></li>
                     </ul>
                 </section>
             </nav>
