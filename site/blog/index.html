@@ -1,0 +1,28 @@
+---
+layout: site
+title: The Devbay Blog
+topic: blog
+topicHdr: The Devbay Blog
+sitemap:
+  lastmod: 2015-01-17
+---
+<main role="main">
+    <header class="topic-hdr" role="banner">
+        <h2><a href="/{{ page.topic }}/">{{ page.topicHdr }}</a></h2>
+    </header>
+    <div class="row">
+        <div class="small-12 columns">
+        {% for post in site.posts limit:site.rss_post_limit %}
+            <article>
+                <header>
+                    <h1><a href="{{ post.url }}" rel="bookmark" target="_self" title="{{ post.title }}">{{ post.title }}</a></h1>
+                    <p class="pubdate">
+                        <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | ordinalize }} {{ post.date | date: '%B, %Y' }}</time>
+                    </p>
+                </header>
+                {{ post.excerpt }}
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</main>

@@ -2,27 +2,33 @@
 layout: site
 ---
 <main role="main">
+    <header class="topic-hdr" role="banner">
+        <h2><a href="/{{ page.topic }}/">{{ page.topicHdr }}</a></h2>
+    </header>
     <div class="row">
         <div class="small-12 columns">
             <article>
+                {% include pagination.html %}
                 <header>
                     <h1>{{ page.title }}</h1>
+                    <p class="social-btn">
+                        <a href="https://twitter.com/share?text={{ page.title | cgi_escape }}&via=devbaydotnet" rel="nofollow" target="_blank"><i class="fa fa-twitter fa-fx fa-1x"></i> Tweet</a>
+                    </p>
                     <p class="author-meta">
                     {% if page.author %}
-                        <img src="http://www.gravatar.com/avatar/{{ page.author.gravatar }}?s=96"/>{{ page.author.name }}
+                        <img src="http://www.gravatar.com/avatar/{{ page.author.gravatar }}?s=96"/><a href="https://twitter.com/{{ page.author.twitter }}" rel="nofollow">{{ page.author.name }}</a>
                     {% else %}
-                        <img src="http://www.gravatar.com/avatar/{{ site.author_gravatar }}?s=96"/>{{ site.author }}
+                        <img src="http://www.gravatar.com/avatar/{{ site.author_gravatar }}?s=96"/><a href="https://twitter.com/{{ site.author_twitter }}" rel="nofollow">{{ site.author }}</a>
                     {% endif %}
                     </p>
-                    <p>
-                      Published <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>
-                                    {{ page.date | ordinalize }} {{ page.date | date: '%B, %Y' }}
-                                </time>
+                    <p class="pubdate">
+                        Published <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>{{ page.date | ordinalize }} {{ page.date | date: '%B, %Y' }}</time>
                     </p>
                 </header>
                 <section>
                     {{ content }}
                 </section>
+                {% include pagination.html %}
             </article>
         </div>
     </div>

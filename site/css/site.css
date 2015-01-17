@@ -18,7 +18,7 @@ body {
   padding-left: 44px;
 }
 
-.dropdown li.topic.api a:not(.button) {
+.dropdown li.topic.blog a:not(.button) {
   color: #8F9D6A;
 }
 
@@ -30,42 +30,46 @@ body {
   color: #7587A6;
 }
 
-.small-block-grid-1.medium-block-grid-3 li {
+.small-block-grid-1.medium-block-grid-2 {
+  margin-right: 0;
+}
+
+.small-block-grid-1.medium-block-grid-2 li {
   padding: 0.5em;
   font-weight: bold;
 }
 
-.small-block-grid-1.medium-block-grid-3 a {
+.small-block-grid-1.medium-block-grid-2 a {
   display: block;
   text-align: center;
   color: #FFFFFF;
 }
 
-.small-block-grid-1.medium-block-grid-3 li {
+.small-block-grid-1.medium-block-grid-2 li {
   box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.1) inset;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.api {
+.small-block-grid-1.medium-block-grid-2 li.blog {
   background-color: #8F9D6A;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.api:hover {
+.small-block-grid-1.medium-block-grid-2 li.blog:hover {
   background-color: #6E7659;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.developers {
+.small-block-grid-1.medium-block-grid-2 li.developers {
   background-color: #E9C062;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.developers:hover {
+.small-block-grid-1.medium-block-grid-2 li.developers:hover {
   background-color: #AF9863;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.sdk {
+.small-block-grid-1.medium-block-grid-2 li.sdk {
   background-color: #7587A6;
 }
 
-.small-block-grid-1.medium-block-grid-3 li.sdk:hover {
+.small-block-grid-1.medium-block-grid-2 li.sdk:hover {
   background-color: #616B7D;
 }
 
@@ -86,7 +90,7 @@ body {
   color: #FFFFFF;
 }
 
-body.api .topic-hdr {
+body.blog .topic-hdr {
   background-color: #8F9D6A;
 }
 
@@ -108,7 +112,7 @@ article h2 {
   font-weight: 700;
 }
 
-body.api article h2 {
+body.blog article h2 {
   border-bottom: 1px solid #8F9D6A;
 }
 
@@ -118,6 +122,15 @@ body.developers article h2 {
 
 body.sdk article h2 {
   border-bottom: 1px solid #7587A6;
+}
+
+body.blog article .pubdate {
+  color: #8F9D6A;
+}
+
+body.blog .social-btn a {
+  border: 1px solid #8F9D6A;
+  color: #8F9D6A;
 }
 
 .hero {
@@ -155,8 +168,26 @@ code {
   font-weight: normal;
 }
 
+.social-btn a {
+  line-height: 45px;
+  padding: 0 15px;
+}
+
 .author-meta img {
   margin-right: 8px;
   width: 72px;
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 40.063em) {
+  body.blog h1 {
+    display: block;
+    padding-right: 64px;
+  }
+
+  body.blog .social-btn {
+    position: absolute;
+    top: 54px;
+    right: 0;
+  }
 }
