@@ -2,7 +2,7 @@
 layout: sdk
 title: eBay SDK for PHP
 sitemap:
-  lastmod: 2014-12-03
+  lastmod: 2015-01-17
 pagination:
   next:
     url: application-keys/

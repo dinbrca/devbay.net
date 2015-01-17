@@ -3,7 +3,7 @@ layout: sdk
 title: Bulk Data Exchange
 description: In-depth guide on using the eBay SDK for PHP with the Bulk Data Exchange service.
 sitemap:
-  lastmod: 2014-12-03
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: file-transfer/

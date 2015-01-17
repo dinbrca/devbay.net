@@ -3,7 +3,7 @@ layout: sdk
 title: Application Keys
 description: Get your eBay API application keys ready for the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2015-01-17
 pagination:
   prev:
     url:

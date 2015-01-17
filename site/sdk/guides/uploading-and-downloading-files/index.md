@@ -3,7 +3,7 @@ layout: sdk
 title: Uploading and downloading files
 description: Learn how eBay SDK for PHP handles uploading and downloading of files.
 sitemap:
-  lastmod: 2014-08-25
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: configuring/

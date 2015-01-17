@@ -3,7 +3,7 @@ layout: sdk
 title: Configuring the SDK
 description: Learn how to configure the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-25
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: versions/

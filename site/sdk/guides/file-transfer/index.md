@@ -3,7 +3,7 @@ layout: sdk
 title: File Transfer
 description: In-depth guide on using the eBay SDK for PHP with the File Transfer service.
 sitemap:
-  lastmod: 2014-08-25
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: business-policies-management/

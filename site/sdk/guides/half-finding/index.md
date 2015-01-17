@@ -3,7 +3,7 @@ layout: sdk
 title: Half Finding
 description: In-depth guide on using the eBay SDK for PHP with the Half Finding service.
 sitemap:
-  lastmod: 2014-12-03
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: bulk-data-exchange/

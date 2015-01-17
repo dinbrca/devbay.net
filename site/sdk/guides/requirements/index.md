@@ -3,7 +3,7 @@ layout: sdk
 title: Requirements
 description: Check the minimum requirements for using the eBay SDK for PHP.
 sitemap:
-  lastmod: 2014-08-06
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: application-keys/

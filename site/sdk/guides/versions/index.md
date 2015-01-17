@@ -3,7 +3,7 @@ layout: sdk
 title: SDK Versions
 description: Learn which version of the eBay API the SDK for PHP supports.
 sitemap:
-  lastmod: 2014-12-03
+  lastmod: 2015-01-17
 pagination:
   prev:
     url: sample-project/
