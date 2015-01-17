@@ -133,6 +133,11 @@ body.blog .social-btn a {
   color: #8F9D6A;
 }
 
+body.sdk .social-btn a {
+  border: 1px solid #7587A6;
+  color: #7587A6;
+}
+
 .hero {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -180,12 +185,12 @@ code {
 }
 
 @media only screen and (min-width: 40.063em) {
-  body.blog h1 {
+  article h1 {
     display: block;
     padding-right: 64px;
   }
 
-  body.blog .social-btn {
+  .social-btn {
     position: absolute;
     top: 54px;
     right: 0;
