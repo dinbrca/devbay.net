@@ -91,5 +91,13 @@
         <script src="/vendor/foundation/5.2.2/js/foundation.topbar.js"></script>
         <!-- endbuild -->
         <script>$(document).foundation();</script>
+        {% if page.comments and site.disqus_shortname %}
+        <script>
+            var disqus_shortname='{{ site.disqus_shortname }}',disqus_identifier='{{ page.url }}',disqus_url='{{ site.url}}{{ page.url }}',disqus_title='{{ page.title | replace: "'", "\\'" }}'{% unless site.production %},disqus_developer=1{% endunless %};
+            (function(d,u){
+                var j=d.createElement('script');j.src=u;j.async=true;(d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(j);
+            }(document,'//{{ site.disqus_shortname }}.disqus.com/embed.js'));
+        </script>
+        {% endif %}
     </body>
 </html>
