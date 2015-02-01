@@ -1,30 +1,30 @@
 .PHONY: all clean build deploy watch
 
-node-bin 		= node_modules/.bin
-tmp 			= .tmp
-dist 			= dist
+NODE-BIN 		= node_modules/.bin
+TMP 			= .tmp
+DIST 			= dist
 
-css-src-path 		= $(tmp)/css
-css-vendors-src-path 	= $(tmp)/vendor
-js-src-path 		= $(tmp)/js
-js-vendors-src-path	= $(tmp)/vendor
+CSS-SRC-PATH 		= $(TMP)/css
+CSS-VENDORS-SRC-PATH 	= $(TMP)/vendor
+JS-SRC-PATH 		= $(TMP)/js
+JS-VENDORS-SRC-PATH	= $(TMP)/vendor
 
-css-dest-path 		= $(dist)/css
-js-dest-path 		= $(dist)/js
+CSS-DEST-PATH 		= $(DIST)/css
+JS-DEST-PATH 		= $(DIST)/js
 
-css-site-target 	= $(css-dest-path)/site.css
-css-site-prereq 	= $(css-src-path)/site.css
+CSS-SITE-TARGET 	= $(CSS-DEST-PATH)/site.css
+CSS-SITE-PREREQ 	= $(CSS-SRC-PATH)/site.css
 
-css-vendors-target 	= $(css-dest-path)/vendors.css
-css-vendors-prereq 	= $(css-vendors-src-path)/normalize/**/css/*.css \
-				$(css-vendors-src-path)/foundation/**/css/*.css
+CSS-VENDORS-TARGET 	= $(CSS-DEST-PATH)/vendors.css
+CSS-VENDORS-PREREQ 	= $(CSS-VENDORS-SRC-PATH)/normalize/**/css/*.css \
+				$(CSS-VENDORS-SRC-PATH)/foundation/**/css/*.css
 
-js-modernizr-target 	= $(js-dest-path)/modernizr.js
-js-modernizr-prereq 	= $(js-vendors-src-path)/modernizr/**/js/*.js
+JS-MODERNIZR-TARGET 	= $(JS-DEST-PATH)/modernizr.js
+JS-MODERNIZR-PREREQ 	= $(JS-VENDORS-SRC-PATH)/modernizr/**/js/*.js
 
-js-vendors-target 	= $(js-dest-path)/vendors.js
-js-vendors-prereq 	= $(js-vendors-src-path)/jquery/**/js/*.js \
-				$(js-vendors-src-path)/foundation/**/js/*.js
+JS-VENDORS-TARGET 	= $(JS-DEST-PATH)/vendors.js
+JS-VENDORS-PREREQ 	= $(JS-VENDORS-SRC-PATH)/jquery/**/js/*.js \
+				$(JS-VENDORS-SRC-PATH)/foundation/**/js/*.js
 
 SITE-PATH		:= site
 POSTS-PATH		:= $(SITE-PATH)/_posts
@@ -42,72 +42,72 @@ jkbuild:
 	jekyll build
 
 clean:
-	rm -rf $(dist)
-	rm -rf $(tmp)
+	rm -rf $(DIST)
+	rm -rf $(TMP)
 
-$(dist):
-	mkdir $(dist)
-	mkdir $(css-dest-path)
-	mkdir $(js-dest-path)
+$(DIST):
+	mkdir $(DIST)
+	mkdir $(CSS-DEST-PATH)
+	mkdir $(JS-DEST-PATH)
 
-$(tmp):
-	mkdir $(tmp)
+$(TMP):
+	mkdir $(TMP)
 
 
 all: 	clean 			\
-	$(tmp)			\
-	$(dist) 		\
+	$(TMP)			\
+	$(DIST) 		\
 	jkbuild			\
-	$(css-site-target) 	\
-	$(css-vendors-target)	\
-	$(js-modernizr-target)	\
-	$(js-vendors-target)
+	$(CSS-SITE-TARGET) 	\
+	$(CSS-VENDORS-TARGET)	\
+	$(JS-MODERNIZR-TARGET)	\
+	$(JS-VENDORS-TARGET)
 
-build:	css-site-build = $(shell cat $(css-site-target) | md5sum | cut -c1-8).site.css
-build:	css-vendors-build = $(shell cat $(css-vendors-target) | md5sum | cut -c1-8).vendors.css
-build:	js-modernizr-build = $(shell cat $(js-modernizr-target) | md5sum | cut -c1-8).modernizr.js
-build:	js-vendors-build = $(shell cat $(js-vendors-target) | md5sum | cut -c1-8).vendors.js
+build:	css-site-build = $(shell cat $(CSS-SITE-TARGET) | md5sum | cut -c1-8).site.css
+build:	css-vendors-build = $(shell cat $(CSS-VENDORS-TARGET) | md5sum | cut -c1-8).vendors.css
+build:	js-modernizr-build = $(shell cat $(JS-MODERNIZR-TARGET) | md5sum | cut -c1-8).modernizr.js
+build:	js-vendors-build = $(shell cat $(JS-VENDORS-TARGET) | md5sum | cut -c1-8).vendors.js
 build:	all
-	@mv $(css-site-target) $(css-dest-path)/$(css-site-build)
-	@mv $(css-vendors-target) $(css-dest-path)/$(css-vendors-build)
-	@mv $(js-modernizr-target) $(js-dest-path)/$(js-modernizr-build)
-	@mv $(js-vendors-target) $(js-dest-path)/$(js-vendors-build)
-	@find $(tmp) -type f -iname "*.html" -exec sed -i -n '/vendors.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-vendors-build)">\n/};p' {} \;
-	@find $(tmp) -type f -iname "*.html" -exec sed -i -n '/site.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-site-build)">\n/};p' {} \;
-	@find $(tmp) -type f -iname "*.html" -exec sed -i -n '/modernizr.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-modernizr-build)">\n/};p' {} \;
-	@find $(tmp) -type f -iname "*.html" -exec sed -i -n '/vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-vendors-build)">\n/};p' {} \;
-	@find $(tmp) -type f -iname "*.html" -exec $(node-bin)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
-	@find $(tmp) -type f -iname "*.xml" -exec $(node-bin)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
-	@cd $(tmp) && find . -type f -iname "*.html" -exec cp --parents {} ../$(dist) \;
-	@cd $(tmp) && find . -type f -iname "*.xml" -exec cp --parents {} ../$(dist) \;
-	@cd $(tmp) && find . -type f -iname "*.png" -exec cp --parents {} ../$(dist) \;
-	@cd $(tmp) && find . -type f -iname "*.jpg" -exec cp --parents {} ../$(dist) \;
-	@cd $(tmp) && find . -type f -iname "*.ico" -exec cp --parents {} ../$(dist) \;
-	@cd $(tmp) && find . -type f -iname "*.txt" -exec cp --parents {} ../$(dist) \;
+	@mv $(CSS-SITE-TARGET) $(CSS-DEST-PATH)/$(css-site-build)
+	@mv $(CSS-VENDORS-TARGET) $(CSS-DEST-PATH)/$(css-vendors-build)
+	@mv $(JS-MODERNIZR-TARGET) $(JS-DEST-PATH)/$(js-modernizr-build)
+	@mv $(JS-VENDORS-TARGET) $(JS-DEST-PATH)/$(js-vendors-build)
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/vendors.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-vendors-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/site.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-site-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/modernizr.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-modernizr-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-vendors-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec $(NODE-BIN)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
+	@find $(TMP) -type f -iname "*.xml" -exec $(NODE-BIN)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
+	@cd $(TMP) && find . -type f -iname "*.html" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.xml" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.png" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.jpg" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.ico" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.txt" -exec cp --parents {} ../$(DIST) \;
 
-$(css-site-target): $(css-site-prereq)
-	@cat $^ | $(node-bin)/cleancss --skip-advanced --output $@
+$(CSS-SITE-TARGET): $(CSS-SITE-PREREQ)
+	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
 
-$(css-vendors-target): $(css-vendors-prereq)
-	@cat $^ | $(node-bin)/cleancss --skip-advanced --output $@
+$(CSS-VENDORS-TARGET): $(CSS-VENDORS-PREREQ)
+	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
 
-$(js-modernizr-target): $(js-modernizr-prereq)
-	@cat $^ | $(node-bin)/uglifyjs --compress=warnings=false --mangle --output $@
+$(JS-MODERNIZR-TARGET): $(JS-MODERNIZR-PREREQ)
+	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
 
-$(js-vendors-target): $(js-vendors-prereq)
-	@cat $^ | $(node-bin)/uglifyjs --compress=warnings=false --mangle --output $@
+$(JS-VENDORS-TARGET): $(JS-VENDORS-PREREQ)
+	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
 
 deploy:	build
-	find $(dist) -type f \( -iname '*.xml' -or -iname '*.txt' -or -iname '*.css' -or -iname '*.js' -or -iname '*.html' \) -exec gzip "{}" \; -exec mv "{}.gz" "{}" \;
-	s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(dist)/css/ s3://devbay.net/css/
-	s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(dist)/js/ s3://devbay.net/js/
-	s3cmd sync --acl-public --exclude '*.*' --include  '*.html' -m "text/html" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --exclude '*.*' --include  '*.xml' -m "application/xml" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --exclude '*.*' --include 'robots.txt' -m "text/plain" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --exclude '*.*' --include '*.png' -m "image/png" --add-header="Cache-Control: max-age=2592000" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(dist)/ s3://devbay.net/
-	s3cmd sync --acl-public --delete-removed  $(dist)/ s3://devbay.net/
+	find $(DIST) -type f \( -iname '*.xml' -or -iname '*.txt' -or -iname '*.css' -or -iname '*.js' -or -iname '*.html' \) -exec gzip "{}" \; -exec mv "{}.gz" "{}" \;
+	s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/css/ s3://devbay.net/css/
+	s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/js/ s3://devbay.net/js/
+	s3cmd sync --acl-public --exclude '*.*' --include  '*.html' -m "text/html" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --exclude '*.*' --include  '*.xml' -m "application/xml" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --exclude '*.*' --include 'robots.txt' -m "text/plain" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --exclude '*.*' --include '*.png' -m "image/png" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
+	s3cmd sync --acl-public --delete-removed  $(DIST)/ s3://devbay.net/
 
 $(POSTS-PATH):
 	mkdir $(POSTS-PATH)
