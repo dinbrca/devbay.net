@@ -26,8 +26,20 @@ js-vendors-target 	= $(js-dest-path)/vendors.js
 js-vendors-prereq 	= $(js-vendors-src-path)/jquery/**/js/*.js \
 				$(js-vendors-src-path)/foundation/**/js/*.js
 
+SITE-PATH		:= site
+POSTS-PATH		:= $(SITE-PATH)/_posts
+TOPIC 			?= new article
+DATE 			:= $(shell date "+%Y-%m-%d")
+FILE 			:= $(shell echo "$(POSTS-PATH)/$(DATE)-$(TOPIC).md" | sed -e 's/\(.*\)/\L\1/;y/\ /-/')
+
 watch:	clean
 	jekyll serve --config _config.yml,_config_local.yml --watch
+
+jklocal:  clean
+	jekyll build --config _config.yml,_config_local.yml
+
+jkbuild:
+	jekyll build
 
 clean:
 	rm -rf $(dist)
@@ -39,11 +51,13 @@ $(dist):
 	mkdir $(js-dest-path)
 
 $(tmp):
-	jekyll build 
+	mkdir $(tmp)
+
 
 all: 	clean 			\
 	$(tmp)			\
 	$(dist) 		\
+	jkbuild			\
 	$(css-site-target) 	\
 	$(css-vendors-target)	\
 	$(js-modernizr-target)	\
@@ -94,3 +108,14 @@ deploy:	build
 	s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(dist)/ s3://devbay.net/
 	s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(dist)/ s3://devbay.net/
 	s3cmd sync --acl-public --delete-removed  $(dist)/ s3://devbay.net/
+
+$(POSTS-PATH):
+	mkdir $(POSTS-PATH)
+
+post:	$(POSTS-PATH)
+	echo "---" >> $(FILE)
+	echo "layout: blog" >> $(FILE)
+	echo "title: $(TOPIC)" >> $(FILE)
+	echo "sitemap:" >> $(FILE)
+	echo "  lastmod: $(DATE)" >> $(FILE)
+	echo "---" >> $(FILE)
