@@ -3,6 +3,7 @@ layout: blog
 title: Public Roadmap and Monthly Releases
 sitemap:
   lastmod: 2015-02-01
+comments: true
 ---
 
 To help keep you informed and up to date I have been working on few things that I can now announce.
