@@ -80,6 +80,7 @@ build:	all
 	@cd $(TMP) && find . -type f -iname "*.html" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.xml" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.png" -exec cp --parents {} ../$(DIST) \;
+	@cd $(TMP) && find . -type f -iname "*.gif" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.jpg" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.ico" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.txt" -exec cp --parents {} ../$(DIST) \;
@@ -104,6 +105,7 @@ deploy:	build
 	@s3cmd sync --acl-public --exclude '*.*' --include  '*.xml' -m "application/xml" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include 'robots.txt' -m "text/plain" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.png' -m "image/png" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.gif' -m "image/gif" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --delete-removed  $(DIST)/ s3://devbay.net/
