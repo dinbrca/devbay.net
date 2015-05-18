@@ -3,14 +3,19 @@
 NODE-BIN 		= node_modules/.bin
 TMP 			= .tmp
 DIST 			= dist
+TOOLS			= developers/tools
 
 CSS-SRC-PATH 		= $(TMP)/css
 CSS-VENDORS-SRC-PATH 	= $(TMP)/vendor
+CSS-BOBBIE-SRC-PATH 	= $(TMP)/$(TOOLS)/bobbie/css
 JS-SRC-PATH 		= $(TMP)/js
 JS-VENDORS-SRC-PATH	= $(TMP)/vendor
+JS-BOBBIE-SRC-PATH 	= $(TMP)/$(TOOLS)/bobbie/js
 
 CSS-DEST-PATH 		= $(DIST)/css
+CSS-BOBBIE-DEST-PATH 	= $(DIST)/$(TOOLS)/bobbie/css
 JS-DEST-PATH 		= $(DIST)/js
+JS-BOBBIE-DEST-PATH 	= $(DIST)/$(TOOLS)/bobbie/js
 
 CSS-SITE-TARGET 	= $(CSS-DEST-PATH)/site.css
 CSS-SITE-PREREQ 	= $(CSS-SRC-PATH)/site.css
@@ -19,12 +24,21 @@ CSS-VENDORS-TARGET 	= $(CSS-DEST-PATH)/vendors.css
 CSS-VENDORS-PREREQ 	= $(CSS-VENDORS-SRC-PATH)/normalize/**/css/*.css \
 				$(CSS-VENDORS-SRC-PATH)/foundation/**/css/*.css
 
+CSS-BOBBIE-TARGET 	= $(CSS-BOBBIE-DEST-PATH)/app.css
+CSS-BOBBIE-PREREQ 	= $(CSS-BOBBIE-SRC-PATH)/*.css
+
 JS-MODERNIZR-TARGET 	= $(JS-DEST-PATH)/modernizr.js
 JS-MODERNIZR-PREREQ 	= $(JS-VENDORS-SRC-PATH)/modernizr/**/js/*.js
 
 JS-VENDORS-TARGET 	= $(JS-DEST-PATH)/vendors.js
 JS-VENDORS-PREREQ 	= $(JS-VENDORS-SRC-PATH)/jquery/**/js/*.js \
 				$(JS-VENDORS-SRC-PATH)/foundation/**/js/*.js
+
+JS-BOBBIE-TARGET 	= $(JS-BOBBIE-DEST-PATH)/app.js
+JS-BOBBIE-PREREQ 	= $(JS-BOBBIE-SRC-PATH)/app.js
+
+JS-BOBBIE-VENDORS-TARGET	= $(JS-BOBBIE-DEST-PATH)/vendors.js
+JS-BOBBIE-VENDORS-PREREQ 	= $(JS-BOBBIE-SRC-PATH)/vendors.js
 
 SITE-PATH		:= site
 POSTS-PATH		:= $(SITE-PATH)/_posts
@@ -41,41 +55,59 @@ jklocal:  clean
 jkbuild:
 	jekyll build
 
+bobbie:
+	@$(NODE-BIN)/webpack --config webpack.bobbie.config.js
+
 clean:
-	rm -rf $(DIST)
-	rm -rf $(TMP)
+	@rm -rf $(DIST)
+	@rm -rf $(TMP)
 
 $(DIST):
-	mkdir $(DIST)
-	mkdir $(CSS-DEST-PATH)
-	mkdir $(JS-DEST-PATH)
+	@mkdir $(DIST)
+	@mkdir $(CSS-DEST-PATH)
+	@mkdir -p $(CSS-BOBBIE-DEST-PATH)
+	@mkdir $(JS-DEST-PATH)
+	@mkdir -p $(JS-BOBBIE-DEST-PATH)
 
 $(TMP):
-	mkdir $(TMP)
+	@mkdir $(TMP)
 
 
 all: 	clean 			\
 	$(TMP)			\
 	$(DIST) 		\
 	jkbuild			\
+	bobbie			\
 	$(CSS-SITE-TARGET) 	\
 	$(CSS-VENDORS-TARGET)	\
+	$(CSS-BOBBIE-TARGET)	\
 	$(JS-MODERNIZR-TARGET)	\
-	$(JS-VENDORS-TARGET)
+	$(JS-VENDORS-TARGET)	\
+	$(JS-BOBBIE-TARGET)	\
+	$(JS-BOBBIE-VENDORS-TARGET)
 
 build:	css-site-build = $(shell cat $(CSS-SITE-TARGET) | md5sum | cut -c1-8).site.css
 build:	css-vendors-build = $(shell cat $(CSS-VENDORS-TARGET) | md5sum | cut -c1-8).vendors.css
+build:	css-bobbie-build = $(shell cat $(CSS-BOBBIE-TARGET) | md5sum | cut -c1-8).app.css
 build:	js-modernizr-build = $(shell cat $(JS-MODERNIZR-TARGET) | md5sum | cut -c1-8).modernizr.js
 build:	js-vendors-build = $(shell cat $(JS-VENDORS-TARGET) | md5sum | cut -c1-8).vendors.js
+build:	js-bobbie-build = $(shell cat $(JS-BOBBIE-TARGET) | md5sum | cut -c1-8).app.js
+build:	js-bobbie-vendors-build = $(shell cat $(JS-BOBBIE-VENDORS-TARGET) | md5sum | cut -c1-8).vendors.js
 build:	all
 	@mv $(CSS-SITE-TARGET) $(CSS-DEST-PATH)/$(css-site-build)
 	@mv $(CSS-VENDORS-TARGET) $(CSS-DEST-PATH)/$(css-vendors-build)
+	@mv $(CSS-BOBBIE-TARGET) $(CSS-BOBBIE-DEST-PATH)/$(css-bobbie-build)
 	@mv $(JS-MODERNIZR-TARGET) $(JS-DEST-PATH)/$(js-modernizr-build)
 	@mv $(JS-VENDORS-TARGET) $(JS-DEST-PATH)/$(js-vendors-build)
-	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/vendors.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-vendors-build)">\n/};p' {} \;
-	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/site.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-site-build)">\n/};p' {} \;
-	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/modernizr.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-modernizr-build)"><\/script>\n/};p' {} \;
-	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-vendors-build)"><\/script>\n/};p' {} \;
+	@mv $(JS-BOBBIE-TARGET) $(JS-BOBBIE-DEST-PATH)/$(js-bobbie-build)
+	@mv $(JS-BOBBIE-VENDORS-TARGET) $(JS-BOBBIE-DEST-PATH)/$(js-bobbie-vendors-build)
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:css \/css\/vendors.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-vendors-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:css \/css\/bobbie.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/developers\/tools\/bobbie\/css\/$(css-bobbie-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:css \/css\/site.css/{:a;N;/endbuild/!ba;N;s/.*\n/<link rel="stylesheet" href="\/css\/$(css-site-build)">\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/modernizr.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-modernizr-build)"><\/script>\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/js\/$(js-vendors-build)"><\/script>\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/bobbie-vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/developers\/tools\/bobbie\/js\/$(js-bobbie-vendors-build)"><\/script>\n/};p' {} \;
+	@find $(TMP) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/bobbie.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/developers\/tools\/bobbie\/js\/$(js-bobbie-build)"><\/script>\n/};p' {} \;
 	@find $(TMP) -type f -iname "*.html" -exec $(NODE-BIN)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
 	@cd $(TMP) && find . -type f -iname "*.html" -exec cp --parents {} ../$(DIST) \;
 	@cd $(TMP) && find . -type f -iname "*.xml" -exec cp --parents {} ../$(DIST) \;
@@ -91,10 +123,19 @@ $(CSS-SITE-TARGET): $(CSS-SITE-PREREQ)
 $(CSS-VENDORS-TARGET): $(CSS-VENDORS-PREREQ)
 	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
 
+$(CSS-BOBBIE-TARGET): $(CSS-BOBBIE-PREREQ)
+	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
+
 $(JS-MODERNIZR-TARGET): $(JS-MODERNIZR-PREREQ)
 	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
 
 $(JS-VENDORS-TARGET): $(JS-VENDORS-PREREQ)
+	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
+
+$(JS-BOBBIE-TARGET): $(JS-BOBBIE-PREREQ)
+	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
+
+$(JS-BOBBIE-VENDORS-TARGET): $(JS-BOBBIE-VENDORS-PREREQ)
 	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
 
 deploy:	build
@@ -111,12 +152,12 @@ deploy:	build
 	@s3cmd sync --acl-public --delete-removed  $(DIST)/ s3://devbay.net/
 
 $(POSTS-PATH):
-	mkdir $(POSTS-PATH)
+	@mkdir $(POSTS-PATH)
 
 post:	$(POSTS-PATH)
-	echo "---" >> $(FILE)
-	echo "layout: blog" >> $(FILE)
-	echo "title: $(TOPIC)" >> $(FILE)
-	echo "sitemap:" >> $(FILE)
-	echo "  lastmod: $(DATE)" >> $(FILE)
-	echo "---" >> $(FILE)
+	@echo "---" >> $(FILE)
+	@echo "layout: blog" >> $(FILE)
+	@echo "title: $(TOPIC)" >> $(FILE)
+	@echo "sitemap:" >> $(FILE)
+	@echo "  lastmod: $(DATE)" >> $(FILE)
+	@echo "---" >> $(FILE)

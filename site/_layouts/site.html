@@ -17,6 +17,13 @@
         <!-- build:css /css/site.css -->
         <link rel="stylesheet" href="/css/site.css">
         <!-- endbuild -->
+        {% if page.tool %}
+          <!-- build:css /css/{{ page.tool.name }}.css -->
+          {% for css in page.tool.css %}
+            <link rel="stylesheet" href="{{ css }}">
+          {% endfor %}
+          <!-- endbuild -->
+        {% endif %}
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -57,7 +64,8 @@
                     <ul class="left">
                         <li><a href="/">Home</a></li>
                         <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/sdk/guides/">Guides</a></li>
+                        <li><a href="/developers/tools/">Developer Tools</a></li>
+                        <li><a href="/sdk/guides/">SDK for PHP</a></li>
                         <li><a href="/about/">About</a></li>
                     </ul>
                 </section>
@@ -90,6 +98,18 @@
         <script src="/vendor/foundation/5.2.2/js/foundation.js"></script>
         <script src="/vendor/foundation/5.2.2/js/foundation.topbar.js"></script>
         <!-- endbuild -->
+        {% if page.tool %}
+          <!-- build:js /js/{{ page.tool.name }}-vendors.js -->
+          {% for js in page.tool.vendors %}
+            <script src="{{ js }}"></script>
+          {% endfor %}
+          <!-- endbuild -->
+          <!-- build:js /js/{{ page.tool.name }}.js -->
+          {% for js in page.tool.js %}
+            <script src="{{ js }}"></script>
+          {% endfor %}
+          <!-- endbuild -->
+        {% endif %}
         <script>$(document).foundation();</script>
         {% if page.comments and site.disqus_shortname %}
         <script>

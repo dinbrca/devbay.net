@@ -1,14 +1,15 @@
 ---
 layout: site
+topic: developers
+topicHdr: Developer Tools
 ---
 <main role="main">
     <header class="topic-hdr" role="banner">
-        <h2><a href="/{{ page.topic }}/guides/">{{ page.topicHdr }}</a></h2>
+        <h2><a href="/{{ page.topic }}/tools/">{{ page.topicHdr }}</a></h2>
     </header>
     <div class="row">
         <div class="small-12 columns">
             <article>
-                {% include pagination.html %}
                 <header>
                     <h1>{{ page.title }}</h1>
                     <p class="social-btn">
@@ -18,7 +19,12 @@ layout: site
                 <section>
                     {{ content }}
                 </section>
-                {% include pagination.html %}
+                {% if page.comments and site.disqus_shortname %}
+                <aside>
+                    <div id="disqus_thread"></div>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </aside>
+                {% endif %}
             </article>
         </div>
     </div>
