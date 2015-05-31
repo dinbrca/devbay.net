@@ -7,6 +7,6 @@ sitemap:
 ---
 This collection of tools are designed to help in using the eBay API.
 
-  - [Bobbi](/developers/tools/bobbie)
+  - [Bobbie](/developers/tools/bobbie/)
 
     Create the correct URL for calling findItemsAdvanced with this tool for the eBay Finding API. 
