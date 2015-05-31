@@ -149,6 +149,8 @@ deploy:	build
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.gif' -m "image/gif" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(CSS-BOBBIE-DEST-PATH)/ s3://devbay.net/developers/tools/bobbie/css/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(JS-BOBBIE-DEST-PATH)/ s3://devbay.net/developers/tools/bobbie/js/
 	@s3cmd sync --acl-public --delete-removed  $(DIST)/ s3://devbay.net/
 
 $(POSTS-PATH):
