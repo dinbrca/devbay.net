@@ -38,20 +38,21 @@ To help determine which version of a SDK you require, a list is provided below t
 
 ### <a id="trading"> </a>[Trading](https://github.com/davidtsadler/ebay-sdk-trading)
 
-| SDK/API Versions | [921][22-29] | [919][22-28] | [917][22-27] | [911][22-26] | [909][22-25] | [907][22-24] | [905][22-23] | [903][22-22] | [901][22-21] | [899][22-20] | [897][22-19] | [895][22-18] | [893][22-17] | [891][22-16] | [889][22-15] | [887][22-14] | [885][22-13] | [883][22-12] | [881][22-11] |
-|:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-| [0.15.0][21-26]  | &#10004;     | &#10004;     | &#10004;     | &#10004;     | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |              |              |
-| [0.14.0][21-25]  |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |              |
-| [0.13.0][21-24]  |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |
-| [0.12.0][21-23]  |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |
-| [0.11.0][21-22]  |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |              |              |              |              |              |              |              |
-| [0.10.0][21-21]  |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |
-| [0.9.0][21-20]   |              |              |              |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |              |              |              |              |
-| [0.8.0][21-19]   |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |
-| [0.7.0][21-18]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |
-| [0.6.0][21-17]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |
-| [0.5.0][21-16]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |  &#10004;    |              |
-| [0.4.0][21-15]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |
+| SDK/API Versions | [923][22-30] | [921][22-29] | [919][22-28] | [917][22-27] | [911][22-26] | [909][22-25] | [907][22-24] | [905][22-23] | [903][22-22] | [901][22-21] | [899][22-20] | [897][22-19] | [895][22-18] | [893][22-17] | [891][22-16] | [889][22-15] | [887][22-14] | [885][22-13] | [883][22-12] | [881][22-11] |
+|:----------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+| [0.16.0][21-27]  |  &#10004;    |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |
+| [0.15.0][21-26]  |              | &#10004;     | &#10004;     | &#10004;     | &#10004;     | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |              |              |
+| [0.14.0][21-25]  |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |              |
+| [0.13.0][21-24]  |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |              |
+| [0.12.0][21-23]  |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |              |              |              |
+| [0.11.0][21-22]  |              |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |              |              |              |              |              |              |              |
+| [0.10.0][21-21]  |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |              |              |              |
+| [0.9.0][21-20]   |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |              |              |              |              |
+| [0.8.0][21-19]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |              |
+| [0.7.0][21-18]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |              |              |              |              |
+| [0.6.0][21-17]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     | &#10004;     |              |              |
+| [0.5.0][21-16]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |  &#10004;    |              |
+| [0.4.0][21-15]   |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              |              | &#10004;     |
 
 ### <a id="shopping"> </a>[Shopping](https://github.com/davidtsadler/ebay-sdk-shopping)
 
@@ -125,6 +126,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [12-02]: https://developer.ebay.com/DevZone/finding/ReleaseNotes.html#1.13.0
 [12-01]: https://developer.ebay.com/DevZone/finding/ReleaseNotes.html#1.12.0
 
+[21-27]: https://github.com/davidtsadler/ebay-sdk-trading/releases/tag/0.16.0
 [21-26]: https://github.com/davidtsadler/ebay-sdk-trading/releases/tag/0.15.0
 [21-25]: https://github.com/davidtsadler/ebay-sdk-trading/releases/tag/0.14.0
 [21-24]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.13.0
@@ -138,6 +140,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [21-16]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.5.0
 [21-15]: https://github.com/davidtsadler/ebay-sdk-trading/tree/0.4.0
 
+[22-30]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#923
 [22-29]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#921
 [22-28]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#919
 [22-27]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#917
@@ -158,7 +161,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [22-12]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#883
 [22-11]: http://developer.ebay.com/devzone/xml/docs/releasenotes.html#881
 
-[31-17]: https://github.com/davidtsadler/ebay-sdk-shopping/releases/tag/0.5.1 
+[31-17]: https://github.com/davidtsadler/ebay-sdk-shopping/releases/tag/0.5.1
 [31-16]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.5.0
 [31-15]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.4.0
 [31-14]: https://github.com/davidtsadler/ebay-sdk-shopping/tree/0.3.0
@@ -197,7 +200,7 @@ To help determine which version of a SDK you require, a list is provided below t
 [32-02]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#861
 [32-01]: http://developer.ebay.com/DevZone/shopping/docs/ReleaseNotes.html#857
 
-[41-07]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/releases/tag/0.1.4 
+[41-07]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/releases/tag/0.1.4
 [41-06]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.1.3
 [41-05]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.1.2
 [41-04]: https://github.com/davidtsadler/ebay-sdk-business-policies-management/tree/0.1.1
@@ -207,19 +210,19 @@ To help determine which version of a SDK you require, a list is provided below t
 
 [42-01]: http://developer.ebay.com/DevZone/business-policies/ReleaseNotes.html#1.0.0
 
-[51-03]: https://github.com/davidtsadler/ebay-sdk-file-transfer/releases/tag/0.2.1 
+[51-03]: https://github.com/davidtsadler/ebay-sdk-file-transfer/releases/tag/0.2.1
 [51-02]: https://github.com/davidtsadler/ebay-sdk-file-transfer/tree/0.2.0
 [51-01]: https://github.com/davidtsadler/ebay-sdk-file-transfer/tree/0.1.0
 
 [52-01]: http://developer.ebay.com/DevZone/file-transfer/ReleaseNotes.html#1.1.0
 
-[61-03]: https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/releases/tag/0.1.2 
+[61-03]: https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/releases/tag/0.1.2
 [61-02]: https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/tree/0.1.1
 [61-01]: https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/tree/0.1.0
 
 [62-01]: http://developer.ebay.com/DevZone/bulk-data-exchange/ReleaseNotes.html#1.5.0
 
-[71-02]: https://github.com/davidtsadler/ebay-sdk-half-finding/releases/tag/0.1.1 
+[71-02]: https://github.com/davidtsadler/ebay-sdk-half-finding/releases/tag/0.1.1
 [71-01]: https://github.com/davidtsadler/ebay-sdk-half-finding/tree/0.1.0
 
 [72-01]: http://developer.ebay.com/DevZone/half-finding/ReleaseNotes.html#1.2.0
