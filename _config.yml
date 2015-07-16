@@ -46,7 +46,7 @@ disqus_shortname: devbay
 source: site
 
 # Directory where Jekyll will save transformed files.
-destination: .tmp/
+destination: .tmp/site
 
 # Markdown engine that will be used.
 markdown: redcarpet

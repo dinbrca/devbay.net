@@ -31,7 +31,7 @@ var config = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, '.tmp/developers/tools/bobbie/js/'),
+        path: path.resolve(__dirname, '.tmp/site/developers/tools/bobbie/js/'),
         filename: 'app.js'
     },
     resolve: {

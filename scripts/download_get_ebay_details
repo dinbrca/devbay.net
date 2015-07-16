@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+SITES=(0 2 3 15 16 23 71 77 100 101 123 146 186 193 201 203 205 207 210 211 212 216)
+DATA="<?xml version='1.0' encoding='utf-8'?><GeteBayDetailsRequest xmlns='urn:ebay:apis:eBLBaseComponents'><RequesterCredentials><eBayAuthToken>$EBAY_AUTH_TOKEN</eBayAuthToken></RequesterCredentials></GeteBayDetailsRequest>"
+SUCCESS="<Ack>Success"
+
+for i in "${SITES[@]}"
+do
+  OUT=$(./scripts/curl_trading $i GeteBayDetails "$DATA")
+
+  RET=$?
+
+  if [[ $RET -ne 0 ]]; then
+    exit 1
+  elif [[ $OUT =~ $SUCCESS ]]; then
+    echo $OUT > .tmp/downloads/ebay-details/$i.xml
+  else
+    echo "get_ebay_details $i $OUT"
+    exit 1
+  fi
+done
+
+exit 0

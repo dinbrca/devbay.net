@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+OUT=$(curl -qSfs --request POST -H "X-EBAY-API-COMPATIBILITY-LEVEL:925" -H "X-EBAY-API-SITEID:$1" -H "X-EBAY-API-CALL-NAME:$2" -H "Content-Type: text/xml" --data "$3" https://api.ebay.com/ws/api.dll) 2>/dev/null
+
+RET=$?
+
+if [[ $RET -ne 0 ]]; then
+  echo "curl_trading $1 $2"
+  exit 1
+else
+  echo $OUT
+  exit 0
+fi

@@ -1,0 +1,15 @@
+html.no-js #site-picker,
+html.js article h2,
+html.js .site,
+html.js .shipping-service-details {
+    display: none;
+}
+
+html.js .site.active,
+html.js .shipping-service-details.active {
+    display: inherit;
+}
+
+article table {
+    width: 100%;
+}
