@@ -1,13 +1,13 @@
 ---
 layout: tool
-title: CountryDetails
+title: CurrencyDetails
 description: 
 tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
 ---
-Two-letter country code and the English names associated with each code. <a href="#example">Jump to example</a>
+Three-letter ISO 4217 currency code and the English names associated with each code. <a href="#example">Jump to example</a>
 
 {% include site-picker.html %}
 {% include_relative _0.html %}
@@ -38,7 +38,8 @@ Two-letter country code and the English names associated with each code. <a href
 ```xml
 <AddItemRequest>
     <Item>
-        <Country>GB</Country>
+        <Currency>GBP</Currency>
+        <StartPrice currencyID="GBP">123.45</StartPrice>
     </Item>
 </AddItemRequest>
 ```

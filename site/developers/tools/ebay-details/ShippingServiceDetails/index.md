@@ -32,35 +32,37 @@ Domestic and International shipping services supported by each eBay site. <a hre
 {% include_relative _211.html %}
 {% include_relative _212.html %}
 {% include_relative _216.html %}
+
 <h2 id="example">Example</h2>
+
 ```xml
 <AddItemRequest>
     <Item>
-      <ShippingDetails>
-        <ShippingType>Flat</ShippingType>
-        <!-- Domestic -->
-        <ShippingServiceOptions>
-          <ShippingServicePriority>1</ShippingServicePriority>
-          <ShippingService>Other</ShippingService>
-          <ShippingServiceCost>2</ShippingServiceCost>
-        </ShippingServiceOptions>
-        <ShippingServiceOptions>
-          <ShippingServicePriority>2</ShippingServicePriority>
-          <ShippingService>USPSParcel</ShippingService>
-          <ShippingServiceCost>3</ShippingServiceCost>
-        </ShippingServiceOptions>
-        <!-- International -->
-        <InternationalShippingServiceOption>
-          <ShippingServicePriority>1</ShippingServicePriority>
-          <ShippingService>USPSFirstClassMailInternational</ShippingService>
-          <ShippingServiceCost>4</ShippingServiceCost>
-        </InternationalShippingServiceOption>
-        <InternationalShippingServiceOption>
-          <ShippingServicePriority>2</ShippingServicePriority>
-          <ShippingService>USPSPriorityMailInternational</ShippingService>
-          <ShippingServiceCost>5</ShippingServiceCost>
-        </InternationalShippingServiceOption>
-      </ShippingDetails>
+        <ShippingDetails>
+            <ShippingType>Flat</ShippingType>
+            <!-- Domestic -->
+            <ShippingServiceOptions>
+                <ShippingServicePriority>1</ShippingServicePriority>
+                <ShippingService>Other</ShippingService>
+                <ShippingServiceCost>2</ShippingServiceCost>
+            </ShippingServiceOptions>
+            <ShippingServiceOptions>
+                <ShippingServicePriority>2</ShippingServicePriority>
+                <ShippingService>USPSParcel</ShippingService>
+                <ShippingServiceCost>3</ShippingServiceCost>
+            </ShippingServiceOptions>
+            <!-- International -->
+            <InternationalShippingServiceOption>
+                <ShippingServicePriority>1</ShippingServicePriority>
+                <ShippingService>USPSFirstClassMailInternational</ShippingService>
+                <ShippingServiceCost>4</ShippingServiceCost>
+            </InternationalShippingServiceOption>
+            <InternationalShippingServiceOption>
+                <ShippingServicePriority>2</ShippingServicePriority>
+                <ShippingService>USPSPriorityMailInternational</ShippingService>
+                <ShippingServiceCost>5</ShippingServiceCost>
+            </InternationalShippingServiceOption>
+        </ShippingDetails>
     </Item>
 </AddItemRequest>
 ```

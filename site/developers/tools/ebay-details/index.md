@@ -8,4 +8,5 @@ sitemap:
 ---
 
   - [CountryDetails](/developers/tools/ebay-details/CountryDetails/)
+  - [CurrencyDetails](/developers/tools/ebay-details/CurrencyDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)
