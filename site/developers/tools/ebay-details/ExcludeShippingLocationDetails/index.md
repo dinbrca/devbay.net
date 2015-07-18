@@ -1,13 +1,13 @@
 ---
 layout: tool
-title: CountryDetails
-description: Results of calling GeteBayDetails with DetailName set to CountryDetails.
+title: ExcludeShippingLocationDetails
+description: Results of calling GeteBayDetails with DetailName set to ExcludeShippingLocationDetails.
 tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
 ---
-Two-letter country code and the English names associated with each code.
+ISO 3166 location codes and the localized names associated with each code. Locations are shown grouped by region code.
 
 <a href="#example">Jump to example</a>
 
@@ -37,10 +37,17 @@ Two-letter country code and the English names associated with each code.
 
 <h2 id="example">Example</h2>
 
+Note that you can use either the location or region code when specifying the *ExcludeShipToLocation* field in the various calls of the AddItem family.
+
 ```xml
 <AddItemRequest>
     <Item>
-        <Country>GB</Country>
+        <ShippingDetails>
+            <!-- GB is a location code -->
+            <ExcludeShipToLocation>GB</ExcludeShipToLocation>
+            <!-- Asia is a region code -->
+            <ExcludeShipToLocation>Asia</ExcludeShipToLocation>
+        </ShippingDetails>
     </Item>
 </AddItemRequest>
 ```

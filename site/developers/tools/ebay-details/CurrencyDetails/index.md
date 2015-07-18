@@ -1,13 +1,15 @@
 ---
 layout: tool
 title: CurrencyDetails
-description: 
+description: Results of calling GeteBayDetails with DetailName set to CurrencyDetails.
 tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
 ---
-Three-letter ISO 4217 currency code and the English names associated with each code. <a href="#example">Jump to example</a>
+Three-letter ISO 4217 currency code and the English names associated with each code.
+
+<a href="#example">Jump to example</a>
 
 {% include site-picker.html %}
 {% include_relative _0.html %}

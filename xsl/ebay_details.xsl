@@ -16,6 +16,7 @@
 <xsl:template match="/">
   <xsl:apply-templates select="." mode="country-details"/>
   <xsl:apply-templates select="." mode="currency-details"/>
+  <xsl:apply-templates select="." mode="exclude-shipping-location-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
 </xsl:template>
 
@@ -119,6 +120,60 @@
   <td>
     <strong>
       <xsl:value-of select="*:Currency"/>
+    </strong>
+  </td>
+</xsl:template>
+
+<xsl:template match="/" mode="exclude-shipping-location-details">
+  <xsl:result-document href="{$destDirectory}/ExcludeShippingLocationDetails/_{$siteID}.html">
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+        <xsl:for-each-group select="//*:ExcludeShippingLocationDetails" group-by="*:Region">
+          <xsl:sort select="current-grouping-key()"/>
+          <xsl:variable name="sorted">
+              <xsl:apply-templates select="current-group()" mode="sort">
+                <xsl:sort select="*:Description"/>
+              </xsl:apply-templates>
+          </xsl:variable>
+          <xsl:variable name="sortedResultsNodeSet" select="exsl:node-set($sorted)"/>
+          <h3><xsl:value-of select="current-grouping-key()"/></h3>
+          <table>
+            <thead>
+              <tr>
+                <td>Description</td>
+                <td>Location</td>
+                <td>Description</td>
+                <td>Location</td>
+                <td>Description</td>
+                <td>Location</td>
+              </tr>
+            </thead>
+            <tbody>
+              <xsl:apply-templates select="$sortedResultsNodeSet/*:ExcludeShippingLocationDetails[position() mod 3 = 1 or position() = 1]" mode="row"/>
+            </tbody>
+          </table>
+        </xsl:for-each-group>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:ExcludeShippingLocationDetails" mode="sort">
+  <xsl:copy-of select="current()"/>
+</xsl:template>
+
+<xsl:template match="*:ExcludeShippingLocationDetails" mode="row">
+  <tr>
+      <xsl:apply-templates select=". | following-sibling::*:ExcludeShippingLocationDetails[position() &lt; 3]" mode="cell"/>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:ExcludeShippingLocationDetails" mode="cell">
+  <td>
+    <xsl:value-of select="*:Description"/>
+  </td>
+  <td>
+    <strong>
+      <xsl:value-of select="*:Location"/>
     </strong>
   </td>
 </xsl:template>

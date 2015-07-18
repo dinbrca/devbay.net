@@ -1,13 +1,15 @@
 ---
 layout: tool
 title: ShippingServiceDetails
-description:
+description: Results of calling GeteBayDetails with DetailName set to ShippingServiceDetails.
 tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
 ---
-Domestic and International shipping services supported by each eBay site. <a href="#example">Jump to example</a>
+Domestic and International shipping services supported by each eBay site.
+
+<a href="#example">Jump to example</a>
 
 {% include site-picker.html %}
 {% include_relative _0.html %}
