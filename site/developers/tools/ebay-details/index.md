@@ -7,4 +7,5 @@ sitemap:
   lastmod: 2015-05-31
 ---
 
+  - [CountryDetails](/developers/tools/ebay-details/CountryDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)

@@ -1,5 +1,5 @@
 html.no-js #site-picker,
-html.js article h2,
+html.js article section.site h2,
 html.js .site,
 html.js .shipping-service-details {
     display: none;

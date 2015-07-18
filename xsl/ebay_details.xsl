@@ -4,6 +4,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:exsl="http://exslt.org/common"
+  extension-element-prefixes="exsl"
   exclude-result-prefixes="xs wsdl">
 
 <xsl:output method="html" encoding="UTF-8"/>
@@ -12,7 +14,60 @@
 <xsl:param name="destDirectory" required="yes" as="xs:string"/>
 
 <xsl:template match="/">
+  <xsl:apply-templates select="." mode="country-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
+</xsl:template>
+
+<xsl:template match="/" mode="country-details">
+  <xsl:result-document href="{$destDirectory}/CountryDetails/_{$siteID}.html">
+    <xsl:variable name="sortedCountries">
+        <xsl:apply-templates select="//*:CountryDetails" mode="sort">
+          <xsl:sort select="*:Description"/>
+        </xsl:apply-templates>
+    </xsl:variable>
+
+    <xsl:variable name="sortedResultsNodeSet" select="exsl:node-set($sortedCountries)"/>
+
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>Country</td>
+            <td>Description</td>
+            <td>Country</td>
+            <td>Description</td>
+            <td>Country</td>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:apply-templates select="$sortedResultsNodeSet/*:CountryDetails[position() mod 3 = 1 or position() = 1]" mode="row"/>
+        </tbody>
+      </table>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:CountryDetails" mode="sort">
+  <xsl:copy-of select="current()"/>
+</xsl:template>
+
+<xsl:template match="*:CountryDetails" mode="row">
+  <tr>
+      <xsl:apply-templates select=". | following-sibling::*:CountryDetails[position() &lt; 3]" mode="cell"/>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:CountryDetails" mode="cell">
+  <td>
+    <xsl:value-of select="*:Description"/>
+  </td>
+  <td>
+    <strong>
+      <xsl:value-of select="*:Country"/>
+    </strong>
+  </td>
 </xsl:template>
 
 <xsl:template match="/" mode="shipping-service-details">
@@ -29,7 +84,7 @@
           </tr>
         </thead>
         <tbody>
-          <xsl:apply-templates select=".//*:ShippingServiceDetails[not(*:InternationalService)]" mode="shipping-service-details-table">
+          <xsl:apply-templates select=".//*:ShippingServiceDetails[not(*:InternationalService)]" mode="row">
             <xsl:sort select="upper-case(*:ShippingService)"/>
           </xsl:apply-templates>
         </tbody>
@@ -44,7 +99,7 @@
           </tr>
         </thead>
         <tbody>
-          <xsl:apply-templates select=".//*:ShippingServiceDetails[*:InternationalService]" mode="shipping-service-details-table">
+          <xsl:apply-templates select=".//*:ShippingServiceDetails[*:InternationalService]" mode="row">
             <xsl:sort select="upper-case(*:ShippingService)"/>
           </xsl:apply-templates>
         </tbody>
@@ -53,7 +108,7 @@
   </xsl:result-document>
 </xsl:template>
 
-<xsl:template match="*:ShippingServiceDetails" mode="shipping-service-details-table">
+<xsl:template match="*:ShippingServiceDetails" mode="row">
   <tr>
     <td>
       <xsl:value-of select="*:Description"/>
