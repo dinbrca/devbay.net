@@ -9,6 +9,7 @@ sitemap:
 
   - [CountryDetails](/developers/tools/ebay-details/CountryDetails/)
   - [CurrencyDetails](/developers/tools/ebay-details/CurrencyDetails/)
+  - [DispatchTimeMaxDetails](/developers/tools/ebay-details/DispatchTimeMaxDetails/)
   - [ExcludeShippingLocationDetails](/developers/tools/ebay-details/ExcludeShippingLocationDetails/)
   - [ReturnPolicyDetails](/developers/tools/ebay-details/ReturnPolicyDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)

@@ -16,6 +16,7 @@
 <xsl:template match="/">
   <xsl:apply-templates select="." mode="country-details"/>
   <xsl:apply-templates select="." mode="currency-details"/>
+  <xsl:apply-templates select="." mode="dispatch-time-details"/>
   <xsl:apply-templates select="." mode="exclude-shipping-location-details"/>
   <xsl:apply-templates select="." mode="return-policy-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
@@ -123,6 +124,44 @@
       <xsl:value-of select="*:Currency"/>
     </strong>
   </td>
+</xsl:template>
+
+<xsl:template match="/" mode="dispatch-time-details">
+  <xsl:result-document href="{$destDirectory}/DispatchTimeMaxDetails/_{$siteID}.html">
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>DispatchTimeMax</td>
+            <td>ExtendedHandling</td>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:apply-templates select=".//*:DispatchTimeMaxDetails" mode="row">
+            <xsl:sort select="*:DispatchTimeMax" data-type="number"/>
+          </xsl:apply-templates>
+        </tbody>
+      </table>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:DispatchTimeMaxDetails" mode="row">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:DispatchTimeMax"/>
+      </strong>
+    </td>
+    <td>
+      <xsl:value-of select="*:ExtendedHandling"/>
+    </td>
+  </tr>
 </xsl:template>
 
 <xsl:template match="/" mode="exclude-shipping-location-details">
@@ -293,7 +332,7 @@
     </table>
   </xsl:if>
   <xsl:if test="*:WarrantyType">
-    <p>The type of warranty offered.</p>
+    <p>Sellers can specify what type of warranty is included with the item.</p>
     <table>
       <thead>
         <tr>
@@ -307,7 +346,7 @@
     </table>
   </xsl:if>
   <xsl:if test="*:WarrantyType">
-    <p>The length of the warranty offered. </p>
+    <p>Sellers can specify the length of the warranty that is included with the item.</p>
     <table>
       <thead>
         <tr>
