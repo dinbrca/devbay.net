@@ -18,6 +18,7 @@
   <xsl:apply-templates select="." mode="currency-details"/>
   <xsl:apply-templates select="." mode="dispatch-time-details"/>
   <xsl:apply-templates select="." mode="exclude-shipping-location-details"/>
+  <xsl:apply-templates select="." mode="item-specific-details"/>
   <xsl:apply-templates select="." mode="return-policy-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
 </xsl:template>
@@ -216,6 +217,45 @@
       <xsl:value-of select="*:Location"/>
     </strong>
   </td>
+</xsl:template>
+
+<xsl:template match="/" mode="item-specific-details">
+  <xsl:result-document href="{$destDirectory}/ItemSpecificDetails/_{$siteID}.html">
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+      <p>Item Specifics are name value pairs that describe aspects of an item. For example, A T-shirt could have an Item Specific that describes its size. In this instance the name is <i>Size</i> and the values could be <i>Small</i> <i>Medium</i> or <i>Large</i> Note that you can only assign one value per name unless <i>GetCategorySpecifics</i> or <i>GetItemRecommendations</i> indicates that it supports multiple values.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>Maximum</td>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:apply-templates select=".//*:ItemSpecificDetails" mode="rows"/>
+        </tbody>
+      </table>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:ItemSpecificDetails" mode="rows">
+  <tr>
+    <td>Item Specifics allowed when listing an item.</td>
+    <td><xsl:value-of select="*:MaxItemSpecificsPerItem"/></td>
+  </tr>
+  <tr>
+    <td>Characters allowed per Item Specific name.</td>
+    <td><xsl:value-of select="*:MaxValuesPerName"/></td>
+  </tr>
+  <tr>
+    <td>Characters allowed per Item Specific value.</td>
+    <td><xsl:value-of select="*:MaxCharactersPerValue"/></td>
+  </tr>
+  <tr>
+    <td>Values allowed per name.</td>
+    <td><xsl:value-of select="*:MaxCharactersPerName"/></td>
+  </tr>
 </xsl:template>
 
 <xsl:template match="/" mode="return-policy-details">

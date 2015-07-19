@@ -11,5 +11,6 @@ sitemap:
   - [CurrencyDetails](/developers/tools/ebay-details/CurrencyDetails/)
   - [DispatchTimeMaxDetails](/developers/tools/ebay-details/DispatchTimeMaxDetails/)
   - [ExcludeShippingLocationDetails](/developers/tools/ebay-details/ExcludeShippingLocationDetails/)
+  - [ItemSpecificDetails](/developers/tools/ebay-details/ItemSpecificDetails/)
   - [ReturnPolicyDetails](/developers/tools/ebay-details/ReturnPolicyDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)
