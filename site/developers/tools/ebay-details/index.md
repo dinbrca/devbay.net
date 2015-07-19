@@ -10,4 +10,5 @@ sitemap:
   - [CountryDetails](/developers/tools/ebay-details/CountryDetails/)
   - [CurrencyDetails](/developers/tools/ebay-details/CurrencyDetails/)
   - [ExcludeShippingLocationDetails](/developers/tools/ebay-details/ExcludeShippingLocationDetails/)
+  - [ReturnPolicyDetails](/developers/tools/ebay-details/ReturnPolicyDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)

@@ -17,6 +17,7 @@
   <xsl:apply-templates select="." mode="country-details"/>
   <xsl:apply-templates select="." mode="currency-details"/>
   <xsl:apply-templates select="." mode="exclude-shipping-location-details"/>
+  <xsl:apply-templates select="." mode="return-policy-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
 </xsl:template>
 
@@ -176,6 +177,253 @@
       <xsl:value-of select="*:Location"/>
     </strong>
   </td>
+</xsl:template>
+
+<xsl:template match="/" mode="return-policy-details">
+  <xsl:result-document href="{$destDirectory}/ReturnPolicyDetails/_{$siteID}.html">
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+      <xsl:apply-templates select=".//*:ReturnPolicyDetails" mode="return-policy-details"/>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:ReturnPolicyDetails" mode="return-policy-details">
+  <p>Features available to the seller when specifying the return policy for an item.</p>
+  <table>
+    <thead>
+      <tr>
+        <td>Feature</td>
+        <td>Available</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sellers can enter a text description.</td>
+        <td><xsl:choose><xsl:when test="*:Description">Yes</xsl:when><xsl:otherwise>No</xsl:otherwise></xsl:choose></td>
+      </tr>
+      <tr>
+        <td>Sellers can specify a European Article Number (EAN).</td>
+        <td><xsl:choose><xsl:when test="*:EAN">Yes</xsl:when><xsl:otherwise>No</xsl:otherwise></xsl:choose></td>
+      </tr>
+    </tbody>
+  </table>
+  <xsl:if test="*:ReturnsAccepted">
+    <p>Sellers can specify whether they accept returns or not.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>ReturnsAcceptedOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:ReturnsAccepted" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:ReturnsWithin">
+    <p>Sellers can specify the time period in which an item should be returned by the buyer.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>ReturnsWithinOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:ReturnsWithin" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:ShippingCostPaidBy">
+    <p>Sellers can specify who pays the shipping cost for a returned item.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>ShippingCostPaidBy</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:ShippingCostPaidBy" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:Refund">
+    <p>Sellers can specify how the buyer will be compensated for a returned item.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>RefundOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:Refund" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:RestockingFeeValue">
+    <p>Sellers can specify a restocking fee for returned items.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>RestockingFeeValueOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:RestockingFeeValue" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:WarrantyOffered">
+    <p>Sellers can specify if an item includes a warranty.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>WarrantyOfferedOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:WarrantyOffered" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:WarrantyType">
+    <p>The type of warranty offered.</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>WarrantyType</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:WarrantyType" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+  <xsl:if test="*:WarrantyType">
+    <p>The length of the warranty offered. </p>
+    <table>
+      <thead>
+        <tr>
+          <td>Description</td>
+          <td>WarrantyDurationOption</td>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:apply-templates select="*:WarrantyDuration" mode="return-policy-details"/>
+      </tbody>
+    </table>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template match="*:ReturnsAccepted" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:ReturnsAcceptedOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:ReturnsWithin" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:ReturnsWithinOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:ShippingCostPaidBy" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:ShippingCostPaidByOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:Refund" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:RefundOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:RestockingFeeValue" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:RestockingFeeValueOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:WarrantyOffered" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:WarrantyOfferedOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:WarrantyType" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:WarrantyTypeOption"/>
+      </strong>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="*:WarrantyDuration" mode="return-policy-details">
+  <tr>
+    <td>
+      <xsl:value-of select="*:Description"/>
+    </td>
+    <td>
+      <strong>
+        <xsl:value-of select="*:WarrantyDurationOption"/>
+      </strong>
+    </td>
+  </tr>
 </xsl:template>
 
 <xsl:template match="/" mode="shipping-service-details">
