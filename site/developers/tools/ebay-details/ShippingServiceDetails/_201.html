@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>本地普通郵遞</td>
             <td><strong>HK_DomesticRegularShipping</strong></td>
             <td>true</td>
@@ -20,14 +20,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>本地普通郵遞</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_DomesticRegularShipping</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>20103</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>本地特許郵遞</td>
             <td><strong>HK_DomesticSpecialShipping</strong></td>
             <td>true</td>
@@ -37,14 +41,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>本地特許郵遞</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_DomesticSpecialShipping</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>20104</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>本地郵政速遞</td>
             <td><strong>HK_LocalCourier</strong></td>
             <td>true</td>
@@ -54,14 +62,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>本地郵政速遞</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_LocalCourier</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>20102</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>只限本地收件</td>
             <td><strong>HK_LocalPickUpOnly</strong></td>
             <td>true</td>
@@ -71,14 +83,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>只限本地收件</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_LocalPickUpOnly</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>20101</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>運送優惠</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -88,8 +104,14 @@
                <dl>
                   <dt>Description</dt>
                   <dd>運送優惠</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>20199</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -102,12 +124,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>海外普通郵遞</td>
             <td><strong>HK_InternationalRegularShipping</strong></td>
             <td>true</td>
@@ -117,14 +139,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>海外普通郵遞</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_InternationalRegularShipping</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>70101</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>海外特許郵遞</td>
             <td><strong>HK_InternationalSpecialShipping</strong></td>
             <td>true</td>
@@ -134,14 +162,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>海外特許郵遞</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>HK_InternationalSpecialShipping</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>70102</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>運送優惠</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -151,8 +185,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>運送優惠</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>70199</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

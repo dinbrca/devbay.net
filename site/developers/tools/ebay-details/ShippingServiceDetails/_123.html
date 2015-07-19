@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>bpost - aangetekende zending</td>
             <td><strong>BENL_DePostCetifiedShipping</strong></td>
             <td>true</td>
@@ -20,18 +20,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - aangetekende zending</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DePostCetifiedShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12316</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>bpost - standaardverzending</td>
             <td><strong>BENL_DePostStandardShipping</strong></td>
             <td>true</td>
@@ -41,18 +47,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - standaardverzending</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DePostStandardShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12315</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>bpost - Taxipost 24u</td>
             <td><strong>BENL_DePostTaxipost24h</strong></td>
             <td>true</td>
@@ -62,18 +72,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - Taxipost 24u</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DePostTaxipost24h</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12318</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>bpost - Taxipost LLS</td>
             <td><strong>BENL_DePostTaxipostLLS</strong></td>
             <td>true</td>
@@ -83,18 +99,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - Taxipost LLS</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DePostTaxipostLLS</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12317</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>bpost - Taxipost Secur</td>
             <td><strong>BENL_DePostTaxipostSecur</strong></td>
             <td>true</td>
@@ -104,18 +124,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - Taxipost Secur</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DePostTaxipostSecur</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12319</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>De Post zending - aangetekend (1 werkdag)</td>
             <td><strong>BENL_DePostZendingAangetekend</strong></td>
             <td>false</td>
@@ -123,20 +149,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - aangetekend (1 werkdag)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingAangetekend</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - aangetekend (1 werkdag)</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingAangetekend</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12308</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>De Post zending - NON PRIOR (2 werkdagen)</td>
             <td><strong>BENL_DePostZendingNONPRIOR</strong></td>
             <td>false</td>
@@ -144,20 +178,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - NON PRIOR (2 werkdagen)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingNONPRIOR</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - NON PRIOR (2 werkdagen)</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingNONPRIOR</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12306</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>De Post zending - PRIOR (1 werkdag)</td>
             <td><strong>BENL_DePostZendingPRIOR</strong></td>
             <td>false</td>
@@ -165,20 +207,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - PRIOR (1 werkdag)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingPRIOR</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - PRIOR (1 werkdag)</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingPRIOR</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12307</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Voordelige verzending uit het buitenland</td>
             <td><strong>BENL_EconomyDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -188,18 +238,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Voordelige verzending uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_EconomyDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>10</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12321</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>22</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>10</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Express verzending uit het buitenland</td>
             <td><strong>BENL_ExpressDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -209,18 +263,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express verzending uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_ExpressDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12323</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Kiala afhaalpunt</td>
             <td><strong>BENL_KialaAfhaalpunt</strong></td>
             <td>true</td>
@@ -230,18 +288,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Kiala afhaalpunt</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_KialaAfhaalpunt</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12311</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Kilopost pakje (2 werkdagen)</td>
             <td><strong>BENL_KilopostPakje</strong></td>
             <td>false</td>
@@ -249,20 +311,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Kilopost pakje (2 werkdagen)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_KilopostPakje</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Kilopost pakje (2 werkdagen)</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12317</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_KilopostPakje</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12309</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Andere verzendservice</td>
             <td><strong>BENL_Other</strong></td>
             <td>false</td>
@@ -270,20 +340,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Andere verzendservice</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_Other</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Andere verzendservice</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12320</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_Other</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12305</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Andere verzending</td>
             <td><strong>BENL_OtherShippingMethods</strong></td>
             <td>true</td>
@@ -293,18 +371,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Andere verzending</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_OtherShippingMethods</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12320</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Pakketpost</td>
             <td><strong>BENL_ParcelPost</strong></td>
             <td>false</td>
@@ -312,24 +396,34 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Pakketpost</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_ParcelPost</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Pakketpost</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12317</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_ParcelPost</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12303</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Ophalen bij de verkoper</td>
             <td><strong>BENL_Pickup</strong></td>
             <td>true</td>
@@ -339,14 +433,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ophalen bij de verkoper</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_Pickup</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12350</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Verzending met prioriteit</td>
             <td><strong>BENL_PriorityDelivery</strong></td>
             <td>false</td>
@@ -354,24 +452,34 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Verzending met prioriteit</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_PriorityDelivery</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Verzending met prioriteit</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_PriorityDelivery</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12302</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Verzending met ontvangstbevestiging</td>
             <td><strong>BENL_RegisteredMail</strong></td>
             <td>false</td>
@@ -379,24 +487,32 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Verzending met ontvangstbevestiging</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_RegisteredMail</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Verzending met ontvangstbevestiging</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_RegisteredMail</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12304</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standaardverzending</td>
             <td><strong>BENL_StandardDelivery</strong></td>
             <td>false</td>
@@ -404,24 +520,32 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Standaardverzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_StandardDelivery</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Standaardverzending</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_StandardDelivery</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12301</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standaardverzending uit het buitenland</td>
             <td><strong>BENL_StandardDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -431,18 +555,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standaardverzending uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_StandardDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12322</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Taxipost (express)</td>
             <td><strong>BENL_Taxipost</strong></td>
             <td>false</td>
@@ -450,20 +578,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Taxipost (express)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_Taxipost</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Taxipost (express)</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12318</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_Taxipost</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12310</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Verzending uit het buitenland met internationale tracking</td>
             <td><strong>BENL_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -473,18 +609,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzending uit het buitenland met internationale tracking</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_TrackedDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12324</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Vaste kosten standaard verzending</td>
             <td><strong>BENL_VasteKostenStandaardVerzending</strong></td>
             <td>false</td>
@@ -492,20 +632,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Vaste kosten standaard verzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_VasteKostenStandaardVerzending</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Vaste kosten standaard verzending</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_VasteKostenStandaardVerzending</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12312</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Vaste kosten versnelde verzending</td>
             <td><strong>BENL_VasteKostenVersneldeVerzending</strong></td>
             <td>false</td>
@@ -513,20 +661,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Vaste kosten versnelde verzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_VasteKostenVersneldeVerzending</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Vaste kosten versnelde verzending</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>12315</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_VasteKostenVersneldeVerzending</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12313</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Verzekerde verzending</td>
             <td><strong>BENL_VerzekerdeVerzending</strong></td>
             <td>true</td>
@@ -536,14 +692,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzekerde verzending</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_VerzekerdeVerzending</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12314</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Korting op verzending</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -553,8 +713,14 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Korting op verzending</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -567,12 +733,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>De Post</td>
             <td><strong>BENL_DePostInternational</strong></td>
             <td>false</td>
@@ -580,20 +746,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62301</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>De Post zending - aangetekend</td>
             <td><strong>BENL_DePostZendingAangetekendInternational</strong></td>
             <td>false</td>
@@ -601,20 +777,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - aangetekend</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingAangetekendInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - aangetekend</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62317</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingAangetekendInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62312</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>De Post zending - NON PRIOR</td>
             <td><strong>BENL_DePostZendingNONPRIORInternational</strong></td>
             <td>false</td>
@@ -622,20 +808,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - NON PRIOR</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingNONPRIORInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - NON PRIOR</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingNONPRIORInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62311</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>De Post zending - PRIOR</td>
             <td><strong>BENL_DePostZendingPRIORInternational</strong></td>
             <td>false</td>
@@ -643,20 +839,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>De Post zending - PRIOR</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_DePostZendingPRIORInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>De Post zending - PRIOR</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_DePostZendingPRIORInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62310</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>DHL</td>
             <td><strong>BENL_DHLInternational</strong></td>
             <td>true</td>
@@ -666,14 +872,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DHL</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_DHLInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62304</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Vaste kosten versnelde internationale verzending</td>
             <td><strong>BENL_ExpeditedInternational</strong></td>
             <td>false</td>
@@ -681,20 +893,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Vaste kosten versnelde internationale verzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_ExpeditedInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Vaste kosten versnelde internationale verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_ExpeditedInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62308</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Fedex</td>
             <td><strong>BENL_FedExInternational</strong></td>
             <td>true</td>
@@ -704,14 +926,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Fedex</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_FedExInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62303</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Kilopost pakje Internationaal</td>
             <td><strong>BENL_KilopostPakjeInternationaal</strong></td>
             <td>false</td>
@@ -719,20 +947,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Kilopost pakje Internationaal</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_KilopostPakjeInternationaal</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Kilopost pakje Internationaal</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_KilopostPakjeInternationaal</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62313</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>La Poste (France)</td>
             <td><strong>BENL_LaPosteInternational</strong></td>
             <td>true</td>
@@ -742,14 +980,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>La Poste (France)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_LaPosteInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62306</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Andere internationale verzending (zie beschrijving)</td>
             <td><strong>BENL_OtherInternational</strong></td>
             <td>true</td>
@@ -759,14 +1003,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Andere internationale verzending (zie beschrijving)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_OtherInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62309</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>bpost - aangetekende zending</td>
             <td><strong>BENL_PostInternationalRegistered</strong></td>
             <td>true</td>
@@ -776,14 +1026,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - aangetekende zending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_PostInternationalRegistered</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62317</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>bpost - standaardverzending</td>
             <td><strong>BENL_PostInternationalStandard</strong></td>
             <td>true</td>
@@ -793,14 +1049,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bpost - standaardverzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_PostInternationalStandard</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62316</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Vaste kosten standaard internationale verzending</td>
             <td><strong>BENL_StandardInternational</strong></td>
             <td>false</td>
@@ -808,20 +1070,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Vaste kosten standaard internationale verzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_StandardInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Vaste kosten standaard internationale verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_StandardInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62307</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Taxipost expressverzending</td>
             <td><strong>BENL_TaxipostExpressverzending</strong></td>
             <td>false</td>
@@ -829,20 +1101,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Taxipost expressverzending</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_TaxipostExpressverzending</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>Taxipost expressverzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62316</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_TaxipostExpressverzending</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62314</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>TNT</td>
             <td><strong>BENL_TNTInternational</strong></td>
             <td>true</td>
@@ -852,14 +1134,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TNT</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_TNTInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62318</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>TPG Post / TNT (Netherlands)</td>
             <td><strong>BENL_TPGPostTNTInternational</strong></td>
             <td>false</td>
@@ -867,20 +1155,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>TPG Post / TNT (Netherlands)</dd>
-                  <dt>ShippingService</dt>
-                  <dd>BENL_TPGPostTNTInternational</dd>
                   <dt>DeprecationDetails</dt>
                   <dd>AnnouncementStartTime: 2008-07-01T07:00:00.000Z</dd>
                   <dd>EventTime: 2008-08-01T07:00:00.000Z</dd>
                   <dd>MessageType: DeprecationAndMapping</dd>
+                  <dt>Description</dt>
+                  <dd>TPG Post / TNT (Netherlands)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>MappedToShippingServiceID</dt>
+                  <dd>62318</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_TPGPostTNTInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62305</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS</td>
             <td><strong>BENL_UPSInternational</strong></td>
             <td>true</td>
@@ -890,14 +1188,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_UPSInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62302</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Verzekerde verzending</td>
             <td><strong>BENL_VerzekerdeVerzendingInternational</strong></td>
             <td>true</td>
@@ -907,14 +1211,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzekerde verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>BENL_VerzekerdeVerzendingInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62315</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Korting op verzending</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -924,8 +1234,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Korting op verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>62399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

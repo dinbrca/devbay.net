@@ -514,8 +514,8 @@
         <thead>
           <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
           </tr>
         </thead>
         <tbody>
@@ -529,8 +529,8 @@
         <thead>
           <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
           </tr>
         </thead>
         <tbody>
@@ -544,7 +544,14 @@
 </xsl:template>
 
 <xsl:template match="*:ShippingServiceDetails" mode="row">
-  <tr>
+  <xsl:variable name="class">
+    <xsl:choose>
+      <xsl:when test="position() mod 2 = 0">even</xsl:when>
+      <xsl:otherwise>odd</xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <tr class="{$class}">
     <td>
       <xsl:value-of select="*:Description"/>
     </td>
@@ -564,23 +571,24 @@
 
 <xsl:template match="*:ShippingServiceDetails" mode="dl">
   <dl>
-    <xsl:apply-templates select="*:Description" mode="dl"/>
-    <xsl:apply-templates select="*:ShippingService" mode="dl"/>
     <xsl:apply-templates select="*:CODService" mode="dl"/>
     <xsl:apply-templates select="*:CostGroupFlat" mode="dl"/>
     <xsl:apply-templates select="*:DeprecationDetails" mode="dl"/>
-    <xsl:apply-templates select="*:ShippingTimeMin" mode="dl"/>
+    <xsl:apply-templates select="*:Description" mode="dl"/>
+    <xsl:apply-templates select="*:ExpeditedService" mode="dl"/>
+    <xsl:apply-templates select="*:InternationalService" mode="dl"/>
+    <xsl:apply-templates select="*:MappedToShippingServiceID" mode="dl"/>
+    <xsl:apply-templates select="*:ServiceType" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingCarrier" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingCategory" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingService" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingServiceID" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingServicePackageDetails" mode="dl"/>
     <xsl:apply-templates select="*:ShippingTimeMax" mode="dl"/>
+    <xsl:apply-templates select="*:ShippingTimeMin" mode="dl"/>
+    <xsl:apply-templates select="*:SurchargeApplicable" mode="dl"/>
     <xsl:apply-templates select="*:ValidForSellingFlow" mode="dl"/>
   </dl>
-</xsl:template>
-
-<xsl:template match="*:ShippingService" mode="dl">
-  <dt>ShippingService</dt><dd><xsl:value-of select="."/></dd>
-</xsl:template>
-
-<xsl:template match="*:Description" mode="dl">
-  <dt>Description</dt><dd><xsl:value-of select="."/></dd>
 </xsl:template>
 
 <xsl:template match="*:CODService" mode="dl">
@@ -598,12 +606,58 @@
   <dd>MessageType: <xsl:value-of select="*:MessageType"/></dd>
 </xsl:template>
 
-<xsl:template match="*:ShippingTimeMin" mode="dl">
-  <dt>ShippingTimeMin</dt><dd><xsl:value-of select="."/></dd>
+<xsl:template match="*:Description" mode="dl">
+  <dt>Description</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ExpeditedService" mode="dl">
+  <dt>ExpeditedService</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:InternationalService" mode="dl">
+  <dt>InternationalService</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:MappedToShippingServiceID" mode="dl">
+  <dt>MappedToShippingServiceID</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ServiceType" mode="dl">
+  <dt>ServiceType</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingCarrier" mode="dl">
+  <dt>ShippingCarrier</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingCategory" mode="dl">
+  <dt>ShippingCategory</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingService" mode="dl">
+  <dt>ShippingService</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingServiceID" mode="dl">
+  <dt>ShippingServiceID</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingServicePackageDetails" mode="dl">
+  <dt>ShippingServicePackageDetails</dt>
+  <xsl:if test="*:DimensionsRequired"><dd>DimensionsRequired: <xsl:value-of select="*:DimensionsRequired"/></dd></xsl:if>
+  <dd>Name: <xsl:value-of select="*:Name"/></dd>
 </xsl:template>
 
 <xsl:template match="*:ShippingTimeMax" mode="dl">
   <dt>ShippingTimeMax</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:ShippingTimeMin" mode="dl">
+  <dt>ShippingTimeMin</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="*:SurchargeApplicable" mode="dl">
+  <dt>SurchargeApplicable</dt><dd><xsl:value-of select="."/></dd>
 </xsl:template>
 
 <xsl:template match="*:ValidForSellingFlow" mode="dl">

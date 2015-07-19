@@ -13,3 +13,7 @@ html.js .shipping-service-details.active {
 article table {
     width: 100%;
 }
+
+table tr.shipping-service-details {
+  background-color: #e9c062;
+}

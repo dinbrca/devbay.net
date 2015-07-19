@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Nachnahme (Versand inkl. Nachnahmegebühr)</td>
             <td><strong>CH_COD</strong></td>
             <td>true</td>
@@ -20,18 +20,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Nachnahme (Versand inkl. Nachnahmegebühr)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_COD</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19305</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Sparversand aus dem Ausland</td>
             <td><strong>CH_EconomyDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -41,18 +45,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sparversand aus dem Ausland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_EconomyDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>10</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19311</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>22</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>10</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expressversand aus dem Ausland</td>
             <td><strong>CH_ExpressDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -62,18 +70,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expressversand aus dem Ausland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_ExpressDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19313</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Express- oder Kurierversand</td>
             <td><strong>CH_ExpressOrCourier</strong></td>
             <td>true</td>
@@ -83,18 +95,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express- oder Kurierversand</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_ExpressOrCourier</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19306</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Versicherter Versand (z.B. Assurance/Fragile)</td>
             <td><strong>CH_InsuredDispatch</strong></td>
             <td>true</td>
@@ -104,14 +122,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Versand (z.B. Assurance/Fragile)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_InsuredDispatch</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19303</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Versicherter Express- oder Kurierversand</td>
             <td><strong>CH_InsuredExpressOrCourier</strong></td>
             <td>true</td>
@@ -121,18 +143,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Express- oder Kurierversand</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_InsuredExpressOrCourier</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19307</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Versicherter Sonder-/Speditionsversand (z.B. Möbel, KFZ)</td>
             <td><strong>CH_InsuredSpecialDispatch</strong></td>
             <td>true</td>
@@ -142,14 +170,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Sonder-/Speditionsversand (z.B. Möbel, KFZ)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_InsuredSpecialDispatch</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19309</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Ware muss abgeholt werden</td>
             <td><strong>CH_Pickup</strong></td>
             <td>true</td>
@@ -159,14 +191,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ware muss abgeholt werden</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_Pickup</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19350</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Sonstige (Siehe Artikelbeschreibung)</td>
             <td><strong>CH_Sonstige</strong></td>
             <td>true</td>
@@ -176,18 +212,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sonstige (Siehe Artikelbeschreibung)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_Sonstige</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19310</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Sonder-/Speditionsversand (z.B. Möbel, KFZ)</td>
             <td><strong>CH_SpecialDispatch</strong></td>
             <td>true</td>
@@ -197,14 +237,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sonder-/Speditionsversand (z.B. Möbel, KFZ)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_SpecialDispatch</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19308</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standardversand aus dem Ausland</td>
             <td><strong>CH_StandardDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -214,18 +258,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardversand aus dem Ausland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19312</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standardversand (A-Post/Priority)</td>
             <td><strong>CH_StandardDispatchAPost</strong></td>
             <td>true</td>
@@ -235,18 +283,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardversand (A-Post/Priority)</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardDispatchAPost</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19301</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standardversand (B-Post/Economy)</td>
             <td><strong>CH_StandardDispatchBPost</strong></td>
             <td>true</td>
@@ -256,18 +310,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardversand (B-Post/Economy)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardDispatchBPost</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19302</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Versand mit Nachverfolgung aus dem Ausland</td>
             <td><strong>CH_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -277,18 +335,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versand mit Nachverfolgung aus dem Ausland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_TrackedDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19314</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Einschreiben (Versand inkl. Einschreibengebühr)</td>
             <td><strong>CH_Writing</strong></td>
             <td>true</td>
@@ -298,14 +360,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Einschreiben (Versand inkl. Einschreibengebühr)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_Writing</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19304</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Versand zum Sonderpreis</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -315,8 +381,14 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versand zum Sonderpreis</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>19399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -329,12 +401,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>CH_BITTE_TREFFEN_SIE_EINE_AUSWAHL</td>
             <td><strong>CH_BitteTreffenSieEineAuswahl</strong></td>
             <td>false</td>
@@ -344,14 +416,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>CH_BITTE_TREFFEN_SIE_EINE_AUSWAHL</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_BitteTreffenSieEineAuswahl</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69301</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>ECONOMY Sendungen</td>
             <td><strong>CH_EconomySendungenInternational</strong></td>
             <td>true</td>
@@ -361,14 +439,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>ECONOMY Sendungen</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_EconomySendungenInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69313</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Einschreiben (Versand inkl. Einschreibengebühr)</td>
             <td><strong>CH_EinschreibenVersandInklEinschreibengebuhr</strong></td>
             <td>false</td>
@@ -378,14 +462,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Einschreiben (Versand inkl. Einschreibengebühr)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_EinschreibenVersandInklEinschreibengebuhr</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69304</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expresspauschale für internationalen Versand</td>
             <td><strong>CH_ExpeditedInternational</strong></td>
             <td>false</td>
@@ -395,14 +485,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expresspauschale für internationalen Versand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_ExpeditedInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69317</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Express- oder Kurierversand</td>
             <td><strong>CH_ExpressOrCourierInternational</strong></td>
             <td>false</td>
@@ -412,14 +508,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express- oder Kurierversand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_ExpressOrCourierInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69306</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Versicherter Express- oder Kurierversand</td>
             <td><strong>CH_InsuredExpressOrCourierInternational</strong></td>
             <td>false</td>
@@ -429,14 +531,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Express- oder Kurierversand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_InsuredExpressOrCourierInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69307</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Nachnahme (Versand inkl. Nachnahmegebühr)</td>
             <td><strong>CH_NachnahmeVersandInklNachnahmegebuhr</strong></td>
             <td>false</td>
@@ -446,14 +554,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Nachnahme (Versand inkl. Nachnahmegebühr)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_NachnahmeVersandInklNachnahmegebuhr</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69305</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>PRIORITY Sendungen</td>
             <td><strong>CH_PrioritySendungenInternational</strong></td>
             <td>true</td>
@@ -463,14 +577,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>PRIORITY Sendungen</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_PrioritySendungenInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69314</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Sonderversand (z.B. Sperrgut, KFZ)</td>
             <td><strong>CH_SonderversandZBSperrgutKFZ</strong></td>
             <td>false</td>
@@ -480,14 +600,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sonderversand (z.B. Sperrgut, KFZ)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_SonderversandZBSperrgutKFZ</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69308</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Sonstiger Versand (Siehe Artikelbeschreibung)</td>
             <td><strong>CH_SonstigerVersandInternational</strong></td>
             <td>true</td>
@@ -497,14 +623,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sonstiger Versand (Siehe Artikelbeschreibung)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_SonstigerVersandInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69310</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Sonstiger Versand (Siehe Artikelbeschreibung)</td>
             <td><strong>CH_SonstigerVersandSieheArtikelbeschreibung</strong></td>
             <td>false</td>
@@ -514,14 +646,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Sonstiger Versand (Siehe Artikelbeschreibung)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_SonstigerVersandSieheArtikelbeschreibung</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69318</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standardpauschale für internationalen Versand</td>
             <td><strong>CH_StandardInternational</strong></td>
             <td>false</td>
@@ -531,14 +669,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardpauschale für internationalen Versand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69316</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standardversand (A-Post/Priority)</td>
             <td><strong>CH_StandardversandAPostPriority</strong></td>
             <td>false</td>
@@ -548,14 +692,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardversand (A-Post/Priority)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardversandAPostPriority</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69311</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standardversand (B-Post/Economy)</td>
             <td><strong>CH_StandardversandBPostEconomy</strong></td>
             <td>false</td>
@@ -565,14 +715,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standardversand (B-Post/Economy)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_StandardversandBPostEconomy</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69312</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Unversicherter Versand</td>
             <td><strong>CH_UnversicherterVersand</strong></td>
             <td>false</td>
@@ -582,14 +738,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Unversicherter Versand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_UnversicherterVersand</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69302</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>URGENT Sendungen</td>
             <td><strong>CH_UrgentSendungenInternational</strong></td>
             <td>true</td>
@@ -599,14 +761,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>URGENT Sendungen</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_UrgentSendungenInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69315</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Versicherter Sonderversand (z.B. Sperrgut, KFZ)</td>
             <td><strong>CH_VersicherterSonderversandZBSperrgutKFZ</strong></td>
             <td>false</td>
@@ -616,14 +784,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Sonderversand (z.B. Sperrgut, KFZ)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_VersicherterSonderversandZBSperrgutKFZ</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69309</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Versicherter Versand</td>
             <td><strong>CH_VersicherterVersand</strong></td>
             <td>false</td>
@@ -633,14 +807,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versicherter Versand</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>CH_VersicherterVersand</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69303</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Versand zum Sonderpreis</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -650,8 +830,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Versand zum Sonderpreis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>69399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

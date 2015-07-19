@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Boîte à tarif fixe du service Colis accélérés de Postes Canada</td>
             <td><strong>CanadaPostExpeditedFlatRateBox</strong></td>
             <td>false</td>
@@ -20,18 +20,40 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Boîte à tarif fixe du service Colis accélérés de Postes Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>CanadaPostExpeditedFlatRateBox</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>212</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Free In-store pickup</td>
             <td><strong>CA_bopis</strong></td>
             <td>false</td>
@@ -41,14 +63,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Free In-store pickup</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>IN_STORE_PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_bopis</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72654</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Priorité</td>
             <td><strong>CA_CanadaPostPriorityNextAM</strong></td>
             <td>true</td>
@@ -58,18 +86,40 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Priorité</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_CanadaPostPriorityNextAM</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1542</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition économique</td>
             <td><strong>CA_EconomyShipping</strong></td>
             <td>true</td>
@@ -79,18 +129,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition économique</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_EconomyShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>216</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>15</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expédition économique depuis l’extérieur du Canada</td>
             <td><strong>CA_EconomyShippingfromoutsideCanada</strong></td>
             <td>true</td>
@@ -100,18 +156,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition économique depuis l’extérieur du Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_EconomyShippingfromoutsideCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>16</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1538</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>20</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>16</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expedited Delivery</td>
             <td><strong>CA_ExpeditedDelivery</strong></td>
             <td>false</td>
@@ -121,18 +183,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expedited Delivery</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpeditedDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>202</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expédition accélérée</td>
             <td><strong>CA_ExpeditedDelivery</strong></td>
             <td>true</td>
@@ -142,18 +210,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition accélérée</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpeditedDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1543</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition accélérée depuis l’extérieur du Canada</td>
             <td><strong>CA_ExpeditedShippingfromoutsideCanada</strong></td>
             <td>true</td>
@@ -163,18 +237,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition accélérée depuis l’extérieur du Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpeditedShippingfromoutsideCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1540</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expédition Express</td>
             <td><strong>CA_ExpressShipping</strong></td>
             <td>true</td>
@@ -184,18 +264,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition Express</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpressShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1541</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>FedEx 2 Day</td>
             <td><strong>CA_FedEx2Day</strong></td>
             <td>true</td>
@@ -205,18 +291,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx 2 Day</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedEx2Day</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>221</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>FedEx Economy</td>
             <td><strong>CA_FedExEconomy</strong></td>
             <td>true</td>
@@ -226,18 +322,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx Economy</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExEconomy</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>220</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>FedEx First Overnight</td>
             <td><strong>CA_FedExFirstOvernight</strong></td>
             <td>true</td>
@@ -247,18 +353,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx First Overnight</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExFirstOvernight</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>223</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>FedEx Priority Overnight</td>
             <td><strong>CA_FedExPriorityOvernight</strong></td>
             <td>true</td>
@@ -268,18 +384,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx Priority Overnight</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExPriorityOvernight</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>222</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Fret</td>
             <td><strong>CA_Freight</strong></td>
             <td>true</td>
@@ -289,14 +415,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Fret</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_Freight</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>350</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>L'acheteur vient chercher l'objet</td>
             <td><strong>CA_Pickup</strong></td>
             <td>true</td>
@@ -306,14 +436,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>L'acheteur vient chercher l'objet</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_Pickup</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>250</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Colis accélérés</td>
             <td><strong>CA_PostExpeditedParcel</strong></td>
             <td>true</td>
@@ -323,18 +459,40 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Colis accélérés</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostExpeditedParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>205</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Poste-lettres</td>
             <td><strong>CA_PostLettermail</strong></td>
             <td>true</td>
@@ -344,18 +502,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Poste-lettres</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostLettermail</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>203</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>6</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Messageries prioritaires</td>
             <td><strong>CA_PostPriorityCourier</strong></td>
             <td>false</td>
@@ -365,14 +529,36 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Messageries prioritaires</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostPriorityCourier</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>207</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Colis standard</td>
             <td><strong>CA_PostRegularParcel</strong></td>
             <td>true</td>
@@ -382,18 +568,40 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Colis standard</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostRegularParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>204</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Xpresspost</td>
             <td><strong>CA_PostXpresspost</strong></td>
             <td>true</td>
@@ -403,18 +611,40 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Xpresspost</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostXpresspost</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>206</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Normes de livraison postale</td>
             <td><strong>CA_StandardDelivery</strong></td>
             <td>false</td>
@@ -424,14 +654,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Normes de livraison postale</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_StandardDelivery</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>201</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition standard</td>
             <td><strong>CA_StandardShipping</strong></td>
             <td>true</td>
@@ -441,18 +677,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition standard</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_StandardShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>217</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expédition standard depuis l’extérieur du Canada</td>
             <td><strong>CA_StandardShippingfromoutsideCanada</strong></td>
             <td>true</td>
@@ -462,18 +704,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition standard depuis l’extérieur du Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_StandardShippingfromoutsideCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>11</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>1539</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>15</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>11</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>UPS Expedited Canada</td>
             <td><strong>CA_UPSExpeditedCanada</strong></td>
             <td>true</td>
@@ -483,18 +731,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Expedited Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSExpeditedCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>210</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS Express Canada</td>
             <td><strong>CA_UPSExpressCanada</strong></td>
             <td>true</td>
@@ -504,18 +758,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Express Canada</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSExpressCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>208</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>UPS Express Saver Canada</td>
             <td><strong>CA_UPSExpressSaverCanada</strong></td>
             <td>true</td>
@@ -525,18 +787,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Express Saver Canada</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSExpressSaverCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>209</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS Standard au Canada</td>
             <td><strong>CA_UPSStandardCanada</strong></td>
             <td>true</td>
@@ -546,18 +816,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Standard au Canada</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSStandardCanada</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>211</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Promotional Shipping Service</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -567,8 +843,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Shipping Service</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>299</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -581,12 +865,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Boîte à tarif fixe du service Colis accélérés É.-U. de Postes Canada</td>
             <td><strong>CanadaPostExpeditedFlatRateBoxUSA</strong></td>
             <td>false</td>
@@ -596,14 +880,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Boîte à tarif fixe du service Colis accélérés É.-U. de Postes Canada</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CanadaPostExpeditedFlatRateBoxUSA</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50226</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition économie aux États-Unis</td>
             <td><strong>CA_EconomyToUS</strong></td>
             <td>false</td>
@@ -613,18 +921,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition économie aux États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_EconomyToUS</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>11</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>213</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>20</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>11</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Expedited Int'l Shipping</td>
             <td><strong>CA_ExpeditedInternational</strong></td>
             <td>true</td>
@@ -634,14 +950,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expedited Int'l Shipping</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpeditedInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50202</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition accélérée aux États-Unis</td>
             <td><strong>CA_ExpeditedToUS</strong></td>
             <td>false</td>
@@ -651,18 +975,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition accélérée aux États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_ExpeditedToUS</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>215</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>FedEx International Economy - International</td>
             <td><strong>CA_FedExInternationalEconomyROW</strong></td>
             <td>true</td>
@@ -672,18 +1004,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx International Economy - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExInternationalEconomyROW</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>226</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>FedEx International Economy - USA</td>
             <td><strong>CA_FedExInternationalEconomyUnitedStates</strong></td>
             <td>true</td>
@@ -693,18 +1035,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx International Economy - USA</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExInternationalEconomyUnitedStates</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>224</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>FedEx International Priority - International</td>
             <td><strong>CA_FedExInternationalPriorityROW</strong></td>
             <td>true</td>
@@ -714,18 +1066,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx International Priority - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExInternationalPriorityROW</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>227</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>FedEx International Priority - USA</td>
             <td><strong>CA_FedExInternationalPriorityUnitedStates</strong></td>
             <td>true</td>
@@ -735,18 +1097,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx International Priority - USA</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_FedExInternationalPriorityUnitedStates</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>225</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Autres services d'expédition internationale (voir description)</td>
             <td><strong>CA_OtherInternational</strong></td>
             <td>false</td>
@@ -756,14 +1128,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Autres services d'expédition internationale (voir description)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_OtherInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50203</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Canada Post Expedited Parcel - USA</td>
             <td><strong>CA_PostExpeditedParcelUSA</strong></td>
             <td>true</td>
@@ -773,14 +1153,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Canada Post Expedited Parcel - USA</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostExpeditedParcelUSA</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50204</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Poste aux lettres - International</td>
             <td><strong>CA_PostInternationalLetterPost</strong></td>
             <td>true</td>
@@ -790,14 +1194,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Poste aux lettres - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostInternationalLetterPost</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50217</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Colis-avion - International</td>
             <td><strong>CA_PostInternationalParcelAir</strong></td>
             <td>true</td>
@@ -807,14 +1219,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Colis-avion - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostInternationalParcelAir</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50209</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Colis international de surface</td>
             <td><strong>CA_PostInternationalParcelSurface</strong></td>
             <td>true</td>
@@ -824,14 +1260,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Colis international de surface</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostInternationalParcelSurface</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50208</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Paquets légers - International</td>
             <td><strong>CA_PostLightPacketInternational</strong></td>
             <td>true</td>
@@ -841,14 +1301,34 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Paquets légers - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostLightPacketInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50225</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Paquets légers - É.-U.</td>
             <td><strong>CA_PostLightPacketUSA</strong></td>
             <td>true</td>
@@ -858,14 +1338,34 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Paquets légers - É.-U.</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostLightPacketUSA</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50224</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Petits paquets - É.-U.</td>
             <td><strong>CA_PostSmallPacketsUSA</strong></td>
             <td>false</td>
@@ -875,14 +1375,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Petits paquets - É.-U.</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostSmallPacketsUSA</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50205</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Petits paquets - É.-U. par avion</td>
             <td><strong>CA_PostSmallPacketsUSAAir</strong></td>
             <td>true</td>
@@ -892,14 +1400,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Petits paquets - É.-U. par avion</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostSmallPacketsUSAAir</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50213</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Petits paquets - É.-U. service de surface</td>
             <td><strong>CA_PostSmallPacketsUSAGround</strong></td>
             <td>false</td>
@@ -909,14 +1441,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Petits paquets - É.-U. service de surface</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostSmallPacketsUSAGround</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50212</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada Paquet repérable - International</td>
             <td><strong>CA_PostTrackedPacketsInternational</strong></td>
             <td>true</td>
@@ -926,18 +1482,49 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada Paquet repérable - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostTrackedPacketsInternational</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>6</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50229</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>6</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada Paquet repérable - É.-U.</td>
             <td><strong>CA_PostTrackedPacketsUSA</strong></td>
             <td>true</td>
@@ -947,18 +1534,49 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada Paquet repérable - É.-U.</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostTrackedPacketsUSA</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>7</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50228</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>DimensionsRequired: true</dd>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>7</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Postes Canada, Poste aux lettres - É.-U.</td>
             <td><strong>CA_PostUSALetterPost</strong></td>
             <td>true</td>
@@ -968,14 +1586,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Poste aux lettres - É.-U.</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostUSALetterPost</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50216</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Postes Canada, Xpresspost - International</td>
             <td><strong>CA_PostXpresspostInternational</strong></td>
             <td>true</td>
@@ -985,14 +1611,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Postes Canada, Xpresspost - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostXpresspostInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50207</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Canada Post Xpresspost - USA</td>
             <td><strong>CA_PostXpresspostUSA</strong></td>
             <td>true</td>
@@ -1002,14 +1652,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Canada Post Xpresspost - USA</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PostXpresspostUSA</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50206</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Priorité Mondial</td>
             <td><strong>CA_PriorityWorldwide</strong></td>
             <td>true</td>
@@ -1019,14 +1693,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Priorité Mondial</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PriorityWorldwide</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50227</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Purolator International</td>
             <td><strong>CA_PurolatorInternational</strong></td>
             <td>false</td>
@@ -1036,14 +1734,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Purolator International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_PurolatorInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50211</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Petits paquets - International</td>
             <td><strong>CA_SmallPacketsInternational</strong></td>
             <td>false</td>
@@ -1053,14 +1775,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Petits paquets - International</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_SmallPacketsInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50210</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Petits paquets - International, courrier-avion</td>
             <td><strong>CA_SmallPacketsInternationalAir</strong></td>
             <td>true</td>
@@ -1070,14 +1800,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Petits paquets - International, courrier-avion</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_SmallPacketsInternationalAir</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50215</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Petits paquets - International, courrier-surface</td>
             <td><strong>CA_SmallPacketsInternationalGround</strong></td>
             <td>true</td>
@@ -1087,14 +1841,38 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Petits paquets - International, courrier-surface</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_SmallPacketsInternationalGround</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50214</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: ParcelOrPaddedEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBox</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: SmallCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: MediumCanadaPostBubbleMailer</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeCanadaPostBubbleMailer</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standard Int'l Shipping</td>
             <td><strong>CA_StandardInternational</strong></td>
             <td>true</td>
@@ -1104,14 +1882,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standard Int'l Shipping</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_StandardInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50201</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expédition standard aux États-Unis</td>
             <td><strong>CA_StandardToUS</strong></td>
             <td>false</td>
@@ -1121,18 +1907,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expédition standard aux États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_StandardToUS</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>5</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>214</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>5</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>3Day Select aux États-Unis</td>
             <td><strong>CA_UPS3DaySelectUnitedStates</strong></td>
             <td>true</td>
@@ -1142,14 +1936,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>3Day Select aux États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPS3DaySelectUnitedStates</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50220</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>UPS Expedited États-Unis</td>
             <td><strong>CA_UPSExpeditedUnitedStates</strong></td>
             <td>true</td>
@@ -1159,14 +1961,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Expedited États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSExpeditedUnitedStates</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50219</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS Express États-Unis</td>
             <td><strong>CA_UPSExpressUnitedStates</strong></td>
             <td>true</td>
@@ -1176,14 +1986,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Express États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSExpressUnitedStates</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50218</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>UPS Standard aux États-Unis</td>
             <td><strong>CA_UPSStandardUnitedStates</strong></td>
             <td>true</td>
@@ -1193,14 +2011,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Standard aux États-Unis</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSStandardUnitedStates</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50221</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS Worlwide Expedited</td>
             <td><strong>CA_UPSWorldWideExpedited</strong></td>
             <td>true</td>
@@ -1210,14 +2036,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Worlwide Expedited</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSWorldWideExpedited</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50223</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>UPS Worldwide Express</td>
             <td><strong>CA_UPSWorldWideExpress</strong></td>
             <td>true</td>
@@ -1227,14 +2061,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Worldwide Express</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>CA_UPSWorldWideExpress</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50222</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Promotional Shipping Service</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -1244,8 +2086,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Shipping Service</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50299</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Voordelige verzending uit het buitenland</td>
             <td><strong>NL_EconomyDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -20,18 +20,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Voordelige verzending uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_EconomyDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>10</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14605</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>22</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>10</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Verzending per expresse uit het buitenland</td>
             <td><strong>NL_ExpressDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -41,18 +45,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzending per expresse uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_ExpressDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14607</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Andere verzendservice</td>
             <td><strong>NL_Other</strong></td>
             <td>true</td>
@@ -62,18 +70,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Andere verzendservice</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_Other</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14604</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Pakketpost</td>
             <td><strong>NL_ParcelPost</strong></td>
             <td>true</td>
@@ -83,18 +95,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Pakketpost</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_ParcelPost</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14602</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Ophalen bij de verkoper</td>
             <td><strong>NL_PickUp</strong></td>
             <td>true</td>
@@ -104,14 +122,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ophalen bij de verkoper</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_PickUp</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14650</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Verzending met ontvangstbevestiging</td>
             <td><strong>NL_RegisteredMail</strong></td>
             <td>true</td>
@@ -121,18 +143,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzending met ontvangstbevestiging</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_RegisteredMail</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14603</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standaardverzending</td>
             <td><strong>NL_StandardDelivery</strong></td>
             <td>true</td>
@@ -142,18 +168,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standaardverzending</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_StandardDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14601</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standaardverzending uit het buitenland</td>
             <td><strong>NL_StandardDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -163,18 +195,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standaardverzending uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_StandardDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14606</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Verzending met internationale tracering uit het buitenland</td>
             <td><strong>NL_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -184,18 +220,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Verzending met internationale tracering uit het buitenland</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_TrackedDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14608</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td> Verzendservice voor speciale acties </td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -205,8 +245,14 @@
                <dl>
                   <dt>Description</dt>
                   <dd> Verzendservice voor speciale acties </dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>14699</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -219,12 +265,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>DHL</td>
             <td><strong>NL_DHLInternational</strong></td>
             <td>true</td>
@@ -234,14 +280,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DHL</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_DHLInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64604</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>DPD (Duitsland)</td>
             <td><strong>NL_DPDGBRInternational</strong></td>
             <td>true</td>
@@ -251,14 +303,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DPD (Duitsland)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_DPDGBRInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64605</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Vaste kosten versnelde internationale verzending</td>
             <td><strong>NL_ExpeditedInternational</strong></td>
             <td>true</td>
@@ -268,14 +326,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Vaste kosten versnelde internationale verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_ExpeditedInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64608</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Fedex</td>
             <td><strong>NL_FedExInternational</strong></td>
             <td>true</td>
@@ -285,14 +349,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Fedex</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_FedExInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64603</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>GLS (Alleen zakelijke verkopers)</td>
             <td><strong>NL_GLSBusinessInternational</strong></td>
             <td>true</td>
@@ -302,14 +372,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>GLS (Alleen zakelijke verkopers)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_GLSBusinessInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64606</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Andere internationale verzending (zie beschrijving)</td>
             <td><strong>NL_OtherInternational</strong></td>
             <td>true</td>
@@ -319,14 +395,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Andere internationale verzending (zie beschrijving)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_OtherInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64609</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Vaste kosten standaard internationale verzending</td>
             <td><strong>NL_StandardInternational</strong></td>
             <td>true</td>
@@ -336,14 +418,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Vaste kosten standaard internationale verzending</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_StandardInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64607</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>TPG Post / TNT</td>
             <td><strong>NL_TPGPostTNTInternational</strong></td>
             <td>true</td>
@@ -353,14 +441,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TPG Post / TNT</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_TPGPostTNTInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64601</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS</td>
             <td><strong>NL_UPSInternational</strong></td>
             <td>true</td>
@@ -370,14 +464,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
                   <dt>ShippingService</dt>
                   <dd>NL_UPSInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64602</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td> Verzendservice voor speciale acties </td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -387,8 +487,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd> Verzendservice voor speciale acties </dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>64699</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

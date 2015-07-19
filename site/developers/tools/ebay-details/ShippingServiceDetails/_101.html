@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Bartolini Priority/Express</td>
             <td><strong>IT_BartoliniPriorityExpress</strong></td>
             <td>false</td>
@@ -20,18 +20,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Bartolini Priority/Express</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_BartoliniPriorityExpress</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10119</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>DHL Express</td>
             <td><strong>IT_DHLExpress</strong></td>
             <td>true</td>
@@ -41,18 +49,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DHL Express</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>DHL</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_DHLExpress</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10120</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Spedizione economica dall’estero</td>
             <td><strong>IT_EconomyDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -62,18 +80,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione economica dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_EconomyDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>10</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10112</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>22</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>10</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Altro corriere 48ore</td>
             <td><strong>IT_ExpressCourier</strong></td>
             <td>true</td>
@@ -81,22 +107,32 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Altro corriere 48ore</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_ExpressCourier</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Altro corriere 48ore</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_ExpressCourier</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10110</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Spedizione espressa dall’estero</td>
             <td><strong>IT_ExpressDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -106,18 +142,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione espressa dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_ExpressDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10114</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Paccocelere Maxi</td>
             <td><strong>IT_ExpressPackageMaxi</strong></td>
             <td>false</td>
@@ -125,22 +169,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Paccocelere Maxi</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_ExpressPackageMaxi</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Paccocelere Maxi</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_ExpressPackageMaxi</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10111</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta assicurata</td>
             <td><strong>IT_InsuredMail</strong></td>
             <td>true</td>
@@ -148,22 +198,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Posta assicurata</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_InsuredMail</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>Description</dt>
+                  <dd>Posta assicurata</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_InsuredMail</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10105</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>IoInvio</td>
             <td><strong>IT_IoInvio</strong></td>
             <td>true</td>
@@ -173,18 +229,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>IoInvio</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_IoInvio</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10117</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta raccomandata</td>
             <td><strong>IT_MailRegisteredLetter</strong></td>
             <td>true</td>
@@ -192,22 +256,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Posta raccomandata</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_MailRegisteredLetter</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>Description</dt>
+                  <dd>Posta raccomandata</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_MailRegisteredLetter</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10103</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Posta raccomandata con contrassegno</td>
             <td><strong>IT_MailRegisteredLetterWithMark</strong></td>
             <td>false</td>
@@ -217,18 +287,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta raccomandata con contrassegno</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_MailRegisteredLetterWithMark</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10104</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Spedizione MiniPak dall’estero</td>
             <td><strong>IT_MiniPakFromAbroad</strong></td>
             <td>true</td>
@@ -238,18 +314,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione MiniPak dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_MiniPakFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>6</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10126</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>6</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Altro corriere 3-5 giorni</td>
             <td><strong>IT_OtherCourier3To5Days</strong></td>
             <td>true</td>
@@ -259,18 +341,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Altro corriere 3-5 giorni</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_OtherCourier3To5Days</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10116</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Ritiro in zona</td>
             <td><strong>IT_Pickup</strong></td>
             <td>true</td>
@@ -280,14 +372,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ritiro in zona</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_Pickup</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10151</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Pieghi di Libri</td>
             <td><strong>IT_PieghidiLibri</strong></td>
             <td>true</td>
@@ -297,18 +395,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Pieghi di Libri</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PieghidiLibri</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10124</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta prioritaria</td>
             <td><strong>IT_PriorityMail</strong></td>
             <td>true</td>
@@ -318,18 +422,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta prioritaria</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PriorityMail</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10102</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Posta Celere / Paccocelere 1</td>
             <td><strong>IT_QuickMail</strong></td>
             <td>true</td>
@@ -337,22 +449,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Posta Celere / Paccocelere 1</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_QuickMail</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Posta Celere / Paccocelere 1</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_QuickMail</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10106</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Altro corriere 24ore</td>
             <td><strong>IT_QuickPackage1</strong></td>
             <td>true</td>
@@ -360,22 +480,32 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Altro corriere 24ore</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_QuickPackage1</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Altro corriere 24ore</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_QuickPackage1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10108</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Paccocelere 3</td>
             <td><strong>IT_QuickPackage3</strong></td>
             <td>true</td>
@@ -383,22 +513,30 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Paccocelere 3</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_QuickPackage3</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>Description</dt>
+                  <dd>Paccocelere 3</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_QuickPackage3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10109</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta ordinaria</td>
             <td><strong>IT_RegularMail</strong></td>
             <td>false</td>
@@ -408,18 +546,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta ordinaria</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_RegularMail</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10101</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Pacco ordinario</td>
             <td><strong>IT_RegularPackage</strong></td>
             <td>true</td>
@@ -427,22 +571,28 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Pacco ordinario</dd>
-                  <dt>ShippingService</dt>
-                  <dd>IT_RegularPackage</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>Description</dt>
+                  <dd>Pacco ordinario</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
+                  <dt>ShippingService</dt>
+                  <dd>IT_RegularPackage</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10107</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Ritiro presso punto Indabox</td>
             <td><strong>IT_RitiroPressoPuntoIndabox</strong></td>
             <td>false</td>
@@ -452,18 +602,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ritiro presso punto Indabox</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_RitiroPressoPuntoIndabox</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10123</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Ritiro presso ufficio postale</td>
             <td><strong>IT_RitiroPressoUfficioPostale</strong></td>
             <td>false</td>
@@ -473,18 +631,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Ritiro presso ufficio postale</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_RitiroPressoUfficioPostale</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10122</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Spedizione standard dall’estero</td>
             <td><strong>IT_StandardDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -494,18 +660,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione standard dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_StandardDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10113</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>TNT-Click</td>
             <td><strong>IT_TNTClick</strong></td>
             <td>false</td>
@@ -515,18 +689,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TNT-Click</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_TNTClick</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10118</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>TNT Express</td>
             <td><strong>IT_TNT_Express</strong></td>
             <td>false</td>
@@ -536,18 +718,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TNT Express</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_TNT_Express</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10121</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Spedizione tracciata dall’estero</td>
             <td><strong>IT_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -557,18 +747,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione tracciata dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_TrackedDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10115</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Spedizione TrakPak dall’estero</td>
             <td><strong>IT_TrakPakFromAbroad</strong></td>
             <td>true</td>
@@ -578,18 +776,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione TrakPak dall’estero</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_TrakPakFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>5</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10125</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>8</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>5</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Servizio di spedizione promozionale</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -599,8 +803,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Servizio di spedizione promozionale</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>10199</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -613,12 +825,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>DHL Express International</td>
             <td><strong>IT_DhlExpressInternational</strong></td>
             <td>true</td>
@@ -628,14 +840,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DHL Express International</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>DHL</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_DhlExpressInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60110</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Spedizione internazionale espressa</td>
             <td><strong>IT_ExpeditedInternational</strong></td>
             <td>true</td>
@@ -645,14 +869,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione internazionale espressa</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_ExpeditedInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60102</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Express Mail Service</td>
             <td><strong>IT_ExpressMailService</strong></td>
             <td>true</td>
@@ -662,14 +896,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express Mail Service</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_ExpressMailService</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60108</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Spedizione internazionale economica</td>
             <td><strong>IT_OtherInternational</strong></td>
             <td>true</td>
@@ -679,14 +923,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione internazionale economica</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_OtherInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60103</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Paccocelere Internazionale</td>
             <td><strong>IT_PaccocelereInternazionale</strong></td>
             <td>true</td>
@@ -696,14 +950,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Paccocelere Internazionale</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPRESS</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PaccocelereInternazionale</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60109</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Pacco Ordinario Estero</td>
             <td><strong>IT_PaccoOrdinarioEstero</strong></td>
             <td>true</td>
@@ -713,14 +977,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Pacco Ordinario Estero</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PaccoOrdinarioEstero</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60105</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta Assicurata Internazionale</td>
             <td><strong>IT_PostaAssicurataInternazionale</strong></td>
             <td>true</td>
@@ -730,14 +1004,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta Assicurata Internazionale</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PostaAssicurataInternazionale</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60107</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Posta Prioritaria Internazionale</td>
             <td><strong>IT_PostaPrioritariaInternazionale</strong></td>
             <td>true</td>
@@ -747,14 +1031,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta Prioritaria Internazionale</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PostaPrioritariaInternazionale</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60104</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Posta Raccomandata Internazionale</td>
             <td><strong>IT_PostaRaccomandataInternazionale</strong></td>
             <td>true</td>
@@ -764,14 +1058,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Posta Raccomandata Internazionale</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_PostaRaccomandataInternazionale</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60106</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Spedizione internazionale standard</td>
             <td><strong>IT_StandardInternational</strong></td>
             <td>true</td>
@@ -781,14 +1085,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Spedizione internazionale standard</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>IT_StandardInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60101</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Servizio di spedizione promozionale</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -796,12 +1110,22 @@
          <tr class="shipping-service-details">
             <td colspan="3">
                <dl>
-                  <dt>Description</dt>
-                  <dd>Servizio di spedizione promozionale</dd>
-                  <dt>ShippingService</dt>
-                  <dd>PromotionalShippingMethod</dd>
                   <dt>CODService</dt>
                   <dd>true</dd>
+                  <dt>Description</dt>
+                  <dd>Servizio di spedizione promozionale</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
+                  <dt>ShippingService</dt>
+                  <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>60199</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>

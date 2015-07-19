@@ -7,7 +7,7 @@ tool:
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
 ---
-Domestic and International shipping services supported by each eBay site.
+Domestic and International shipping services supported by each eBay site. You may only use services where *ValidForSellingFlow* is *true*, in the various calls of the AddItem family.
 
 <a href="#example">Jump to example</a>
 

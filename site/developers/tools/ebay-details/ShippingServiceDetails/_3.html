@@ -5,12 +5,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>Freight</td>
             <td><strong>Courier</strong></td>
             <td>true</td>
@@ -20,14 +20,18 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Freight</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>Courier</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>316</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Click &amp; Collect</td>
             <td><strong>PickUpDropOff</strong></td>
             <td>false</td>
@@ -37,18 +41,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Click &amp; Collect</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PUDO_IN_STORE_PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>PickUpDropOff</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>370</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>30</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Promotional Economy Postage</td>
             <td><strong>PromotionalEconomyShipping</strong></td>
             <td>false</td>
@@ -58,18 +68,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Economy Postage</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalEconomyShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>7</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72665</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>14</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>7</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Promotional Expedited Postage</td>
             <td><strong>PromotionalExpeditedShipping</strong></td>
             <td>false</td>
@@ -79,18 +97,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Expedited Postage</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalExpeditedShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72667</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Promotional Overnight Postage</td>
             <td><strong>PromotionalOvernightShipping</strong></td>
             <td>false</td>
@@ -100,18 +126,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Overnight Postage</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_OVERNIGHT</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalOvernightShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72669</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Promotional Postage Service</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -121,14 +155,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Postage Service</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Promotional Postage (varies)</td>
             <td><strong>PromotionalShippingVaries</strong></td>
             <td>false</td>
@@ -138,14 +180,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Postage (varies)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_VARIES</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingVaries</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72670</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Promotional Standard Postage</td>
             <td><strong>PromotionalStandardShipping</strong></td>
             <td>false</td>
@@ -155,18 +205,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Standard Postage</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalStandardShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72666</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Promotional Two Day Postage</td>
             <td><strong>PromotionalTwoDayShipping</strong></td>
             <td>false</td>
@@ -176,18 +234,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Two Day Postage</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL_TWO_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalTwoDayShipping</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72668</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standard Delivery from outside UK with Royal Mail</td>
             <td><strong>StandardDeliveryfromOutsideUKwithRoyalMail</strong></td>
             <td>true</td>
@@ -197,18 +263,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standard Delivery from outside UK with Royal Mail</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>StandardDeliveryfromOutsideUKwithRoyalMail</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>7</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>329</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>13</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>7</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Free In-store pickup</td>
             <td><strong>UK_bopis</strong></td>
             <td>false</td>
@@ -218,14 +290,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Free In-store pickup</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>IN_STORE_PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_bopis</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72651</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: Letter</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: PackageThickEnvelope</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>bPost International Parcel</td>
             <td><strong>UK_BPostInternational</strong></td>
             <td>true</td>
@@ -235,18 +319,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>bPost International Parcel</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_BPostInternational</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>353</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>7</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Collect+ Economy Tracked</td>
             <td><strong>UK_CollectDropAtStoreDeliveryToDoor</strong></td>
             <td>false</td>
@@ -256,18 +346,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Economy Tracked</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectDropAtStoreDeliveryToDoor</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>323</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Collection in Person</td>
             <td><strong>UK_CollectInPerson</strong></td>
             <td>true</td>
@@ -277,14 +373,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collection in Person</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PICKUP</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectInPerson</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>311</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>72 Hour Out of Gauge Collect+ Store to Home</td>
             <td><strong>UK_CollectPlus72HoursOutOfGaugeStoreToHome</strong></td>
             <td>false</td>
@@ -294,18 +396,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>72 Hour Out of Gauge Collect+ Store to Home</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlus72HoursOutOfGaugeStoreToHome</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>335</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>30</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>72 Hour Collect+ Store To Home</td>
             <td><strong>UK_CollectPlus72HoursStoreToHome</strong></td>
             <td>false</td>
@@ -315,18 +423,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>72 Hour Collect+ Store To Home</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlus72HoursStoreToHome</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>334</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>30</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Collect+ Standard</td>
             <td><strong>UK_CollectPlusStandard</strong></td>
             <td>true</td>
@@ -336,18 +450,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Standard</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlusStandard</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>338</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Collect+ Tracked (Heavy up to 10kg): drop at store – deliver to door</td>
             <td><strong>UK_CollectPlusTrackHeavy</strong></td>
             <td>false</td>
@@ -357,18 +477,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Tracked (Heavy up to 10kg): drop at store – deliver to door</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlusTrackHeavy</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>326</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Collect+ Tracked (Jiffy Bag up to 2Kg): drop at store – deliver to door</td>
             <td><strong>UK_CollectPlusTrackJiffyBag</strong></td>
             <td>false</td>
@@ -378,18 +504,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Tracked (Jiffy Bag up to 2Kg): drop at store – deliver to door</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlusTrackJiffyBag</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>324</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Collect+ Tracked (Standard up to 5kg): drop at store – deliver to door</td>
             <td><strong>UK_CollectPlusTrackStandard</strong></td>
             <td>false</td>
@@ -399,18 +531,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Tracked (Standard up to 5kg): drop at store – deliver to door</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlusTrackStandard</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>325</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Collect+ Economy Tracked</td>
             <td><strong>UK_CollectPlusTrakedDeliveryToDoor</strong></td>
             <td>true</td>
@@ -420,18 +558,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Collect+ Economy Tracked</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectPlusTrakedDeliveryToDoor</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>330</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>DHL Express Worldwide</td>
             <td><strong>UK_DHLExpressWorldwide</strong></td>
             <td>true</td>
@@ -441,18 +585,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DHL Express Worldwide</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>DHL</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_DHLExpressWorldwide</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>354</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>DPD Two Day</td>
             <td><strong>UK_DPD2Day</strong></td>
             <td>true</td>
@@ -462,18 +614,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DPD Two Day</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_DPD2Day</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>348</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>DPD Next Day</td>
             <td><strong>UK_DPDNextDay</strong></td>
             <td>true</td>
@@ -483,18 +643,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DPD Next Day</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_DPDNextDay</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>347</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Immediate (Scheduled delivery)</td>
             <td><strong>UK_eBayNowImmediateDelivery</strong></td>
             <td>false</td>
@@ -504,18 +672,30 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Immediate (Scheduled delivery)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>SAME_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_eBayNowImmediateDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72606</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: Letter</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: PackageThickEnvelope</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Next-day (Scheduled delivery)</td>
             <td><strong>UK_eBayNowNextDayDelivery</strong></td>
             <td>false</td>
@@ -525,18 +705,30 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Next-day (Scheduled delivery)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_eBayNowNextDayDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72608</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: Letter</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: PackageThickEnvelope</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Same-day (Scheduled delivery)</td>
             <td><strong>UK_eBayNowSameDayDelivery</strong></td>
             <td>false</td>
@@ -546,18 +738,30 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Same-day (Scheduled delivery)</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>SAME_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_eBayNowSameDayDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72607</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: Letter</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: PackageThickEnvelope</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Economy Delivery from outside UK</td>
             <td><strong>UK_EconomyShippingFromOutside</strong></td>
             <td>true</td>
@@ -567,18 +771,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Economy Delivery from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_EconomyShippingFromOutside</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>10</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>319</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>22</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>10</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Express Delivery from outside UK</td>
             <td><strong>UK_ExpeditedShippingFromOutside</strong></td>
             <td>true</td>
@@ -588,18 +798,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express Delivery from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ExpeditedShippingFromOutside</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>321</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>FedEx International Economy</td>
             <td><strong>UK_FedExIntlEconomy</strong></td>
             <td>true</td>
@@ -609,18 +825,28 @@
                <dl>
                   <dt>Description</dt>
                   <dd>FedEx International Economy</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>FedEx</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_FedExIntlEconomy</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>168</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>MiniPak from outside UK</td>
             <td><strong>UK_MiniPakFromAbroad</strong></td>
             <td>true</td>
@@ -630,18 +856,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>MiniPak from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_MiniPakFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>6</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>351</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>6</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Hermes Tracked</td>
             <td><strong>UK_myHermesDoorToDoorService</strong></td>
             <td>true</td>
@@ -651,18 +883,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Hermes Tracked</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_myHermesDoorToDoorService</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>322</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Other Courier</td>
             <td><strong>UK_OtherCourier</strong></td>
             <td>true</td>
@@ -672,18 +910,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other Courier</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourier</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>309</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Other 24 Hour Courier</td>
             <td><strong>UK_OtherCourier24</strong></td>
             <td>true</td>
@@ -693,18 +937,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other 24 Hour Courier</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourier24</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>314</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Other Courier 3 days</td>
             <td><strong>UK_OtherCourier3Days</strong></td>
             <td>true</td>
@@ -714,18 +966,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other Courier 3 days</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourier3Days</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>317</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Other 48 Hour Courier</td>
             <td><strong>UK_OtherCourier48</strong></td>
             <td>true</td>
@@ -735,18 +995,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other 48 Hour Courier</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourier48</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>315</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Other Courier 5 days</td>
             <td><strong>UK_OtherCourier5Days</strong></td>
             <td>true</td>
@@ -756,18 +1022,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other Courier 5 days</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourier5Days</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>5</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>318</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>5</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Parcelforce 24</td>
             <td><strong>UK_Parcelforce24</strong></td>
             <td>true</td>
@@ -777,18 +1051,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce 24</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_Parcelforce24</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>307</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Parcelforce 48</td>
             <td><strong>UK_Parcelforce48</strong></td>
             <td>true</td>
@@ -798,18 +1080,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce 48</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_Parcelforce48</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>308</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>PF Return Service</td>
             <td><strong>UK_PFReturnService</strong></td>
             <td></td>
@@ -819,16 +1107,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>PF Return Service</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_PFReturnService</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>343</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>RM Return Service</td>
             <td><strong>UK_RMReturnService</strong></td>
             <td></td>
@@ -838,16 +1130,20 @@
                <dl>
                   <dt>Description</dt>
                   <dd>RM Return Service</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RMReturnService</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>342</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail 24</td>
             <td><strong>UK_RoyalMail24</strong></td>
             <td>true</td>
@@ -857,18 +1153,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 24</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMail24</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>337</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail 48</td>
             <td><strong>UK_RoyalMail48</strong></td>
             <td>true</td>
@@ -878,18 +1182,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 48</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMail48</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>336</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail 1st Class Signed For</td>
             <td><strong>UK_RoyalMailFirstClassRecorded</strong></td>
             <td>true</td>
@@ -899,18 +1209,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 1st Class Signed For</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailFirstClassRecorded</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>303</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail 1st Class Recorded Medium Parcel</td>
             <td><strong>UK_RoyalMailFirstClassRecordedMediumParcel</strong></td>
             <td>false</td>
@@ -920,18 +1238,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 1st Class Recorded Medium Parcel</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailFirstClassRecordedMediumParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>333</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail 1st Class</td>
             <td><strong>UK_RoyalMailFirstClassStandard</strong></td>
             <td>true</td>
@@ -941,18 +1265,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 1st Class</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailFirstClassStandard</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>301</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail 1st Class Standard Medium Parcel</td>
             <td><strong>UK_RoyalMailFirstClassStandardMediumParcel</strong></td>
             <td>false</td>
@@ -962,18 +1294,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 1st Class Standard Medium Parcel</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailFirstClassStandardMediumParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>332</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail Tracked 24</td>
             <td><strong>UK_RoyalMailNextDay</strong></td>
             <td>true</td>
@@ -983,18 +1321,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Tracked 24</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailNextDay</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>328</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail 2nd Class Signed For</td>
             <td><strong>UK_RoyalMailSecondClassRecorded</strong></td>
             <td>true</td>
@@ -1004,18 +1350,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 2nd Class Signed For</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSecondClassRecorded</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>304</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail Signed For 2nd Class Medium Parcel</td>
             <td><strong>UK_RoyalMailSecondClassRecordedMediumParcel</strong></td>
             <td>false</td>
@@ -1025,18 +1377,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Signed For 2nd Class Medium Parcel</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSecondClassRecordedMediumParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>341</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail 2nd Class</td>
             <td><strong>UK_RoyalMailSecondClassStandard</strong></td>
             <td>true</td>
@@ -1046,18 +1404,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 2nd Class</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSecondClassStandard</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>302</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail 2nd Class Standard Medium Parcel</td>
             <td><strong>UK_RoyalMailSecondClassStandardMediumParcel</strong></td>
             <td>false</td>
@@ -1067,18 +1431,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail 2nd Class Standard Medium Parcel</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSecondClassStandardMediumParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>340</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail Special Delivery</td>
             <td><strong>UK_RoyalMailSpecialDelivery</strong></td>
             <td>false</td>
@@ -1088,18 +1458,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Special Delivery</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSpecialDelivery</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>305</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail Special Delivery (TM) 9:00 am</td>
             <td><strong>UK_RoyalMailSpecialDelivery9am</strong></td>
             <td>true</td>
@@ -1109,18 +1487,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Special Delivery (TM) 9:00 am</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSpecialDelivery9am</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>313</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail Special Delivery (TM) 1:00 pm</td>
             <td><strong>UK_RoyalMailSpecialDeliveryNextDay</strong></td>
             <td>true</td>
@@ -1130,18 +1516,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Special Delivery (TM) 1:00 pm</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSpecialDeliveryNextDay</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>312</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail Standard Parcels</td>
             <td><strong>UK_RoyalMailStandardParcel</strong></td>
             <td>false</td>
@@ -1151,18 +1545,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Standard Parcels</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailStandardParcel</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>306</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail Tracked 48</td>
             <td><strong>UK_RoyalMailTracked</strong></td>
             <td>true</td>
@@ -1172,18 +1572,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail Tracked 48</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailTracked</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>327</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Other Courier 3-5 days</td>
             <td><strong>UK_SellersStandardRate</strong></td>
             <td>true</td>
@@ -1193,18 +1599,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other Courier 3-5 days</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_SellersStandardRate</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>310</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standard Delivery from outside UK</td>
             <td><strong>UK_StandardShippingFromOutside</strong></td>
             <td>true</td>
@@ -1214,18 +1626,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standard Delivery from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_StandardShippingFromOutside</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>4</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>320</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>10</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>4</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>TNT International Express</td>
             <td><strong>UK_TntIntlExp</strong></td>
             <td>true</td>
@@ -1235,18 +1653,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TNT International Express</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_TntIntlExp</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>170</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Tracked delivery from outside UK</td>
             <td><strong>UK_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -1256,18 +1682,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Tracked delivery from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>Other</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_TrackedDeliveryFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>331</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>TrakPak from outside UK</td>
             <td><strong>UK_TrakPakFromAbroad</strong></td>
             <td>true</td>
@@ -1277,18 +1711,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>TrakPak from outside UK</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_TrakPakFromAbroad</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>5</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>352</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>8</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>5</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>UPS Next Day</td>
             <td><strong>UK_UPSNextDay</strong></td>
             <td>true</td>
@@ -1298,18 +1738,30 @@
                <dl>
                   <dt>Description</dt>
                   <dd>UPS Next Day</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCarrier</dt>
+                  <dd>UPS</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_UPSNextDay</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>346</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
+                  <dt>SurchargeApplicable</dt>
+                  <dd>true</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Yodel 24</td>
             <td><strong>UK_Yodel24</strong></td>
             <td>true</td>
@@ -1319,18 +1771,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Yodel 24</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ONE_DAY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_Yodel24</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>344</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>1</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Yodel 48</td>
             <td><strong>UK_Yodel48</strong></td>
             <td>true</td>
@@ -1340,11 +1800,19 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Yodel 48</dd>
+                  <dt>ExpeditedService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_Yodel48</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>345</dd>
                   <dt>ShippingTimeMax</dt>
+                  <dd>2</dd>
+                  <dt>ShippingTimeMin</dt>
                   <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
@@ -1358,12 +1826,12 @@
       <thead>
          <tr>
             <td>Description</td>
-            <td>Service</td>
-            <td>Valid</td>
+            <td>ShippingService</td>
+            <td>ValidForSellingFlow</td>
          </tr>
       </thead>
       <tbody>
-         <tr>
+         <tr class="odd">
             <td>International Priority Shipping</td>
             <td><strong>InternationalPriorityShippingUK</strong></td>
             <td>false</td>
@@ -1373,18 +1841,36 @@
                <dl>
                   <dt>Description</dt>
                   <dd>International Priority Shipping</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>InternationalPriorityShippingUK</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>6</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50300</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: Letter</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: LargeEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: PackageThickEnvelope</dd>
+                  <dt>ShippingServicePackageDetails</dt>
+                  <dd>Name: USPSLargePack</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>8</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>6</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Promotional Postage Service</td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -1394,14 +1880,24 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Promotional Postage Service</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Calculated</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>PROMOTIONAL</dd>
                   <dt>ShippingService</dt>
                   <dd>PromotionalShippingMethod</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50399</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Express Int'l Postage</td>
             <td><strong>UK_CollectInPersonInternational</strong></td>
             <td>true</td>
@@ -1411,14 +1907,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Express Int'l Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_CollectInPersonInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50312</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>DPD Classic</td>
             <td><strong>UK_DPDClassic</strong></td>
             <td>false</td>
@@ -1428,18 +1932,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DPD Classic</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>INTL_TRACKED_SERVICE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_DPDClassic</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>3</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50320</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>3</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>DPD Direct</td>
             <td><strong>UK_DPDDirect</strong></td>
             <td>false</td>
@@ -1449,18 +1961,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>DPD Direct</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>INTL_TRACKED_SERVICE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_DPDDirect</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>1</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50321</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>1</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Expedited Int'l Flat Rate Postage</td>
             <td><strong>UK_ExpeditedInternationalFlatRatePostage</strong></td>
             <td>false</td>
@@ -1470,14 +1990,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Expedited Int'l Flat Rate Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ExpeditedInternationalFlatRatePostage</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50314</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>International Tracked Postage</td>
             <td><strong>UK_IntlTrackedPostage</strong></td>
             <td>true</td>
@@ -1487,18 +2015,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>International Tracked Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>EXPEDITED</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_IntlTrackedPostage</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>2</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50319</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>5</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Economy Int'l Postage</td>
             <td><strong>UK_OtherCourierOrDeliveryInternational</strong></td>
             <td>true</td>
@@ -1508,14 +2044,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Economy Int'l Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>ECONOMY</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherCourierOrDeliveryInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50311</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Other Int'l Postage (see description)</td>
             <td><strong>UK_OtherInternationalPostage</strong></td>
             <td>false</td>
@@ -1525,14 +2069,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Other Int'l Postage (see description)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>OTHER</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_OtherInternationalPostage</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50315</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Parcelforce Euro 48</td>
             <td><strong>UK_ParcelForceEuro48International</strong></td>
             <td>false</td>
@@ -1542,14 +2094,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Euro 48</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceEuro48International</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50309</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Parcelforce International Datapost</td>
             <td><strong>UK_ParcelForceInternationalDatapost</strong></td>
             <td>false</td>
@@ -1559,14 +2119,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce International Datapost</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceInternationalDatapost</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50307</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Parcelforce Global Priority</td>
             <td><strong>UK_ParcelForceInternationalScheduled</strong></td>
             <td>true</td>
@@ -1576,14 +2144,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Global Priority</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceInternationalScheduled</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50310</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Parcelforce Global Economy (Not available for destinations in Europe)</td>
             <td><strong>UK_ParcelForceIntlEconomy</strong></td>
             <td>true</td>
@@ -1593,14 +2169,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Global Economy (Not available for destinations in Europe)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceIntlEconomy</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50318</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Parcelforce Global Express</td>
             <td><strong>UK_ParcelForceIntlExpress</strong></td>
             <td>true</td>
@@ -1610,14 +2194,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Global Express</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceIntlExpress</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50316</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Parcelforce Global Value</td>
             <td><strong>UK_ParcelForceIntlValue</strong></td>
             <td>true</td>
@@ -1627,14 +2219,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Global Value</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceIntlValue</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50317</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Parcelforce Ireland 24</td>
             <td><strong>UK_ParcelForceIreland24International</strong></td>
             <td>false</td>
@@ -1644,14 +2244,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Parcelforce Ireland 24</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_ParcelForceIreland24International</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50308</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail International Standard (Small Packets)</td>
             <td><strong>UK_RoyalMailAirmailInternational</strong></td>
             <td>true</td>
@@ -1661,14 +2269,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail International Standard (Small Packets)</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailAirmailInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50302</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail International Tracked</td>
             <td><strong>UK_RoyalMailAirsureInternational</strong></td>
             <td>true</td>
@@ -1678,14 +2294,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail International Tracked</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailAirsureInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50303</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail HM Forces Mail</td>
             <td><strong>UK_RoyalMailHMForcesMailInternational</strong></td>
             <td>true</td>
@@ -1695,14 +2319,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail HM Forces Mail</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailHMForcesMailInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50306</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Royal Mail International Signed</td>
             <td><strong>UK_RoyalMailInternationalSignedFor</strong></td>
             <td>true</td>
@@ -1712,14 +2344,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail International Signed</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailInternationalSignedFor</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50305</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Royal Mail International Economy</td>
             <td><strong>UK_RoyalMailSurfaceMailInternational</strong></td>
             <td>true</td>
@@ -1729,14 +2369,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Royal Mail International Economy</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RoyalMailSurfaceMailInternational</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50304</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>RU Tracked Packet from China</td>
             <td><strong>UK_RUTrackedFromChina</strong></td>
             <td>true</td>
@@ -1746,18 +2394,26 @@
                <dl>
                   <dt>Description</dt>
                   <dd>RU Tracked Packet from China</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>NONE</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_RUTrackedFromChina</dd>
-                  <dt>ShippingTimeMin</dt>
-                  <dd>7</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>72552</dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>15</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>7</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="odd">
             <td>Standard Int'l Postage</td>
             <td><strong>UK_SellersStandardInternationalRate</strong></td>
             <td>true</td>
@@ -1767,14 +2423,22 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standard Int'l Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_SellersStandardInternationalRate</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50301</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>true</dd>
                </dl>
             </td>
          </tr>
-         <tr>
+         <tr class="even">
             <td>Standard Int'l Flat Rate Postage</td>
             <td><strong>UK_StandardInternationalFlatRatePostage</strong></td>
             <td>false</td>
@@ -1784,8 +2448,16 @@
                <dl>
                   <dt>Description</dt>
                   <dd>Standard Int'l Flat Rate Postage</dd>
+                  <dt>InternationalService</dt>
+                  <dd>true</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingCategory</dt>
+                  <dd>STANDARD</dd>
                   <dt>ShippingService</dt>
                   <dd>UK_StandardInternationalFlatRatePostage</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>50313</dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
