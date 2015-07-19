@@ -14,3 +14,4 @@ sitemap:
   - [ItemSpecificDetails](/developers/tools/ebay-details/ItemSpecificDetails/)
   - [ReturnPolicyDetails](/developers/tools/ebay-details/ReturnPolicyDetails/)
   - [ShippingServiceDetails](/developers/tools/ebay-details/ShippingServiceDetails/)
+  - [VariationDetails](/developers/tools/ebay-details/VariationDetails/)

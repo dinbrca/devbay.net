@@ -21,6 +21,7 @@
   <xsl:apply-templates select="." mode="item-specific-details"/>
   <xsl:apply-templates select="." mode="return-policy-details"/>
   <xsl:apply-templates select="." mode="shipping-service-details"/>
+  <xsl:apply-templates select="." mode="variation-details"/>
 </xsl:template>
 
 <xsl:template match="/" mode="country-details">
@@ -223,7 +224,6 @@
   <xsl:result-document href="{$destDirectory}/ItemSpecificDetails/_{$siteID}.html">
     <section id="site-{$siteID}" class="site">
       <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
-      <p>Item Specifics are name value pairs that describe aspects of an item. For example, A T-shirt could have an Item Specific that describes its size. In this instance the name is <i>Size</i> and the values could be <i>Small</i> <i>Medium</i> or <i>Large</i> Note that you can only assign one value per name unless <i>GetCategorySpecifics</i> or <i>GetItemRecommendations</i> indicates that it supports multiple values.</p>
       <table>
         <thead>
           <tr>
@@ -608,6 +608,40 @@
 
 <xsl:template match="*:ValidForSellingFlow" mode="dl">
   <dt>ValidForSellingFlow</dt><dd><xsl:value-of select="."/></dd>
+</xsl:template>
+
+<xsl:template match="/" mode="variation-details">
+  <xsl:result-document href="{$destDirectory}/VariationDetails/_{$siteID}.html">
+    <section id="site-{$siteID}" class="site">
+      <h2><xsl:value-of select="//*:SiteDetails[*:SiteID=$siteID]/*:Site"/> (<xsl:value-of select="$siteID"/>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>Maximum</td>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:apply-templates select=".//*:VariationDetails" mode="rows"/>
+        </tbody>
+      </table>
+    </section>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="*:VariationDetails" mode="rows">
+  <tr>
+    <td>Number of item variations allowed per listing.</td>
+    <td><xsl:value-of select="*:MaxVariationsPerItem"/></td>
+  </tr>
+  <tr>
+    <td>Number of variation specific sets per listing. For example, specific sets for clothing would include <i>Size</i> and <i>Color</i>.</td>
+    <td><xsl:value-of select="*:MaxNamesPerVariationSpecificsSet"/></td>
+  </tr>
+  <tr>
+    <td>Number of values allowed per variation specific set. For example, if a specific set was <i>Color</i>, then values could include <i>Red</i>, <i>White</i> and <i>Blue</i> and others up to the maximum.</td>
+    <td><xsl:value-of select="*:MaxValuesPerVariationSpecificsSetName"/></td>
+  </tr>
 </xsl:template>
 
 </xsl:stylesheet>
