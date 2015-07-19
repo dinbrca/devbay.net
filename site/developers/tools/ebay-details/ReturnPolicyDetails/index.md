@@ -6,6 +6,9 @@ tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
+sitemap:
+  lastmod: 2015-07-19
+comments: true
 ---
 Most eBay sites require a seller to specify a return policy when listing an item and eBay provides several features and options for creating them.
 

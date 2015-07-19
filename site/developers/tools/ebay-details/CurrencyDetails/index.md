@@ -6,6 +6,9 @@ tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
+sitemap:
+  lastmod: 2015-07-19
+comments: true
 ---
 Three-letter ISO 4217 currency code and the English names associated with each code.
 

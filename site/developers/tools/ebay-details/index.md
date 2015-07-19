@@ -2,10 +2,12 @@
 layout: tool
 title: eBay Details
 description: Information for the many eBay sites that can be obtained by calling GeteBayDetails.
-
 sitemap:
-  lastmod: 2015-05-31
+  lastmod: 2015-07-19
+comments: true
 ---
+
+Below are links to values that can be returned by setting [DetailName](http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/GeteBayDetails.html#Request.DetailName) in your request to [GeteBayDetails](http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/GeteBayDetails.html).
 
   - [CountryDetails](/developers/tools/ebay-details/CountryDetails/)
   - [CurrencyDetails](/developers/tools/ebay-details/CurrencyDetails/)

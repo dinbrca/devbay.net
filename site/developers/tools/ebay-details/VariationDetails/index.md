@@ -6,6 +6,9 @@ tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
+sitemap:
+  lastmod: 2015-07-19
+comments: true
 ---
 Multiple variations, or multiple SKUs, allow you to create a single multi-quantity fixed priced listing. The listing can include or the variations of your product.
 

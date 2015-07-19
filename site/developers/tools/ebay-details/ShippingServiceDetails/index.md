@@ -6,6 +6,9 @@ tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
+sitemap:
+  lastmod: 2015-07-19
+comments: true
 ---
 Domestic and International shipping services supported by each eBay site. You may only use services where *ValidForSellingFlow* is *true*, in the various calls of the AddItem family.
 

@@ -6,6 +6,9 @@ tool:
   name: ebay-details
   js: ['/developers/tools/ebay-details/js/app.js']
   css: ['/developers/tools/ebay-details/css/app.css']
+sitemap:
+  lastmod: 2015-07-19
+comments: true
 ---
 The maximum number of business days allowed as a seller's handling time once payment has cleared. A value of zero indicates *same day handling* for an item. Handling times of 4 business days or more are considered to be *Extended Handling*.
 

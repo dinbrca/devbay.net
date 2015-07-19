@@ -11,4 +11,6 @@ This collection of tools are designed to help in using the eBay API.
 
     Create the correct URL for calling findItemsAdvanced with this tool for the eBay Finding API. 
 
-  - [eBay Site Details](/developers/tools/ebay-details/)
+  - [eBay Details](/developers/tools/ebay-details/)
+
+    A reference that provides some of the values that can be obtained when calling [GeteBayDetails](http://developer.ebay.com/DevZone/XML/docs/Reference/eBay/GeteBayDetails.html).
