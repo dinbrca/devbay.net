@@ -12,6 +12,12 @@ html.js .shipping-service-details.active {
 
 article table {
     width: 100%;
+    table-layout: fixed;
+}
+
+table tr th,
+table tr td {
+  word-wrap: break-word;
 }
 
 table tr.shipping-service-details {
