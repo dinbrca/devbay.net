@@ -107,8 +107,6 @@ transform:
 all: 	clean				\
 	$(SITE)				\
 	$(DIST)				\
-	download			\
-	transform			\
 	jkbuild				\
 	bobbie				\
 	ebay-details			\
