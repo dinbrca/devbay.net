@@ -3,11 +3,11 @@ layout: sdk
 title: Getting Started Guide
 description: Learn how to get started with the eBay SDK for PHP.
 sitemap:
-  lastmod: 2015-01-17
+  lastmod: 2015-08-03
 pagination:
   prev:
-    url: installation/
-    title: Installation
+    url: migration
+    title: Migration Guide
   next:
     url: sample-project/
     title: Sample Project

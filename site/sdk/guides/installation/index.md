@@ -3,14 +3,14 @@ layout: sdk
 title: Installation
 description: Learn how to install the eBay SDK for PHP.
 sitemap:
-  lastmod: 2015-02-21
+  lastmod: 2015-08-03
 pagination:
   prev:
     url: requirements/
     title: Requirements
   next:
-    url: getting-started/
-    title: Getting Started Guide
+    url: migration
+    title: Migration Guide
 ---
 ## Installing via Composer
 

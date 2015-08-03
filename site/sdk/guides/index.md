@@ -1,8 +1,9 @@
 ---
 layout: sdk
 title: eBay SDK for PHP
+description: Learn how to use the eBay SDK for PHP with these guides.
 sitemap:
-  lastmod: 2015-01-17
+  lastmod: 2015-08-03
 pagination:
   next:
     url: application-keys/
@@ -16,6 +17,7 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
     - [Get your applications keys](/sdk/guides/application-keys/)
     - [Verify that your system meets the requirements for the SDK](/sdk/guides/requirements/)
     - [Install the SDK](/sdk/guides/installation/)
+    - [Migration Guide](/sdk/guides/migration/)
   - Using the SDK
     - [Getting Started Guide](/sdk/guides/getting-started/)
     - [Sample Project](/sdk/guides/sample-project/)
