@@ -22,98 +22,41 @@ Composer is a tool for dependency management in PHP. It allows you to declare th
 
 Installing the SDK with Composer is done as follows:
 
-  1. Edit your project's `composer.json` file so that is contains the following:
-
-     ```javascript
-     {
-         "require": {
-             "dts/ebay-sdk-finding": "~0.1",
-             "dts/ebay-sdk-trading": "~0.1",
-             "dts/ebay-sdk-shopping": "~0.1",
-             "dts/ebay-sdk-business-policies-management": "~0.1",
-             "dts/ebay-sdk-file-transfer": "~0.1",
-             "dts/ebay-sdk-bulk-data-exchange": "~0.1",
-             "dts/ebay-sdk-half-finding": "~0.1"
-         }
-     }
-     ```
-
-     Note that this will install all of the SDK. It is explained later how the installation can be customized to only include the parts that you need.
-
   1. Download and install Composer.
 
      ```
      curl -sS https://getcomposer.org/installer | php
      ```
 
-  1. Install the SDK and its dependencies.
+  1. Install the SDK.
 
      ```
-     php composer.phar install
+     php composer.phar require dts/ebay-sdk-php
      ```
 
-  1. Require Composer's autoloader by adding the following line to the top of you code.
+  1. Require Composer's autoloader by adding the following line to the top of your code.
 
      ```php
+     <?php
      require 'vendor/autoload.php';
      ```
 
 It is highly recommended that you read the Composer documentation at [getcomposer.org](http://getcomposer.org) to fully understand how to install Composer, define dependencies and configure the autoloading.
 
-### Customizing the installation
-
-Due to the vast size of the eBay API, the SDK is actually composed of several smaller individual SDKs that provide the means to use a specific eBay API service in your project.
-
-Using the method outlined earlier installs all of the SDK, but by only declaring the services that you require you can install just what you need. For example, if you are only using the Finding API service your `composer.json` file will be as follows:
-
-```javascript
-{
-    "require": {
-        "dts/ebay-sdk-finding": "~0.1"
-    }
-}
-```
-
-### Versions
-
-Because each SDK is its own project they will be at different versions to one another. To help determine which version of a SDK you require there is a [complete list of each SDK, and the API version they support](/sdk/guides/versions/) available. If during the development of your project you want to keep up with the latest changes you can specify `dev-master` as the version.
-
-```javascript
-{
-    "require": {
-        "dts/ebay-sdk-trading": "dev-master"
-    }
-}
-```
-
 ## Installing via Phar and Zip
 
-Each SDK comes with both a [Phar](http://php.net/manual/en/book.phar.php) and Zip archive. These files contain all the classes and dependencies you need to run a SDK. You can download either the Phar or Zip from the releases of each SDK.
+The SDK comes with both a [phar](http://php.net/manual/en/book.phar.php) and Zip archive. These files contain all the classes and dependencies you need to run the SDK. You can download either the phar or Zip from the [SDK releases](https://github.com/davidtsadler/ebay-sdk-php/releases).
 
-  * [Bulk Data Exchange](https://github.com/davidtsadler/ebay-sdk-bulk-data-exchange/releases)
-  * [Business Policies Management](https://github.com/davidtsadler/ebay-sdk-business-policies-management/releases)
-  * [File Transfer](https://github.com/davidtsadler/ebay-sdk-file-transfer/releases)
-  * [Finding](https://github.com/davidtsadler/ebay-sdk-finding/releases)
-  * [Half Finding](https://github.com/davidtsadler/ebay-sdk-half-finding/releases)
-  * [Shopping](https://github.com/davidtsadler/ebay-sdk-shopping/releases)
-  * [Trading](https://github.com/davidtsadler/ebay-sdk-trading/releases)
-
-Using a Phar in your project is as simple as including it in your scripts.
+Using the phar in your project is as simple as including it in your scripts.
 
 ```php
-require '/path/to/downloaded-sdk.phar';
+require '/path/to/phar/download/ebay-sdk-php.phar';
 ```
 
-To use a Zip in your project you will first have to unzip it into the directory of your choice. The files within a Zip are in a [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) compatible directory structure. In addition each SDK provides its own autoloader that you can include in your project's code.
+To use the Zip in your project you will first have to unzip it into the directory of your choice. The files within a Zip are in a [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) compatible directory structure. In addition the SDK provides its own autoloader that you can include in your project's code.
 
 ```php
-require '/path/to/dts-<service>-autoloader.php';
-```
-
-Note that the name of the autoloader file is different for each SDK and is named after the service that the SDK supports. For example the Finding SDK will provide an autoloader in the following named file.
-
-```php
-require '/path/to/dts-finding-autoloader.php';
+require '/path/to/zip/download/ebay-sdk-php-autoloader.php';
 ```
 
 Alternatively you can use an existing autoloader from your project or develop your own.
