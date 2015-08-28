@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-OUT=$(curl -qSfs --request POST -H "X-EBAY-API-COMPATIBILITY-LEVEL:929" -H "X-EBAY-API-SITEID:$1" -H "X-EBAY-API-CALL-NAME:$2" -H "Content-Type: text/xml" --data "$3" https://api.ebay.com/ws/api.dll) 2>/dev/null
+OUT=$(curl -qSfs --request POST -H "X-EBAY-API-COMPATIBILITY-LEVEL:933" -H "X-EBAY-API-SITEID:$1" -H "X-EBAY-API-CALL-NAME:$2" -H "Content-Type: text/xml" --data "$3" https://api.ebay.com/ws/api.dll) 2>/dev/null
 
 RET=$?
 

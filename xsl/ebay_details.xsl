@@ -553,7 +553,7 @@
 
   <tr class="{$class}">
     <td>
-      <xsl:value-of select="*:Description"/>
+      <a class="expand-shipping-service-details" title="Click to see details" href="#"><xsl:value-of select="*:Description"/></a>
     </td>
     <td>
       <strong>
