@@ -3,14 +3,14 @@ layout: sdk
 title: Uploading and downloading files
 description: Learn how eBay SDK for PHP handles uploading and downloading of files.
 sitemap:
-  lastmod: 2015-01-17
+  lastmod: 2015-11-02
 pagination:
   prev:
     url: configuring/
     title: Configuring the SDK
   next:
-    url: finding/
-    title: Finding
+    url: debugging/
+    title: Debugging the request and response
 ---
 Depending on your project requirements you may need to upload or download files via the eBay API. The eBay SDK for PHP handles this through the `attachment` method that is explained in this guide.
 

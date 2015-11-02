@@ -27,6 +27,7 @@ The [eBay SDK for PHP](https://github.com/davidtsadler/ebay-sdk) enables PHP dev
   - [SDK Versions](/sdk/guides/versions/)
   - [Configuring the SDK](/sdk/guides/configuring/)
   - [Uploading and downloading files with the SDK](/sdk/guides/uploading-and-downloading-files/)
+  - [Debugging the request and response](/sdk/guides/debugging/) 
 
 ## <a id="service-guides"></a>Service Guides
 
