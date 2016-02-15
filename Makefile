@@ -57,11 +57,12 @@ POSTS-PATH		:= $(SITE-PATH)/_posts
 TOPIC 			?= new article
 DATE 			:= $(shell date "+%Y-%m-%d")
 FILE 			:= $(shell echo "$(POSTS-PATH)/$(DATE)-$(TOPIC).md" | sed -e 's/\(.*\)/\L\1/;y/\ /-/')
+SDK-REPO		:= ../ebay-sdk-php
 
-watch:	clean
+watch:	clean sdk-guides
 	jekyll serve --config _config.yml,_config_local.yml --watch --host 0.0.0.0
 
-jklocal:  clean
+jklocal:  clean sdk-guides
 	jekyll build --config _config.yml,_config_local.yml
 
 jkbuild:
@@ -73,12 +74,19 @@ bobbie:
 ebay-details:
 	@$(NODE-BIN)/webpack --config webpack.ebay-details.config.js
 
+sdk-guides:
+	@cd $(SDK-REPO)/docs && make clean
+	@cd $(SDK-REPO)/docs && make html
+	@mkdir -p $(SITE)/sdk/guides
+	@rsync -rtvu --delete --exclude .buildinfo $(SDK-REPO)/docs/_build/html/ $(SITE)/sdk/guides/ 
+
 clean:
 	@rm -rf $(DIST)
 	@rm -rf $(TMP)
 
 $(DIST):
 	@mkdir $(DIST)
+	@mkdir -p $(DIST)/sdk/guides
 	@mkdir $(CSS-DEST-PATH)
 	@mkdir -p $(CSS-BOBBIE-DEST-PATH)
 	@mkdir -p $(CSS-EBAY-DETAILS-DEST-PATH)
@@ -107,6 +115,7 @@ transform:
 all: 	clean				\
 	$(SITE)				\
 	$(DIST)				\
+	sdk-guides			\
 	jkbuild				\
 	bobbie				\
 	ebay-details			\
