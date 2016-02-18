@@ -59,10 +59,16 @@ DATE 			:= $(shell date "+%Y-%m-%d")
 FILE 			:= $(shell echo "$(POSTS-PATH)/$(DATE)-$(TOPIC).md" | sed -e 's/\(.*\)/\L\1/;y/\ /-/')
 SDK-REPO		:= ../ebay-sdk-php
 
-watch:	clean sdk-guides
+check_env:
+	$(if $(SDK_ENV),,$(error SDK_ENV is not defined. Set in the environment via "export SDK_ENV=production"))
+
+check_no_env:
+	$(if $(SDK_ENV),$(error SDK_ENV is defined. Remove from the environment via "unset SDK_ENV"),)
+
+watch:	check_no_env clean sdk-guides
 	jekyll serve --config _config.yml,_config_local.yml --watch --host 0.0.0.0
 
-jklocal:  clean sdk-guides
+jklocal:  check_no_env clean sdk-guides
 	jekyll build --config _config.yml,_config_local.yml
 
 jkbuild:
@@ -112,7 +118,8 @@ download: $(DOWNLOADS) $(EBAY_DETAILS)
 transform:
 	@$(SCRIPTS)/transform_get_ebay_details
 
-all: 	clean				\
+all: 	check_env			\
+	clean				\
 	$(SITE)				\
 	$(DIST)				\
 	sdk-guides			\
