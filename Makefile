@@ -180,6 +180,7 @@ build:	all
 	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.woff" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.otf" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.inv" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.map" -exec cp --parents {} ../../$(DIST) \;
 
 $(CSS-SITE-TARGET): $(CSS-SITE-PREREQ)
 	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
