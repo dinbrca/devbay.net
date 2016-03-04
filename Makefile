@@ -172,6 +172,14 @@ build:	all
 	@cd $(SITE) && find . -type f -iname "*.jpg" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.ico" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.txt" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.css" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.js" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.eot" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.svg" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.ttf" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.woff" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.otf" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.inv" -exec cp --parents {} ../../$(DIST) \;
 
 $(CSS-SITE-TARGET): $(CSS-SITE-PREREQ)
 	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
