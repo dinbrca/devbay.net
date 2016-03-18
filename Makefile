@@ -65,10 +65,10 @@ check_env:
 check_no_env:
 	$(if $(SDK_ENV),$(error SDK_ENV is defined. Remove from the environment via "unset SDK_ENV"),)
 
-watch:	check_no_env clean sdk-guides
+watch:	check_no_env clean sdk-guides api-docs
 	jekyll serve --config _config.yml,_config_local.yml --watch --host 0.0.0.0
 
-jklocal:  check_no_env clean sdk-guides
+jklocal:  check_no_env clean sdk-guides api-docs
 	jekyll build --config _config.yml,_config_local.yml
 
 jkbuild:
@@ -81,10 +81,14 @@ ebay-details:
 	@$(NODE-BIN)/webpack --config webpack.ebay-details.config.js
 
 sdk-guides:
-	@cd $(SDK-REPO)/docs && make clean
-	@cd $(SDK-REPO)/docs && make html
+	@cd $(SDK-REPO)/docs && make clean html
 	@mkdir -p $(SITE)/sdk/guides
 	@rsync -rtvu --delete --exclude .buildinfo $(SDK-REPO)/docs/_build/html/ $(SITE)/sdk/guides/ 
+
+api-docs:
+	@cd $(SDK-REPO) && make clean api
+	@mkdir -p $(SITE)/sdk/guides/api
+	@rsync -rtvu --delete $(SDK-REPO)/build/artifacts/docs/ $(SITE)/sdk/guides/api
 
 clean:
 	@rm -rf $(DIST)
@@ -93,6 +97,7 @@ clean:
 $(DIST):
 	@mkdir $(DIST)
 	@mkdir -p $(DIST)/sdk/guides
+	@mkdir -p $(DIST)/sdk/guides/api
 	@mkdir $(CSS-DEST-PATH)
 	@mkdir -p $(CSS-BOBBIE-DEST-PATH)
 	@mkdir -p $(CSS-EBAY-DETAILS-DEST-PATH)
@@ -123,6 +128,7 @@ all: 	check_env			\
 	$(SITE)				\
 	$(DIST)				\
 	sdk-guides			\
+	api-docs			\
 	jkbuild				\
 	bobbie				\
 	ebay-details			\
