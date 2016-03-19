@@ -83,7 +83,7 @@ ebay-details:
 sdk-guides:
 	@cd $(SDK-REPO)/docs && make clean html
 	@mkdir -p $(SITE)/sdk/guides
-	@rsync -rtvu --delete --exclude .buildinfo $(SDK-REPO)/docs/_build/html/ $(SITE)/sdk/guides/ 
+	@rsync -rtvu --delete --exclude .buildinfo --exclude _sources $(SDK-REPO)/docs/_build/html/ $(SITE)/sdk/guides/
 
 api-docs:
 	@cd $(SDK-REPO) && make clean api
@@ -127,8 +127,6 @@ all: 	check_env			\
 	clean				\
 	$(SITE)				\
 	$(DIST)				\
-	sdk-guides			\
-	api-docs			\
 	jkbuild				\
 	bobbie				\
 	ebay-details			\
@@ -170,7 +168,6 @@ build:	all
 	@find $(SITE) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/bobbie-vendors.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/developers\/tools\/bobbie\/js\/$(js-bobbie-vendors-build)"><\/script>\n/};p' {} \;
 	@find $(SITE) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/bobbie.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/developers\/tools\/bobbie\/js\/$(js-bobbie-build)"><\/script>\n/};p' {} \;
 	@find $(SITE) -type f -iname "*.html" -exec sed -i -n '/build:js \/js\/ebay-details.js/{:a;N;/endbuild/!ba;N;s/.*\n/<script src="\/developers\/tools\/ebay-details\/js\/$(js-ebay-details-build)"><\/script>\n/};p' {} \;
-	@find $(SITE) -type f -iname "*.html" -exec $(NODE-BIN)/html-minifier --remove-comments --collapse-whitespace --output {} {} \;
 	@cd $(SITE) && find . -type f -iname "*.html" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.xml" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.png" -exec cp --parents {} ../../$(DIST) \;
@@ -178,15 +175,12 @@ build:	all
 	@cd $(SITE) && find . -type f -iname "*.jpg" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.ico" -exec cp --parents {} ../../$(DIST) \;
 	@cd $(SITE) && find . -type f -iname "*.txt" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.css" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.js" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.eot" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.svg" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.ttf" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.woff" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.otf" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.inv" -exec cp --parents {} ../../$(DIST) \;
-	@cd $(SITE) && find ./sdk/guides/ -type f -iname "*.map" -exec cp --parents {} ../../$(DIST) \;
+	@cd $(SDK-REPO)/docs && make clean html
+	@mkdir -p $(DIST)/sdk/guides
+	@rsync -rtvu --delete --exclude .buildinfo --exclude _sources $(SDK-REPO)/docs/_build/html/ $(DIST)/sdk/guides/
+	@cd $(SDK-REPO) && make clean api
+	@mkdir -p $(DIST)/sdk/guides/api
+	@rsync -rtvu --delete $(SDK-REPO)/build/artifacts/docs/ $(DIST)/sdk/guides/api
 
 $(CSS-SITE-TARGET): $(CSS-SITE-PREREQ)
 	@cat $^ | $(NODE-BIN)/cleancss --skip-advanced --output $@
@@ -215,21 +209,14 @@ $(JS-EBAY-DETAILS-TARGET): $(JS-EBAY-DETAILS-PREREQ)
 $(JS-BOBBIE-VENDORS-TARGET): $(JS-BOBBIE-VENDORS-PREREQ)
 	@cat $^ | $(NODE-BIN)/uglifyjs --compress=warnings=false --mangle --output $@
 
-deploy:	build
+deploy: build
 	@find $(DIST) -type f \( -iname '*.xml' -or -iname '*.txt' -or -iname '*.css' -or -iname '*.js' -or -iname '*.html' \) -exec gzip "{}" \; -exec mv "{}.gz" "{}" \;
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/css/ s3://devbay.net/css/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/js/ s3://devbay.net/js/
-	@s3cmd sync --acl-public --exclude '*.*' --include  '*.html' -m "text/html" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include  '*.xml' -m "application/xml" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include 'robots.txt' -m "text/plain" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.png' -m "image/png" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.gif' -m "image/gif" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.jpg' -m "image/jpg" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.ico' -m "image/vnd.microsoft.icon" --add-header="Cache-Control: max-age=2592000" $(DIST)/ s3://devbay.net/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(CSS-BOBBIE-DEST-PATH)/ s3://devbay.net/developers/tools/bobbie/css/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(CSS-EBAY-DETAILS-DEST-PATH)/ s3://devbay.net/developers/tools/ebay-details/css/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(JS-BOBBIE-DEST-PATH)/ s3://devbay.net/developers/tools/bobbie/js/
-	@s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=31536000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(JS-EBAY-DETAILS-DEST-PATH)/ s3://devbay.net/developers/tools/ebay-details/js/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.xml' -m "application/xml" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.txt' -m "text/plain" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.css' -m "text/css" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.js' -m "application/javascript" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.*' --include '*.html' -m "text/html" --add-header="Cache-Control: max-age=2592000" --add-header="Content-Encoding: gzip" --add-header="Vary: Accept-Encoding" $(DIST)/ s3://devbay.net/
+	@s3cmd sync --acl-public --exclude '*.xml' --exclude '*.txt' --exclude '*.css' --exclude '*.js' --exclude '*.html' --add-header="Cache-Control: max-age=31536000" $(DIST)/ s3://devbay.net/
 	@s3cmd sync --acl-public --delete-removed  $(DIST)/ s3://devbay.net/
 
 $(POSTS-PATH):
