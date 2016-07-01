@@ -163,8 +163,6 @@
                   <dd>BENL_DePostZendingAangetekend</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12308</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -192,8 +190,6 @@
                   <dd>BENL_DePostZendingNONPRIOR</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12306</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -221,8 +217,6 @@
                   <dd>BENL_DePostZendingPRIOR</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12307</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -325,14 +319,37 @@
                   <dd>BENL_KilopostPakje</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12309</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
          <tr class="odd">
+            <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Verzending via Mondial Relay</a></td>
+            <td><strong>BENL_MondialRelay</strong></td>
+            <td>true</td>
+         </tr>
+         <tr class="shipping-service-details">
+            <td colspan="3">
+               <dl>
+                  <dt>Description</dt>
+                  <dd>Verzending via Mondial Relay</dd>
+                  <dt>ServiceType</dt>
+                  <dd>Flat</dd>
+                  <dt>ShippingService</dt>
+                  <dd>BENL_MondialRelay</dd>
+                  <dt>ShippingServiceID</dt>
+                  <dd>12325</dd>
+                  <dt>ShippingTimeMax</dt>
+                  <dd>4</dd>
+                  <dt>ShippingTimeMin</dt>
+                  <dd>2</dd>
+                  <dt>ValidForSellingFlow</dt>
+                  <dd>true</dd>
+               </dl>
+            </td>
+         </tr>
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Andere verzendservice</a></td>
             <td><strong>BENL_Other</strong></td>
             <td>false</td>
@@ -354,14 +371,12 @@
                   <dd>BENL_Other</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12305</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Andere verzending</a></td>
             <td><strong>BENL_OtherShippingMethods</strong></td>
             <td>true</td>
@@ -388,7 +403,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Pakketpost</a></td>
             <td><strong>BENL_ParcelPost</strong></td>
             <td>false</td>
@@ -412,8 +427,6 @@
                   <dd>BENL_ParcelPost</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12303</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
                   <dt>ShippingTimeMin</dt>
@@ -423,7 +436,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Ophalen bij de verkoper</a></td>
             <td><strong>BENL_Pickup</strong></td>
             <td>true</td>
@@ -444,7 +457,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Verzending met prioriteit</a></td>
             <td><strong>BENL_PriorityDelivery</strong></td>
             <td>false</td>
@@ -468,8 +481,6 @@
                   <dd>BENL_PriorityDelivery</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12302</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
                   <dt>ShippingTimeMin</dt>
@@ -479,7 +490,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Verzending met ontvangstbevestiging</a></td>
             <td><strong>BENL_RegisteredMail</strong></td>
             <td>false</td>
@@ -501,8 +512,6 @@
                   <dd>BENL_RegisteredMail</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12304</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>3</dd>
                   <dt>ShippingTimeMin</dt>
@@ -512,7 +521,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Standaardverzending</a></td>
             <td><strong>BENL_StandardDelivery</strong></td>
             <td>false</td>
@@ -534,8 +543,6 @@
                   <dd>BENL_StandardDelivery</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12301</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ShippingTimeMax</dt>
                   <dd>2</dd>
                   <dt>ShippingTimeMin</dt>
@@ -545,7 +552,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Standaardverzending uit het buitenland</a></td>
             <td><strong>BENL_StandardDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -570,7 +577,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Taxipost (express)</a></td>
             <td><strong>BENL_Taxipost</strong></td>
             <td>false</td>
@@ -592,14 +599,12 @@
                   <dd>BENL_Taxipost</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12310</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Verzending uit het buitenland met internationale tracking</a></td>
             <td><strong>BENL_TrackedDeliveryFromAbroad</strong></td>
             <td>true</td>
@@ -624,7 +629,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Vaste kosten standaard verzending</a></td>
             <td><strong>BENL_VasteKostenStandaardVerzending</strong></td>
             <td>false</td>
@@ -646,14 +651,12 @@
                   <dd>BENL_VasteKostenStandaardVerzending</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12312</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Vaste kosten versnelde verzending</a></td>
             <td><strong>BENL_VasteKostenVersneldeVerzending</strong></td>
             <td>false</td>
@@ -675,14 +678,12 @@
                   <dd>BENL_VasteKostenVersneldeVerzending</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>12313</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
             </td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Verzekerde verzending</a></td>
             <td><strong>BENL_VerzekerdeVerzending</strong></td>
             <td>true</td>
@@ -703,7 +704,7 @@
                </dl>
             </td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
             <td><a class="expand-shipping-service-details" title="Click to see details" href="#">Korting op verzending</a></td>
             <td><strong>PromotionalShippingMethod</strong></td>
             <td>false</td>
@@ -762,8 +763,6 @@
                   <dd>BENL_DePostInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62301</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -793,8 +792,6 @@
                   <dd>BENL_DePostZendingAangetekendInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62312</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -824,8 +821,6 @@
                   <dd>BENL_DePostZendingNONPRIORInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62311</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -855,8 +850,6 @@
                   <dd>BENL_DePostZendingPRIORInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62310</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -909,8 +902,6 @@
                   <dd>BENL_ExpeditedInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62308</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -963,8 +954,6 @@
                   <dd>BENL_KilopostPakjeInternationaal</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62313</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -1086,8 +1075,6 @@
                   <dd>BENL_StandardInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62307</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -1117,8 +1104,6 @@
                   <dd>BENL_TaxipostExpressverzending</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62314</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
@@ -1171,8 +1156,6 @@
                   <dd>BENL_TPGPostTNTInternational</dd>
                   <dt>ShippingServiceID</dt>
                   <dd>62305</dd>
-                  <dt>ShippingServicePackageDetails</dt>
-                  <dd>Name: </dd>
                   <dt>ValidForSellingFlow</dt>
                   <dd>false</dd>
                </dl>
